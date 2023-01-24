@@ -1,5 +1,5 @@
-from PySide6.QtWidgets import QApplication, QMainWindow, QMessageBox
-from PySide6 import QtWidgets, QtCore
+from PySide6.QtWidgets import QApplication, QMainWindow, QMessageBox, QAbstractItemView
+from PySide6 import QtWidgets, QtCore 
 from ui_dummy_main_window import Ui_MainWindow
 
 import sqlite3
@@ -45,7 +45,7 @@ class Program_Window(QMainWindow,Ui_MainWindow):
         self.ui.btn_save_all_data.clicked.connect(self.save_queueDatabase_data)
 
         
-
+    
 
         # Catch errors from user inputs
     def data_validation_register(self):
@@ -133,22 +133,72 @@ class Program_Window(QMainWindow,Ui_MainWindow):
         
             
         conn.close()
-        
 
-    def check_changed(self,state):
+    
+            
+    # def add_checkbox(self):
+    #     if "SELECT" not in [self.ui.tableWidget.horizontalHeaderItem(i).text() for i in range(self.ui.tableWidget.columnCount())]:
+            
+            
+    #         # Insert a new column at the first position of the table
+    #         self.ui.tableWidget.insertColumn(0)
+            
+            
+    #         # Add checkbox to the first column for each row
+    #         for i in range(self.ui.tableWidget.rowCount()):
+    #             check_box = QtWidgets.QCheckBox()
+    #             check_box.setStyleSheet("QCheckBox {margin-left: 43px;}")
+    #             self.ui.tableWidget.setCellWidget(i, 0, check_box)
+    #         check_box.stateChanged.connect(lambda state, row=i: self.on_checkbox_state_changed(state, row))
+            
+            
+    #         # Get the current header labels
+    #         header_labels = [self.ui.tableWidget.horizontalHeaderItem(i).text() for i in range(1, self.ui.tableWidget.columnCount())]
+            
+    #         # Insert the new label at the first position
+    #         header_labels.insert(0, "SELECT")
+    
+    
+    
+    
+    def on_checkbox_state_changed(self, state, row):
+        
         if state == QtCore.Qt.Checked:
-            print("Checked")
+            # Select the corresponding row
+            self.ui.tableWidget.selectRow(row)
+            print(f"Selected {row}")
         else:
-            print("Unchecked")
+            # Deselect the corresponding row
+            self.ui.tableWidget.setRangeSelected(QtWidgets.QTableWidgetSelectionRange(row,0,row,self.ui.tableWidget.columnCount()-1), False)
+            print(f"deselected {row}")
+
 
     def add_checkbox(self):
         
-        for i in range(self.ui.tableWidget.rowCount()):
-            check_box = QtWidgets.QCheckBox()
-            self.ui.tableWidget.setCellWidget(i, 0, check_box)
-            check_box.stateChanged.connect(self.check_changed)
-        
+        if "SELECT ROW" not in [self.ui.tableWidget.horizontalHeaderItem(i).text() for i in range(self.ui.tableWidget.columnCount())]:
+            # Insert a new column at the first position of the table
+            self.ui.tableWidget.insertColumn(0)
+            
+            self.ui.tableWidget.setSelectionMode(QAbstractItemView.MultiSelection)
+            
+            # Add checkbox to the first column for each row
+            for i in range(self.ui.tableWidget.rowCount()):
+                check_box = QtWidgets.QCheckBox()
+                check_box.setStyleSheet("QCheckBox {margin-left: 43px;}")
+                self.ui.tableWidget.setCellWidget(i, 0, check_box)
+                check_box.stateChanged.connect(lambda state, row=i: self.on_checkbox_state_changed(state, row))
+            
+            # Get the current header labels
+            header_labels = [self.ui.tableWidget.horizontalHeaderItem(i).text() for i in range(1, self.ui.tableWidget.columnCount())]
+            # Insert the new label at the first position
+            header_labels.insert(0, "SELECT ROW")
+            # Set the new header labels
+            self.ui.tableWidget.setHorizontalHeaderLabels(header_labels)
+            
+        else:
+            pass
                 
+
         # filter out different data from different data tables
     def filter_all_data(self):
         search_text = self.ui.searchLineEdit.text().lower()
@@ -160,6 +210,7 @@ class Program_Window(QMainWindow,Ui_MainWindow):
                     match = True
                     break
             self.ui.tableWidget.setRowHidden(i, not match)                      
+      
       
         # Slide left menu function second page
     def slideLeftMenu(self):
@@ -177,6 +228,7 @@ class Program_Window(QMainWindow,Ui_MainWindow):
             # Restore menu
             newWidth = 60
             self.ui.left_menu_cont_frame.setMinimumSize(newWidth,0)
+
 
         # Executes and sends data after passing Data Validation function
     def enter_data(self):

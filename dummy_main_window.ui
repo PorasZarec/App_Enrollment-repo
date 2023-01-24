@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1330</width>
-    <height>852</height>
+    <width>1313</width>
+    <height>776</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -33,7 +33,7 @@
     <item>
      <widget class="QStackedWidget" name="stackedWidgetfront">
       <property name="currentIndex">
-       <number>2</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="register_page">
        <layout class="QVBoxLayout" name="verticalLayout_14">
@@ -834,7 +834,7 @@
             <widget class="QFrame" name="left_menu_cont_frame">
              <property name="minimumSize">
               <size>
-               <width>60</width>
+               <width>220</width>
                <height>0</height>
               </size>
              </property>
@@ -1019,6 +1019,9 @@
                  </item>
                  <item row="9" column="0">
                   <widget class="QPushButton" name="college_page_button">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(0, 0, 0)</string>
+                   </property>
                    <property name="text">
                     <string/>
                    </property>
@@ -1059,6 +1062,9 @@
                  </item>
                  <item row="8" column="0">
                   <widget class="QPushButton" name="elementary_page_button">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(0, 0, 0)</string>
+                   </property>
                    <property name="text">
                     <string/>
                    </property>
@@ -1100,6 +1106,9 @@
                  </item>
                  <item row="7" column="0">
                   <widget class="QPushButton" name="queue_data">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(0, 0, 0)</string>
+                   </property>
                    <property name="text">
                     <string/>
                    </property>
@@ -1634,19 +1643,19 @@
             <number>0</number>
            </property>
            <property name="leftMargin">
-            <number>0</number>
+            <number>20</number>
            </property>
            <property name="topMargin">
             <number>0</number>
            </property>
            <property name="rightMargin">
-            <number>0</number>
+            <number>20</number>
            </property>
            <property name="bottomMargin">
             <number>0</number>
            </property>
-           <item alignment="Qt::AlignRight">
-            <widget class="QFrame" name="frame_11">
+           <item alignment="Qt::AlignLeft">
+            <widget class="QFrame" name="frm_apply_changes">
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
              </property>
@@ -1664,11 +1673,24 @@
                <number>0</number>
               </property>
               <property name="rightMargin">
-               <number>20</number>
+               <number>0</number>
               </property>
               <property name="bottomMargin">
                <number>0</number>
               </property>
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>210</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
               <item>
                <widget class="QLabel" name="lbl_apply">
                 <property name="font">
@@ -1702,6 +1724,64 @@
                 </property>
                 <property name="text">
                  <string>SAVE</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item alignment="Qt::AlignLeft">
+            <widget class="QFrame" name="frm_delete_select">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_23">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_3">
+                <property name="font">
+                 <font>
+                  <family>Segoe UI Black</family>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <italic>true</italic>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>DELETE SELECTED :</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton">
+                <property name="font">
+                 <font>
+                  <family>Segoe UI Black</family>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>DELETE</string>
                 </property>
                </widget>
               </item>
@@ -1763,7 +1843,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1330</width>
+     <width>1313</width>
      <height>26</height>
     </rect>
    </property>

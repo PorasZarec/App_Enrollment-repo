@@ -26,7 +26,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1330, 852)
+        MainWindow.resize(1313, 776)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
@@ -463,7 +463,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_5.setContentsMargins(0, 0, 0, 0)
         self.left_menu_cont_frame = QFrame(self.main_body_frame)
         self.left_menu_cont_frame.setObjectName(u"left_menu_cont_frame")
-        self.left_menu_cont_frame.setMinimumSize(QSize(60, 0))
+        self.left_menu_cont_frame.setMinimumSize(QSize(220, 0))
         self.left_menu_cont_frame.setMaximumSize(QSize(20, 16777215))
         self.left_menu_cont_frame.setStyleSheet(u"")
         self.left_menu_cont_frame.setFrameShape(QFrame.StyledPanel)
@@ -521,6 +521,7 @@ class Ui_MainWindow(object):
 
         self.college_page_button = QPushButton(self.menu_frame)
         self.college_page_button.setObjectName(u"college_page_button")
+        self.college_page_button.setStyleSheet(u"background-color: rgb(0, 0, 0)")
 
         self.gridLayout.addWidget(self.college_page_button, 9, 0, 1, 1)
 
@@ -543,6 +544,7 @@ class Ui_MainWindow(object):
 
         self.elementary_page_button = QPushButton(self.menu_frame)
         self.elementary_page_button.setObjectName(u"elementary_page_button")
+        self.elementary_page_button.setStyleSheet(u"background-color: rgb(0, 0, 0)")
 
         self.gridLayout.addWidget(self.elementary_page_button, 8, 0, 1, 1)
 
@@ -562,6 +564,7 @@ class Ui_MainWindow(object):
 
         self.queue_data = QPushButton(self.menu_frame)
         self.queue_data.setObjectName(u"queue_data")
+        self.queue_data.setStyleSheet(u"background-color: rgb(0, 0, 0)")
 
         self.gridLayout.addWidget(self.queue_data, 7, 0, 1, 1)
 
@@ -828,16 +831,20 @@ class Ui_MainWindow(object):
         self.horizontalLayout_19 = QHBoxLayout(self.footer_frame)
         self.horizontalLayout_19.setSpacing(0)
         self.horizontalLayout_19.setObjectName(u"horizontalLayout_19")
-        self.horizontalLayout_19.setContentsMargins(0, 0, 0, 0)
-        self.frame_11 = QFrame(self.footer_frame)
-        self.frame_11.setObjectName(u"frame_11")
-        self.frame_11.setFrameShape(QFrame.StyledPanel)
-        self.frame_11.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_22 = QHBoxLayout(self.frame_11)
+        self.horizontalLayout_19.setContentsMargins(20, 0, 20, 0)
+        self.frm_apply_changes = QFrame(self.footer_frame)
+        self.frm_apply_changes.setObjectName(u"frm_apply_changes")
+        self.frm_apply_changes.setFrameShape(QFrame.StyledPanel)
+        self.frm_apply_changes.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_22 = QHBoxLayout(self.frm_apply_changes)
         self.horizontalLayout_22.setSpacing(0)
         self.horizontalLayout_22.setObjectName(u"horizontalLayout_22")
-        self.horizontalLayout_22.setContentsMargins(0, 0, 20, 0)
-        self.lbl_apply = QLabel(self.frame_11)
+        self.horizontalLayout_22.setContentsMargins(0, 0, 0, 0)
+        self.horizontalSpacer = QSpacerItem(210, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_22.addItem(self.horizontalSpacer)
+
+        self.lbl_apply = QLabel(self.frm_apply_changes)
         self.lbl_apply.setObjectName(u"lbl_apply")
         font9 = QFont()
         font9.setFamilies([u"Segoe UI Black"])
@@ -849,7 +856,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_22.addWidget(self.lbl_apply)
 
-        self.btn_save_all_data = QPushButton(self.frame_11)
+        self.btn_save_all_data = QPushButton(self.frm_apply_changes)
         self.btn_save_all_data.setObjectName(u"btn_save_all_data")
         font10 = QFont()
         font10.setFamilies([u"Segoe UI Black"])
@@ -862,7 +869,34 @@ class Ui_MainWindow(object):
         self.horizontalLayout_22.addWidget(self.btn_save_all_data)
 
 
-        self.horizontalLayout_19.addWidget(self.frame_11, 0, Qt.AlignRight)
+        self.horizontalLayout_19.addWidget(self.frm_apply_changes, 0, Qt.AlignLeft)
+
+        self.frm_delete_select = QFrame(self.footer_frame)
+        self.frm_delete_select.setObjectName(u"frm_delete_select")
+        self.frm_delete_select.setFrameShape(QFrame.StyledPanel)
+        self.frm_delete_select.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_23 = QHBoxLayout(self.frm_delete_select)
+        self.horizontalLayout_23.setSpacing(0)
+        self.horizontalLayout_23.setObjectName(u"horizontalLayout_23")
+        self.horizontalLayout_23.setContentsMargins(0, 0, 0, 0)
+        self.label_3 = QLabel(self.frm_delete_select)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setFont(font9)
+
+        self.horizontalLayout_23.addWidget(self.label_3)
+
+        self.pushButton = QPushButton(self.frm_delete_select)
+        self.pushButton.setObjectName(u"pushButton")
+        font11 = QFont()
+        font11.setFamilies([u"Segoe UI Black"])
+        font11.setPointSize(12)
+        font11.setBold(True)
+        self.pushButton.setFont(font11)
+
+        self.horizontalLayout_23.addWidget(self.pushButton)
+
+
+        self.horizontalLayout_19.addWidget(self.frm_delete_select, 0, Qt.AlignLeft)
 
 
         self.verticalLayout_13.addWidget(self.footer_frame)
@@ -891,7 +925,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 1330, 26))
+        self.menubar.setGeometry(QRect(0, 0, 1313, 26))
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -899,7 +933,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidgetfront.setCurrentIndex(2)
+        self.stackedWidgetfront.setCurrentIndex(1)
         self.cmbbox_title.setCurrentIndex(0)
         self.main_body_stackedWidget.setCurrentIndex(0)
 
@@ -1003,6 +1037,8 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem23.setText(QCoreApplication.translate("MainWindow", u"Course", None));
         self.lbl_apply.setText(QCoreApplication.translate("MainWindow", u"APPLY CHANGES :", None))
         self.btn_save_all_data.setText(QCoreApplication.translate("MainWindow", u"SAVE", None))
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"DELETE SELECTED :", None))
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"DELETE", None))
         self.version_.setText(QCoreApplication.translate("MainWindow", u"Version 1.0.0.00", None))
     # retranslateUi
 
