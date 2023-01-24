@@ -33,7 +33,7 @@
     <item>
      <widget class="QStackedWidget" name="stackedWidgetfront">
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="register_page">
        <layout class="QVBoxLayout" name="verticalLayout_14">

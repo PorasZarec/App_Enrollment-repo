@@ -899,7 +899,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidgetfront.setCurrentIndex(1)
+        self.stackedWidgetfront.setCurrentIndex(2)
         self.cmbbox_title.setCurrentIndex(0)
         self.main_body_stackedWidget.setCurrentIndex(0)
 

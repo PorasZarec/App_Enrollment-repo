@@ -1,5 +1,5 @@
 from PySide6.QtWidgets import QApplication, QMainWindow, QMessageBox
-from PySide6 import QtWidgets
+from PySide6 import QtWidgets, QtCore
 from ui_dummy_main_window import Ui_MainWindow
 
 import sqlite3
@@ -26,6 +26,8 @@ class Program_Window(QMainWindow,Ui_MainWindow):
         
         # Front Page View button
         self.ui.view_button.clicked.connect(lambda: self.ui.stackedWidgetfront.setCurrentWidget(self.ui.second_page))
+        self.ui.view_button.clicked.connect(self.add_checkbox)
+        
         # Front Page Register button
         self.ui.register_button.clicked.connect(lambda: self.ui.stackedWidgetfront.setCurrentWidget(self.ui.register_page))
 
@@ -42,6 +44,10 @@ class Program_Window(QMainWindow,Ui_MainWindow):
         # Connect the save_all_data button to the save_data function
         self.ui.btn_save_all_data.clicked.connect(self.save_queueDatabase_data)
 
+        
+
+
+        # Catch errors from user inputs
     def data_validation_register(self):
         
         # Terms and Conditions Checking
@@ -57,6 +63,7 @@ class Program_Window(QMainWindow,Ui_MainWindow):
             QMessageBox.warning(self, "Warning", "Accepting the terms are required.")
             return
         
+        # Checking if changes are made from the GUI tableWidget
     def save_queueDatabase_data(self):
         # Connect to the database
         connection = sqlite3.connect("queue.db")
@@ -69,11 +76,13 @@ class Program_Window(QMainWindow,Ui_MainWindow):
             
             # Update the corresponding row in the database
             try:
-                cursor.execute("UPDATE Student_Data SET firstname=?, lastname=?, gender=?, age=?, nationality=?, Registration=?, Semester=?, Course=?", values)
+                cursor.execute("UPDATE Queue_Student_Data SET firstname=?, lastname=?, gender=?, age=?, nationality=?, Registration=?, Semester=?, Course=?", values)
                 
             # Commit the changes to the database
                 connection.commit()
                 QMessageBox.information(self, "Info", "Data saved successfully")
+                
+                
                 
             except Exception as e:
                 QMessageBox.warning(self, "Error", "Error saving data : {}".format(e))
@@ -87,6 +96,7 @@ class Program_Window(QMainWindow,Ui_MainWindow):
     def load_queue_database(self):
         
         self.ui.searchLineEdit.textChanged.connect(self.filter_all_data)
+        
         
         conn = sqlite3.connect('queue.db')
         table_create_query = '''CREATE TABLE IF NOT EXISTS Queue_Student_Data
@@ -119,8 +129,26 @@ class Program_Window(QMainWindow,Ui_MainWindow):
             for col, data in enumerate(row):
                 self.ui.tableWidget.setItem(row_index, col, QtWidgets.QTableWidgetItem(str(data)))
             row_index += 1
+            
+        
+            
         conn.close()
         
+
+    def check_changed(self,state):
+        if state == QtCore.Qt.Checked:
+            print("Checked")
+        else:
+            print("Unchecked")
+
+    def add_checkbox(self):
+        
+        for i in range(self.ui.tableWidget.rowCount()):
+            check_box = QtWidgets.QCheckBox()
+            self.ui.tableWidget.setCellWidget(i, 0, check_box)
+            check_box.stateChanged.connect(self.check_changed)
+        
+                
         # filter out different data from different data tables
     def filter_all_data(self):
         search_text = self.ui.searchLineEdit.text().lower()
@@ -133,8 +161,7 @@ class Program_Window(QMainWindow,Ui_MainWindow):
                     break
             self.ui.tableWidget.setRowHidden(i, not match)                      
       
-      
-    # Slide left menu function second page
+        # Slide left menu function second page
     def slideLeftMenu(self):
         # Get current left menu width
         width = self.ui.left_menu_cont_frame.width()
@@ -151,6 +178,7 @@ class Program_Window(QMainWindow,Ui_MainWindow):
             newWidth = 60
             self.ui.left_menu_cont_frame.setMinimumSize(newWidth,0)
 
+        # Executes and sends data after passing Data Validation function
     def enter_data(self):
         
         # Gathering all data from user inputs
@@ -246,6 +274,7 @@ if __name__ == "__main__":
     window = Program_Window()
     
     window.setWindowTitle("Dominican College")
+    
     window.load_queue_database()
-    window.save_queueDatabase_data()
+
     sys.exit(app.exec())
