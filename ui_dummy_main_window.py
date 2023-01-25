@@ -521,7 +521,7 @@ class Ui_MainWindow(object):
 
         self.college_page_button = QPushButton(self.menu_frame)
         self.college_page_button.setObjectName(u"college_page_button")
-        self.college_page_button.setStyleSheet(u"background-color: rgb(0, 0, 0)")
+        self.college_page_button.setStyleSheet(u"")
 
         self.gridLayout.addWidget(self.college_page_button, 9, 0, 1, 1)
 
@@ -544,7 +544,7 @@ class Ui_MainWindow(object):
 
         self.elementary_page_button = QPushButton(self.menu_frame)
         self.elementary_page_button.setObjectName(u"elementary_page_button")
-        self.elementary_page_button.setStyleSheet(u"background-color: rgb(0, 0, 0)")
+        self.elementary_page_button.setStyleSheet(u"")
 
         self.gridLayout.addWidget(self.elementary_page_button, 8, 0, 1, 1)
 
@@ -564,7 +564,7 @@ class Ui_MainWindow(object):
 
         self.queue_data = QPushButton(self.menu_frame)
         self.queue_data.setObjectName(u"queue_data")
-        self.queue_data.setStyleSheet(u"background-color: rgb(0, 0, 0)")
+        self.queue_data.setStyleSheet(u"")
 
         self.gridLayout.addWidget(self.queue_data, 7, 0, 1, 1)
 
@@ -885,15 +885,15 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_23.addWidget(self.label_3)
 
-        self.pushButton = QPushButton(self.frm_delete_select)
-        self.pushButton.setObjectName(u"pushButton")
+        self.btn_delete_selected = QPushButton(self.frm_delete_select)
+        self.btn_delete_selected.setObjectName(u"btn_delete_selected")
         font11 = QFont()
         font11.setFamilies([u"Segoe UI Black"])
         font11.setPointSize(12)
         font11.setBold(True)
-        self.pushButton.setFont(font11)
+        self.btn_delete_selected.setFont(font11)
 
-        self.horizontalLayout_23.addWidget(self.pushButton)
+        self.horizontalLayout_23.addWidget(self.btn_delete_selected)
 
 
         self.horizontalLayout_19.addWidget(self.frm_delete_select, 0, Qt.AlignLeft)
@@ -1038,7 +1038,7 @@ class Ui_MainWindow(object):
         self.lbl_apply.setText(QCoreApplication.translate("MainWindow", u"APPLY CHANGES :", None))
         self.btn_save_all_data.setText(QCoreApplication.translate("MainWindow", u"SAVE", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"DELETE SELECTED :", None))
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"DELETE", None))
+        self.btn_delete_selected.setText(QCoreApplication.translate("MainWindow", u"DELETE", None))
         self.version_.setText(QCoreApplication.translate("MainWindow", u"Version 1.0.0.00", None))
     # retranslateUi
 

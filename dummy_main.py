@@ -26,7 +26,7 @@ class Program_Window(QMainWindow,Ui_MainWindow):
         
         # Front Page View button
         self.ui.view_button.clicked.connect(lambda: self.ui.stackedWidgetfront.setCurrentWidget(self.ui.second_page))
-        self.ui.view_button.clicked.connect(self.add_checkbox)
+        self.ui.view_button.clicked.connect(self.load_queue_database)
         
         # Front Page Register button
         self.ui.register_button.clicked.connect(lambda: self.ui.stackedWidgetfront.setCurrentWidget(self.ui.register_page))
@@ -121,6 +121,19 @@ class Program_Window(QMainWindow,Ui_MainWindow):
         
         self.ui.tableWidget.setRowCount(len(rows))
         
+        
+        
+        
+        
+        self.add_checkbox()
+        
+        
+        
+        
+        
+        
+        
+        
         #itterate to all data inside the database
         row_index = 0
         
@@ -134,83 +147,63 @@ class Program_Window(QMainWindow,Ui_MainWindow):
             
         conn.close()
 
-    
-            
-    # def add_checkbox(self):
-    #     if "SELECT" not in [self.ui.tableWidget.horizontalHeaderItem(i).text() for i in range(self.ui.tableWidget.columnCount())]:
-            
-            
-    #         # Insert a new column at the first position of the table
-    #         self.ui.tableWidget.insertColumn(0)
-            
-            
-    #         # Add checkbox to the first column for each row
-    #         for i in range(self.ui.tableWidget.rowCount()):
-    #             check_box = QtWidgets.QCheckBox()
-    #             check_box.setStyleSheet("QCheckBox {margin-left: 43px;}")
-    #             self.ui.tableWidget.setCellWidget(i, 0, check_box)
-    #         check_box.stateChanged.connect(lambda state, row=i: self.on_checkbox_state_changed(state, row))
-            
-            
-    #         # Get the current header labels
-    #         header_labels = [self.ui.tableWidget.horizontalHeaderItem(i).text() for i in range(1, self.ui.tableWidget.columnCount())]
-            
-    #         # Insert the new label at the first position
-    #         header_labels.insert(0, "SELECT")
-    
-    
-    
-    
-    def on_checkbox_state_changed(self, state, row):
-        
-        if state == QtCore.Qt.Checked:
-            # Select the corresponding row
-            self.ui.tableWidget.selectRow(row)
-            print(f"Selected {row}")
-        else:
-            # Deselect the corresponding row
-            self.ui.tableWidget.setRangeSelected(QtWidgets.QTableWidgetSelectionRange(row,0,row,self.ui.tableWidget.columnCount()-1), False)
-            print(f"deselected {row}")
+
 
 
     def add_checkbox(self):
-        
         if "SELECT ROW" not in [self.ui.tableWidget.horizontalHeaderItem(i).text() for i in range(self.ui.tableWidget.columnCount())]:
-            # Insert a new column at the first position of the table
-            self.ui.tableWidget.insertColumn(0)
-            
+            # Insert a new column at the last position of the table
+            self.ui.tableWidget.insertColumn(self.ui.tableWidget.columnCount())
+
             self.ui.tableWidget.setSelectionMode(QAbstractItemView.MultiSelection)
-            
-            # Add checkbox to the first column for each row
+
+            # Add checkbox to the last column for each row
             for i in range(self.ui.tableWidget.rowCount()):
                 check_box = QtWidgets.QCheckBox()
+                self.ui.tableWidget.setCellWidget(i, self.ui.tableWidget.columnCount()-1, check_box)
                 check_box.setStyleSheet("QCheckBox {margin-left: 43px;}")
-                self.ui.tableWidget.setCellWidget(i, 0, check_box)
                 check_box.stateChanged.connect(lambda state, row=i: self.on_checkbox_state_changed(state, row))
-            
+
             # Get the current header labels
-            header_labels = [self.ui.tableWidget.horizontalHeaderItem(i).text() for i in range(1, self.ui.tableWidget.columnCount())]
-            # Insert the new label at the first position
-            header_labels.insert(0, "SELECT ROW")
+            header_labels = [self.ui.tableWidget.horizontalHeaderItem(i).text() for i in range(self.ui.tableWidget.columnCount()-1)]
+            # Insert the new label at the end
+            header_labels.append("SELECT ROW")
             # Set the new header labels
             self.ui.tableWidget.setHorizontalHeaderLabels(header_labels)
-            
+
         else:
             pass
-                
 
-        # filter out different data from different data tables
+
+
+
     def filter_all_data(self):
         search_text = self.ui.searchLineEdit.text().lower()
         for i in range(self.ui.tableWidget.rowCount()):
             match = False
             for j in range(self.ui.tableWidget.columnCount()):
                 item = self.ui.tableWidget.item(i, j)
-                if search_text in item.text().lower():
+                if item and search_text in item.text().lower():
                     match = True
                     break
-            self.ui.tableWidget.setRowHidden(i, not match)                      
-      
+            self.ui.tableWidget.setRowHidden(i, not match)
+            
+    def on_checkbox_state_changed(self, state, row):
+        row = row + 1
+        if state == QtCore.Qt.Checked:
+            # Select the corresponding row
+            self.ui.tableWidget.selectRow(row)
+            print(f"Selected {row}")
+            
+        else:
+            # Deselect the corresponding row
+            self.ui.tableWidget.setRangeSelected(QtWidgets.QTableWidgetSelectionRange(row,0,row,self.ui.tableWidget.columnCount()-1), False)
+            print(f"deselected {row}")
+
+
+
+
+
       
         # Slide left menu function second page
     def slideLeftMenu(self):
@@ -299,6 +292,9 @@ class Program_Window(QMainWindow,Ui_MainWindow):
         
         self.ui.checkBox_registered.setChecked(False)
         self.ui.checkBox_terms.setChecked(False)
+        
+        
+        
         
         sqlquery = "SELECT * FROM Queue_Student_Data"
         
