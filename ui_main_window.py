@@ -179,6 +179,7 @@ class Ui_MainWindow(object):
 
         self.cmbbox_nationality = QComboBox(self.frame_21)
         self.cmbbox_nationality.addItem("")
+        self.cmbbox_nationality.addItem("")
         self.cmbbox_nationality.setObjectName(u"cmbbox_nationality")
         self.cmbbox_nationality.setEditable(True)
 
@@ -987,6 +988,7 @@ class Ui_MainWindow(object):
         self.label_15.setText(QCoreApplication.translate("MainWindow", u"Age", None))
         self.label_16.setText(QCoreApplication.translate("MainWindow", u"Nationality", None))
         self.cmbbox_nationality.setItemText(0, QCoreApplication.translate("MainWindow", u"Filipino", None))
+        self.cmbbox_nationality.setItemText(1, QCoreApplication.translate("MainWindow", u"American", None))
 
         self.cmbbox_nationality.setCurrentText(QCoreApplication.translate("MainWindow", u"Filipino", None))
         self.label_18.setText(QCoreApplication.translate("MainWindow", u"#Completed Course", None))
