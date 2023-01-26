@@ -347,11 +347,9 @@
                        <property name="editable">
                         <bool>true</bool>
                        </property>
-                       <item>
-                        <property name="text">
-                         <string/>
-                        </property>
-                       </item>
+                       <property name="currentText">
+                        <string>Filipino</string>
+                       </property>
                        <item>
                         <property name="text">
                          <string>Filipino</string>
@@ -1244,6 +1242,11 @@
                          <height>0</height>
                         </size>
                        </property>
+                       <column>
+                        <property name="text">
+                         <string>IDnumber</string>
+                        </property>
+                       </column>
                        <column>
                         <property name="text">
                          <string>Firstname</string>

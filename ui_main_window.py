@@ -179,7 +179,6 @@ class Ui_MainWindow(object):
 
         self.cmbbox_nationality = QComboBox(self.frame_21)
         self.cmbbox_nationality.addItem("")
-        self.cmbbox_nationality.addItem("")
         self.cmbbox_nationality.setObjectName(u"cmbbox_nationality")
         self.cmbbox_nationality.setEditable(True)
 
@@ -632,8 +631,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_15.setObjectName(u"horizontalLayout_15")
         self.horizontalLayout_15.setContentsMargins(0, 0, 0, 0)
         self.tableWidget = QTableWidget(self.frame_10)
-        if (self.tableWidget.columnCount() < 8):
-            self.tableWidget.setColumnCount(8)
+        if (self.tableWidget.columnCount() < 9):
+            self.tableWidget.setColumnCount(9)
         __qtablewidgetitem = QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(0, __qtablewidgetitem)
         __qtablewidgetitem1 = QTableWidgetItem()
@@ -650,6 +649,8 @@ class Ui_MainWindow(object):
         self.tableWidget.setHorizontalHeaderItem(6, __qtablewidgetitem6)
         __qtablewidgetitem7 = QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(7, __qtablewidgetitem7)
+        __qtablewidgetitem8 = QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(8, __qtablewidgetitem8)
         self.tableWidget.setObjectName(u"tableWidget")
         self.tableWidget.setMinimumSize(QSize(527, 0))
 
@@ -713,22 +714,22 @@ class Ui_MainWindow(object):
         self.tableWidget_elem = QTableWidget(self.frame_14)
         if (self.tableWidget_elem.columnCount() < 8):
             self.tableWidget_elem.setColumnCount(8)
-        __qtablewidgetitem8 = QTableWidgetItem()
-        self.tableWidget_elem.setHorizontalHeaderItem(0, __qtablewidgetitem8)
         __qtablewidgetitem9 = QTableWidgetItem()
-        self.tableWidget_elem.setHorizontalHeaderItem(1, __qtablewidgetitem9)
+        self.tableWidget_elem.setHorizontalHeaderItem(0, __qtablewidgetitem9)
         __qtablewidgetitem10 = QTableWidgetItem()
-        self.tableWidget_elem.setHorizontalHeaderItem(2, __qtablewidgetitem10)
+        self.tableWidget_elem.setHorizontalHeaderItem(1, __qtablewidgetitem10)
         __qtablewidgetitem11 = QTableWidgetItem()
-        self.tableWidget_elem.setHorizontalHeaderItem(3, __qtablewidgetitem11)
+        self.tableWidget_elem.setHorizontalHeaderItem(2, __qtablewidgetitem11)
         __qtablewidgetitem12 = QTableWidgetItem()
-        self.tableWidget_elem.setHorizontalHeaderItem(4, __qtablewidgetitem12)
+        self.tableWidget_elem.setHorizontalHeaderItem(3, __qtablewidgetitem12)
         __qtablewidgetitem13 = QTableWidgetItem()
-        self.tableWidget_elem.setHorizontalHeaderItem(5, __qtablewidgetitem13)
+        self.tableWidget_elem.setHorizontalHeaderItem(4, __qtablewidgetitem13)
         __qtablewidgetitem14 = QTableWidgetItem()
-        self.tableWidget_elem.setHorizontalHeaderItem(6, __qtablewidgetitem14)
+        self.tableWidget_elem.setHorizontalHeaderItem(5, __qtablewidgetitem14)
         __qtablewidgetitem15 = QTableWidgetItem()
-        self.tableWidget_elem.setHorizontalHeaderItem(7, __qtablewidgetitem15)
+        self.tableWidget_elem.setHorizontalHeaderItem(6, __qtablewidgetitem15)
+        __qtablewidgetitem16 = QTableWidgetItem()
+        self.tableWidget_elem.setHorizontalHeaderItem(7, __qtablewidgetitem16)
         self.tableWidget_elem.setObjectName(u"tableWidget_elem")
         self.tableWidget_elem.setMinimumSize(QSize(527, 0))
 
@@ -790,22 +791,22 @@ class Ui_MainWindow(object):
         self.tableWidget_college = QTableWidget(self.frame_18)
         if (self.tableWidget_college.columnCount() < 8):
             self.tableWidget_college.setColumnCount(8)
-        __qtablewidgetitem16 = QTableWidgetItem()
-        self.tableWidget_college.setHorizontalHeaderItem(0, __qtablewidgetitem16)
         __qtablewidgetitem17 = QTableWidgetItem()
-        self.tableWidget_college.setHorizontalHeaderItem(1, __qtablewidgetitem17)
+        self.tableWidget_college.setHorizontalHeaderItem(0, __qtablewidgetitem17)
         __qtablewidgetitem18 = QTableWidgetItem()
-        self.tableWidget_college.setHorizontalHeaderItem(2, __qtablewidgetitem18)
+        self.tableWidget_college.setHorizontalHeaderItem(1, __qtablewidgetitem18)
         __qtablewidgetitem19 = QTableWidgetItem()
-        self.tableWidget_college.setHorizontalHeaderItem(3, __qtablewidgetitem19)
+        self.tableWidget_college.setHorizontalHeaderItem(2, __qtablewidgetitem19)
         __qtablewidgetitem20 = QTableWidgetItem()
-        self.tableWidget_college.setHorizontalHeaderItem(4, __qtablewidgetitem20)
+        self.tableWidget_college.setHorizontalHeaderItem(3, __qtablewidgetitem20)
         __qtablewidgetitem21 = QTableWidgetItem()
-        self.tableWidget_college.setHorizontalHeaderItem(5, __qtablewidgetitem21)
+        self.tableWidget_college.setHorizontalHeaderItem(4, __qtablewidgetitem21)
         __qtablewidgetitem22 = QTableWidgetItem()
-        self.tableWidget_college.setHorizontalHeaderItem(6, __qtablewidgetitem22)
+        self.tableWidget_college.setHorizontalHeaderItem(5, __qtablewidgetitem22)
         __qtablewidgetitem23 = QTableWidgetItem()
-        self.tableWidget_college.setHorizontalHeaderItem(7, __qtablewidgetitem23)
+        self.tableWidget_college.setHorizontalHeaderItem(6, __qtablewidgetitem23)
+        __qtablewidgetitem24 = QTableWidgetItem()
+        self.tableWidget_college.setHorizontalHeaderItem(7, __qtablewidgetitem24)
         self.tableWidget_college.setObjectName(u"tableWidget_college")
         self.tableWidget_college.setMinimumSize(QSize(527, 0))
 
@@ -985,9 +986,9 @@ class Ui_MainWindow(object):
         self.cmbbox_title.setCurrentText(QCoreApplication.translate("MainWindow", u"Male", None))
         self.label_15.setText(QCoreApplication.translate("MainWindow", u"Age", None))
         self.label_16.setText(QCoreApplication.translate("MainWindow", u"Nationality", None))
-        self.cmbbox_nationality.setItemText(0, "")
-        self.cmbbox_nationality.setItemText(1, QCoreApplication.translate("MainWindow", u"Filipino", None))
+        self.cmbbox_nationality.setItemText(0, QCoreApplication.translate("MainWindow", u"Filipino", None))
 
+        self.cmbbox_nationality.setCurrentText(QCoreApplication.translate("MainWindow", u"Filipino", None))
         self.label_18.setText(QCoreApplication.translate("MainWindow", u"#Completed Course", None))
         self.label_19.setText(QCoreApplication.translate("MainWindow", u"#Completed Semester", None))
         self.label_17.setText(QCoreApplication.translate("MainWindow", u"Registration status", None))
@@ -1013,59 +1014,61 @@ class Ui_MainWindow(object):
         self.label_8.setText(QCoreApplication.translate("MainWindow", u"FILTER DATA:", None))
         self.searchLineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Search Data", None))
         ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
-        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Firstname", None));
+        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"IDnumber", None));
         ___qtablewidgetitem1 = self.tableWidget.horizontalHeaderItem(1)
-        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"Lastname", None));
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"Firstname", None));
         ___qtablewidgetitem2 = self.tableWidget.horizontalHeaderItem(2)
-        ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"Gender", None));
+        ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"Lastname", None));
         ___qtablewidgetitem3 = self.tableWidget.horizontalHeaderItem(3)
-        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"Age", None));
+        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"Gender", None));
         ___qtablewidgetitem4 = self.tableWidget.horizontalHeaderItem(4)
-        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"Nationality", None));
+        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"Age", None));
         ___qtablewidgetitem5 = self.tableWidget.horizontalHeaderItem(5)
-        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"Registration", None));
+        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"Nationality", None));
         ___qtablewidgetitem6 = self.tableWidget.horizontalHeaderItem(6)
-        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"Semester", None));
+        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"Registration", None));
         ___qtablewidgetitem7 = self.tableWidget.horizontalHeaderItem(7)
-        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"Course", None));
+        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"Semester", None));
+        ___qtablewidgetitem8 = self.tableWidget.horizontalHeaderItem(8)
+        ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"Course", None));
         self.label_9.setText(QCoreApplication.translate("MainWindow", u"ELEMENTARY DATA", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"FILTER DATA:", None))
         self.searchLineEdit_elem.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Search Data", None))
-        ___qtablewidgetitem8 = self.tableWidget_elem.horizontalHeaderItem(0)
-        ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"Firstname", None));
-        ___qtablewidgetitem9 = self.tableWidget_elem.horizontalHeaderItem(1)
-        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"Lastname", None));
-        ___qtablewidgetitem10 = self.tableWidget_elem.horizontalHeaderItem(2)
-        ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"Title", None));
-        ___qtablewidgetitem11 = self.tableWidget_elem.horizontalHeaderItem(3)
-        ___qtablewidgetitem11.setText(QCoreApplication.translate("MainWindow", u"Age", None));
-        ___qtablewidgetitem12 = self.tableWidget_elem.horizontalHeaderItem(4)
-        ___qtablewidgetitem12.setText(QCoreApplication.translate("MainWindow", u"Nationality", None));
-        ___qtablewidgetitem13 = self.tableWidget_elem.horizontalHeaderItem(5)
-        ___qtablewidgetitem13.setText(QCoreApplication.translate("MainWindow", u"Registration", None));
-        ___qtablewidgetitem14 = self.tableWidget_elem.horizontalHeaderItem(6)
-        ___qtablewidgetitem14.setText(QCoreApplication.translate("MainWindow", u"Semester", None));
-        ___qtablewidgetitem15 = self.tableWidget_elem.horizontalHeaderItem(7)
-        ___qtablewidgetitem15.setText(QCoreApplication.translate("MainWindow", u"Course", None));
+        ___qtablewidgetitem9 = self.tableWidget_elem.horizontalHeaderItem(0)
+        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"Firstname", None));
+        ___qtablewidgetitem10 = self.tableWidget_elem.horizontalHeaderItem(1)
+        ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"Lastname", None));
+        ___qtablewidgetitem11 = self.tableWidget_elem.horizontalHeaderItem(2)
+        ___qtablewidgetitem11.setText(QCoreApplication.translate("MainWindow", u"Title", None));
+        ___qtablewidgetitem12 = self.tableWidget_elem.horizontalHeaderItem(3)
+        ___qtablewidgetitem12.setText(QCoreApplication.translate("MainWindow", u"Age", None));
+        ___qtablewidgetitem13 = self.tableWidget_elem.horizontalHeaderItem(4)
+        ___qtablewidgetitem13.setText(QCoreApplication.translate("MainWindow", u"Nationality", None));
+        ___qtablewidgetitem14 = self.tableWidget_elem.horizontalHeaderItem(5)
+        ___qtablewidgetitem14.setText(QCoreApplication.translate("MainWindow", u"Registration", None));
+        ___qtablewidgetitem15 = self.tableWidget_elem.horizontalHeaderItem(6)
+        ___qtablewidgetitem15.setText(QCoreApplication.translate("MainWindow", u"Semester", None));
+        ___qtablewidgetitem16 = self.tableWidget_elem.horizontalHeaderItem(7)
+        ___qtablewidgetitem16.setText(QCoreApplication.translate("MainWindow", u"Course", None));
         self.label_10.setText(QCoreApplication.translate("MainWindow", u"COLLEGE DATA", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"FILTER DATA:", None))
         self.searchLineEdit_college.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Search Data", None))
-        ___qtablewidgetitem16 = self.tableWidget_college.horizontalHeaderItem(0)
-        ___qtablewidgetitem16.setText(QCoreApplication.translate("MainWindow", u"Firstname", None));
-        ___qtablewidgetitem17 = self.tableWidget_college.horizontalHeaderItem(1)
-        ___qtablewidgetitem17.setText(QCoreApplication.translate("MainWindow", u"Lastname", None));
-        ___qtablewidgetitem18 = self.tableWidget_college.horizontalHeaderItem(2)
-        ___qtablewidgetitem18.setText(QCoreApplication.translate("MainWindow", u"Title", None));
-        ___qtablewidgetitem19 = self.tableWidget_college.horizontalHeaderItem(3)
-        ___qtablewidgetitem19.setText(QCoreApplication.translate("MainWindow", u"Age", None));
-        ___qtablewidgetitem20 = self.tableWidget_college.horizontalHeaderItem(4)
-        ___qtablewidgetitem20.setText(QCoreApplication.translate("MainWindow", u"Nationality", None));
-        ___qtablewidgetitem21 = self.tableWidget_college.horizontalHeaderItem(5)
-        ___qtablewidgetitem21.setText(QCoreApplication.translate("MainWindow", u"Registration", None));
-        ___qtablewidgetitem22 = self.tableWidget_college.horizontalHeaderItem(6)
-        ___qtablewidgetitem22.setText(QCoreApplication.translate("MainWindow", u"Semester", None));
-        ___qtablewidgetitem23 = self.tableWidget_college.horizontalHeaderItem(7)
-        ___qtablewidgetitem23.setText(QCoreApplication.translate("MainWindow", u"Course", None));
+        ___qtablewidgetitem17 = self.tableWidget_college.horizontalHeaderItem(0)
+        ___qtablewidgetitem17.setText(QCoreApplication.translate("MainWindow", u"Firstname", None));
+        ___qtablewidgetitem18 = self.tableWidget_college.horizontalHeaderItem(1)
+        ___qtablewidgetitem18.setText(QCoreApplication.translate("MainWindow", u"Lastname", None));
+        ___qtablewidgetitem19 = self.tableWidget_college.horizontalHeaderItem(2)
+        ___qtablewidgetitem19.setText(QCoreApplication.translate("MainWindow", u"Title", None));
+        ___qtablewidgetitem20 = self.tableWidget_college.horizontalHeaderItem(3)
+        ___qtablewidgetitem20.setText(QCoreApplication.translate("MainWindow", u"Age", None));
+        ___qtablewidgetitem21 = self.tableWidget_college.horizontalHeaderItem(4)
+        ___qtablewidgetitem21.setText(QCoreApplication.translate("MainWindow", u"Nationality", None));
+        ___qtablewidgetitem22 = self.tableWidget_college.horizontalHeaderItem(5)
+        ___qtablewidgetitem22.setText(QCoreApplication.translate("MainWindow", u"Registration", None));
+        ___qtablewidgetitem23 = self.tableWidget_college.horizontalHeaderItem(6)
+        ___qtablewidgetitem23.setText(QCoreApplication.translate("MainWindow", u"Semester", None));
+        ___qtablewidgetitem24 = self.tableWidget_college.horizontalHeaderItem(7)
+        ___qtablewidgetitem24.setText(QCoreApplication.translate("MainWindow", u"Course", None));
         self.lbl_apply.setText(QCoreApplication.translate("MainWindow", u"APPLY CHANGES :", None))
         self.btn_save_all_data.setText(QCoreApplication.translate("MainWindow", u"SAVE", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"DELETE SELECTED :", None))
