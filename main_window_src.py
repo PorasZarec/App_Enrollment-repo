@@ -19,48 +19,65 @@ class Program_Window(QMainWindow,Ui_MainWindow):
         # show the screen
         self.show()
         
+        ################################
+        # ELEMENTARY REGISTRATION PAGE #
+        ################################
+        
+        # Back button locaed at Elemetary registration page
+        self.ui.button_back_reg_pg_2.clicked.connect(lambda: self.ui.stackedWidgetfront.setCurrentWidget(self.ui.register_page))
+        self.ui.btn_goto_elem_reg.clicked.connect(lambda: self.ui.stackedWidgetfront.setCurrentWidget(self.ui.elem_reg_page))
+        
+        # Submit Button located at registration page    
+        self.ui.button_submit_data_elem.clicked.connect(self.data_validation_register)
+        
+        
+        ###############################
+        #  COLLEGE REGISTRATION PAGE  #
+        ###############################
+        
         # Back Button located at registration page
         self.ui.button_back_reg_pg.clicked.connect(lambda: self.ui.stackedWidgetfront.setCurrentWidget(self.ui.front_page))
-        
-         # Back Button located at second page
-        self.ui.back_button_.clicked.connect(lambda: self.ui.stackedWidgetfront.setCurrentWidget(self.ui.front_page))
-        
-        
-        # Left menu toggle button located at second_page (show hide menu panel)
-        self.ui.open_close_side_bar_button.clicked.connect(lambda: self.slideLeftMenu())   
-         
-         
-        # Front Page View button
-        self.ui.view_button.clicked.connect(lambda: self.ui.stackedWidgetfront.setCurrentWidget(self.ui.second_page))
-        self.ui.view_button.clicked.connect(self.refresh_btn)
-        
-        
-        # Front Page Register button
-        self.ui.register_button.clicked.connect(lambda: self.ui.stackedWidgetfront.setCurrentWidget(self.ui.register_page))
-        
         
         # Submit Button located at registration page    
         self.ui.button_submit_data.clicked.connect(self.data_validation_register)
         
+        
+        ################
+        #  FRONT PAGE  #
+        ################
+        
+        # Front Page View button
+        self.ui.view_button.clicked.connect(lambda: self.ui.stackedWidgetfront.setCurrentWidget(self.ui.second_page))
+        self.ui.view_button.clicked.connect(self.refresh_data)
+        
+        # Front Page Register button
+        self.ui.register_button.clicked.connect(lambda: self.ui.stackedWidgetfront.setCurrentWidget(self.ui.register_page))
+        
+        ##########################
+        #  DATA MANAGEMENT PAGE  #
+        ##########################
+        
+        # Back Button located at second page
+        self.ui.btn_back_second_page.clicked.connect(lambda: self.ui.stackedWidgetfront.setCurrentWidget(self.ui.front_page))
+        
+        # Left menu toggle button located at second_page (show hide menu panel)
+        self.ui.open_close_side_bar_button.clicked.connect(lambda: self.slideLeftMenu())  
         
         # Buttons located at Second page
         self.ui.queue_data.clicked.connect(lambda: self.ui.main_body_stackedWidget.setCurrentWidget(self.ui.mixData))
         self.ui.elementary_page_button.clicked.connect(lambda: self.ui.main_body_stackedWidget.setCurrentWidget(self.ui.elementary_data))
         self.ui.college_page_button.clicked.connect(lambda: self.ui.main_body_stackedWidget.setCurrentWidget(self.ui.college_data))
         
-        
         # Connect the save_all_data button to the save_data function
         self.ui.btn_save_all_data.clicked.connect(self.save_table_execute)
 
-        
         # Connect the button's clicked signal to the refresh_btn function
-        self.ui.btn_refresh_page.clicked.connect(self.refresh_data)
+        self.ui.btn_refresh_page.clicked.connect(self.refresh_btn)
         
         # filter
         self.ui.searchLineEdit.textChanged.connect(self.filter_all_data)
         
-        
-         # Delete Selected button
+        # Delete Selected button
         self.ui.btn_delete_selected.clicked.connect(self.delete_selected_row)
 
     def start_queue_db(self):
@@ -72,6 +89,7 @@ class Program_Window(QMainWindow,Ui_MainWindow):
             gender TEXT,
             age INT,
             nationality TEXT,
+            grade INT,
             Registration TEXT,
             Semester INT,
             Course INT
@@ -104,8 +122,8 @@ class Program_Window(QMainWindow,Ui_MainWindow):
     def refresh_btn(self):
         
         self.refresh_data()
-
         QMessageBox.information(self, "Info", "Refreshed", QMessageBox.Ok)
+        
         
 
 
@@ -165,25 +183,26 @@ class Program_Window(QMainWindow,Ui_MainWindow):
             pass
 
 
-
-
-
-
-
-
     def delete_selected_row(self):
-        result = QMessageBox.question(self, 'Confirm', "Are you sure you want to Delete the selected data?", QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
-        
-        if result == QMessageBox.Yes:
-            conn = sqlite3.connect('queue.db')
-            with conn:
-                cursor = conn.cursor()
-                for row in self.selected_rows:
-                    cursor.execute("DELETE FROM Queue_Student_Data WHERE IDnumber = ?", (row,))
-            self.refresh_data()
+        if self.selected_rows == []:
+            QMessageBox.warning(self, "Warning", "There is no selected Data.")
         else:
-            # cancel operation
-            pass
+            result = QMessageBox.question(self, 'Confirm', "Are you sure you want to Delete the selected data?", QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+            
+            if result == QMessageBox.Yes:
+                conn = sqlite3.connect('queue.db')
+                with conn:
+                    cursor = conn.cursor()
+                    for row in self.selected_rows:
+                        cursor.execute("DELETE FROM Queue_Student_Data WHERE IDnumber = ?", (row,))
+                
+                QMessageBox.information(self, "Info", "Data Deleted Successfully")
+                self.refresh_data()
+                
+            else:
+                # cancel operation
+                pass
+        
         
     def on_checkbox_state_changed(self, state, row):
         
@@ -193,19 +212,6 @@ class Program_Window(QMainWindow,Ui_MainWindow):
         else:
             self.selected_rows.remove(row+1)
             print(row+1)
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     def save_table_execute(self):
         result = QMessageBox.question(self, 'Confirm', "Are you sure you want to Update the data?", QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
@@ -223,13 +229,14 @@ class Program_Window(QMainWindow,Ui_MainWindow):
                 gender = self.ui.tableWidget.item(i, 3).text()
                 age = self.ui.tableWidget.item(i, 4).text()
                 nationality = self.ui.tableWidget.item(i, 5).text()
-                Registration = self.ui.tableWidget.item(i, 6).text()
-                Semester = self.ui.tableWidget.item(i, 7).text()
-                Course = self.ui.tableWidget.item(i, 8).text()
+                grade = self.ui.tableWidget.item(i, 6).text()
+                Registration = self.ui.tableWidget.item(i, 7).text()
+                Semester = self.ui.tableWidget.item(i, 8).text()
+                Course = self.ui.tableWidget.item(i, 9).text()
                 
                 try:
                     # Update the corresponding row in the database
-                    cursor.execute("UPDATE Queue_Student_Data SET firstname=?, lastname=?, gender=?, age=?, nationality=?, Registration=?, Semester=?, Course=? WHERE IDnumber=?", (firstname, lastname, gender, age, nationality, Registration, Semester, Course, IDnumber))
+                    cursor.execute("UPDATE Queue_Student_Data SET firstname=?, lastname=?, gender=?, age=?, nationality=?, grade=?, Registration=?, Semester=?, Course=? WHERE IDnumber=?", (firstname, lastname, gender, age, nationality, grade, Registration, Semester, Course, IDnumber))
                     connection.commit()
                     
                 except Exception as e:
@@ -284,23 +291,113 @@ class Program_Window(QMainWindow,Ui_MainWindow):
             # Restore menu
             newWidth = 60
             self.ui.left_menu_cont_frame.setMinimumSize(newWidth,0)
-            
-        # Catch errors from user inputs
+
+
+        # Catch Empty data from user inputs
     def data_validation_register(self):
-        # Terms and Conditions Checking
-        if self.ui.checkBox_terms.isChecked():
-            # Checking if Firsname and lastname are not empty
-            if self.ui.lineEdit_firstname.text() == "" or self.ui.line_Edit_lastname.text() == "":
-                QMessageBox.warning(self, "Warning", "Firstname and Lastname are required.")
-                return
+        
+        if self.ui.stackedWidgetfront.currentWidget() == self.ui.elem_reg_page:
+            if self.ui.checkBox_terms_elem.isChecked():
+                # Checking if Firsname and lastname are not empty
+                if self.ui.lineEdit_firstname_elem.text() == "" or self.ui.line_Edit_lastname_elem.text() == "":
+                    QMessageBox.warning(self, "Warning", "Firstname and Lastname are required.")
+                    return
+                else:
+                    self.enter_data_elementary()
             else:
-                self.enter_data()
+                QMessageBox.warning(self, "Warning", "Accepting the terms are required.")
+                return
+
         else:
-            QMessageBox.warning(self, "Warning", "Accepting the terms are required.")
-            return
+        # self.ui.stackedWidgetfront.currentWidget() == self.ui.register_page:
+        
+            # Terms and Conditions Checking
+            if self.ui.checkBox_terms.isChecked():
+                # Checking if Firsname and lastname are not empty
+                if self.ui.lineEdit_firstname.text() == "" or self.ui.line_Edit_lastname.text() == "":
+                    QMessageBox.warning(self, "Warning", "Firstname and Lastname are required.")
+                    return
+                else:
+                    self.enter_data_college()
+            else:
+                QMessageBox.warning(self, "Warning", "Accepting the terms are required.")
+                return
             
+        
+    def enter_data_elementary(self):
+        first_name = self.ui.lineEdit_firstname_elem.text()
+        last_name = self.ui.line_Edit_lastname_elem.text()
+        gender = self.ui.cmbbox_gender_elem.currentText()
+        age = self.ui.spinBox_age_elem.value()
+        nationality = self.ui.cmbbox_nationality_elem.currentText()
+        grade_level = self.ui.cmbbox_grade_lvl_elem.currentText()
+        
+        
+        
+        if self.ui.checkBox_registered_elem.isChecked():
+            register_value = "Registered"
+        else:
+            register_value = "Unregistered"
+            
+        conn = sqlite3.connect('queue.db')
+        table_create_query = '''CREATE TABLE IF NOT EXISTS Queue_Student_Data
+            (IDnumber INTEGER PRIMARY KEY AUTOINCREMENT,
+            firstname TEXT,
+            lastname TEXT,
+            gender TEXT,
+            age INT,
+            nationality TEXT,
+            grade INT,
+            Registration TEXT,
+            Semester INT,
+            Course INT
+            )
+        '''
+        conn.execute(table_create_query)
+        # Insert Data
+        data_insert_query = '''INSERT INTO Queue_Student_Data (firstname, lastname, gender, age, nationality, grade, Registration,Semester,Course) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)''' 
+        data_insert_tuple =(
+                    first_name,
+                    last_name,
+                    gender,
+                    age,
+                    nationality,
+                    grade_level,
+                    register_value,
+                    None,
+                    None
+                )
+        cursor = conn.cursor()
+        cursor.execute(data_insert_query, data_insert_tuple)
+        conn.commit()
+        
+        self.clear_reg_inputs()
+        
+        sqlquery = "SELECT * FROM Queue_Student_Data"
+        rows = cursor.execute(sqlquery).fetchall()
+        self.ui.tableWidget.setRowCount(len(rows))
+
+        self.reset_id_numbers()
+
+        cursor.execute("SELECT MAX(IDnumber) FROM Queue_Student_Data")
+        last_id = cursor.fetchone()[0]
+        
+        if last_id is None:
+            row_index = 1
+        else:
+            row_index = last_id
+            
+        for row in rows:
+            for col, data in enumerate(row):
+                self.ui.tableWidget.setItem(row_index, col, QtWidgets.QTableWidgetItem(str(data)))
+            row_index += 1
+            
+        conn.close()
+        
+        QMessageBox.information(self, "Info", "Data inserted successfully")
+        
         # Executes and sends data after passing Data Validation function
-    def enter_data(self):
+    def enter_data_college(self):
         first_name = self.ui.lineEdit_firstname.text()
         last_name = self.ui.line_Edit_lastname.text()
         gender = self.ui.cmbbox_title.currentText()
@@ -320,6 +417,7 @@ class Program_Window(QMainWindow,Ui_MainWindow):
             gender TEXT,
             age INT,
             nationality TEXT,
+            grade INT,
             Registration TEXT,
             Semester INT,
             Course INT
@@ -327,13 +425,14 @@ class Program_Window(QMainWindow,Ui_MainWindow):
         '''
         conn.execute(table_create_query)
         # Insert Data
-        data_insert_query = '''INSERT INTO Queue_Student_Data (firstname, lastname, gender, age, nationality, Registration,Semester,Course) VALUES (?, ?, ?, ?, ?, ?, ?, ?)''' 
+        data_insert_query = '''INSERT INTO Queue_Student_Data (firstname, lastname, gender, age, nationality, grade, Registration,Semester,Course) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)''' 
         data_insert_tuple =(
                     first_name,
                     last_name,
                     gender,
                     age,
                     nationality,
+                    None,
                     register_value,
                     completed_course,
                     completed_semester
@@ -368,17 +467,29 @@ class Program_Window(QMainWindow,Ui_MainWindow):
         QMessageBox.information(self, "Info", "Data inserted successfully")
 
     def clear_reg_inputs(self):
-        # Clearing the last input of a user
-        lineEdits = [self.ui.lineEdit_firstname, self.ui.line_Edit_lastname]
-        for lineEdit in lineEdits:
-            lineEdit.clear()
-        self.ui.cmbbox_title.setCurrentIndex(0)
-        self.ui.cmbbox_nationality.setCurrentIndex(0)
-        self.ui.spinBox_age.setValue(0)
-        self.ui.spinBox_course.setValue(0)
-        self.ui.spinBox_semester.setValue(0)
-        self.ui.checkBox_registered.setChecked(False)
-        self.ui.checkBox_terms.setChecked(False)    
+        
+        if self.ui.stackedWidgetfront.currentWidget() == self.ui.elem_reg_page:
+            lineEdits = [self.ui.lineEdit_firstname_elem, self.ui.line_Edit_lastname_elem]
+            for lineEdit in lineEdits:
+                lineEdit.clear()
+            self.ui.cmbbox_gender_elem.setCurrentIndex(0)
+            self.ui.cmbbox_nationality_elem.setCurrentIndex(0)
+            self.ui.spinBox_age_elem.setValue(0)
+            self.ui.cmbbox_grade_lvl_elem.setCurrentIndex(0)
+            self.ui.checkBox_registered_elem.setChecked(False)
+            self.ui.checkBox_terms_elem.setChecked(False)
+        else:
+            # Clearing the last input of a user
+            lineEdits = [self.ui.lineEdit_firstname, self.ui.line_Edit_lastname]
+            for lineEdit in lineEdits:
+                lineEdit.clear()
+            self.ui.cmbbox_title.setCurrentIndex(0)
+            self.ui.cmbbox_nationality.setCurrentIndex(0)
+            self.ui.spinBox_age.setValue(0)
+            self.ui.spinBox_course.setValue(0)
+            self.ui.spinBox_semester.setValue(0)
+            self.ui.checkBox_registered.setChecked(False)
+            self.ui.checkBox_terms.setChecked(False)
 
 # App execution context           
 if __name__ == "__main__":

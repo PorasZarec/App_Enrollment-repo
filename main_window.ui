@@ -33,8 +33,556 @@
     <item>
      <widget class="QStackedWidget" name="stackedWidgetfront">
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
+      <widget class="QWidget" name="elem_reg_page">
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QFrame" name="frm_elem_reg_page">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_21">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QFrame" name="top_frame_reg_pg_2">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_27">
+              <item>
+               <widget class="QFrame" name="left_header_frame_2">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_28">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="center_header_frame_2">
+                <property name="font">
+                 <font>
+                  <family>Segoe UI Black</family>
+                  <pointsize>15</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_29">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="lbl_registration_2">
+                   <property name="text">
+                    <string>ELEMENTARY REGISTRATION</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="right_header_frame_2">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_30">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item alignment="Qt::AlignRight">
+                  <widget class="QPushButton" name="button_back_reg_pg_2">
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI Black</family>
+                     <pointsize>15</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>BACK</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="body_middle_frame_2">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_18">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QScrollArea" name="scrollArea_2">
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>-145</y>
+                   <width>1297</width>
+                   <height>648</height>
+                  </rect>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_31">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QFrame" name="middle_frame_2">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_32">
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QFrame" name="frame_22">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                         <weight>50</weight>
+                         <bold>false</bold>
+                        </font>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QFormLayout" name="formLayout_2">
+                        <property name="horizontalSpacing">
+                         <number>50</number>
+                        </property>
+                        <property name="verticalSpacing">
+                         <number>30</number>
+                        </property>
+                        <property name="leftMargin">
+                         <number>300</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>30</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>300</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>30</number>
+                        </property>
+                        <item row="2" column="0">
+                         <widget class="QLabel" name="label_21">
+                          <property name="text">
+                           <string>Firstname</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="1">
+                         <widget class="QLineEdit" name="lineEdit_firstname_elem"/>
+                        </item>
+                        <item row="3" column="0">
+                         <widget class="QLabel" name="label_22">
+                          <property name="text">
+                           <string>Lastname</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="1">
+                         <widget class="QLineEdit" name="line_Edit_lastname_elem"/>
+                        </item>
+                        <item row="4" column="0">
+                         <widget class="QLabel" name="label_23">
+                          <property name="text">
+                           <string>Gender</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="1">
+                         <widget class="QComboBox" name="cmbbox_gender_elem">
+                          <property name="editable">
+                           <bool>true</bool>
+                          </property>
+                          <property name="currentText">
+                           <string>Male</string>
+                          </property>
+                          <property name="currentIndex">
+                           <number>0</number>
+                          </property>
+                          <item>
+                           <property name="text">
+                            <string>Male</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Female</string>
+                           </property>
+                          </item>
+                         </widget>
+                        </item>
+                        <item row="5" column="0">
+                         <widget class="QLabel" name="label_24">
+                          <property name="text">
+                           <string>Age</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="1">
+                         <widget class="QSpinBox" name="spinBox_age_elem"/>
+                        </item>
+                        <item row="6" column="0">
+                         <widget class="QLabel" name="label_25">
+                          <property name="text">
+                           <string>Nationality</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="6" column="1">
+                         <widget class="QComboBox" name="cmbbox_nationality_elem">
+                          <property name="editable">
+                           <bool>true</bool>
+                          </property>
+                          <property name="currentText">
+                           <string>Filipino</string>
+                          </property>
+                          <property name="currentIndex">
+                           <number>0</number>
+                          </property>
+                          <item>
+                           <property name="text">
+                            <string>Filipino</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>American</string>
+                           </property>
+                          </item>
+                         </widget>
+                        </item>
+                        <item row="7" column="1">
+                         <widget class="QComboBox" name="cmbbox_grade_lvl_elem">
+                          <item>
+                           <property name="text">
+                            <string>1</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>2</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>3</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>4</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>5</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>6</string>
+                           </property>
+                          </item>
+                         </widget>
+                        </item>
+                        <item row="7" column="0">
+                         <widget class="QLabel" name="label_27">
+                          <property name="text">
+                           <string>Grade level</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="8" column="0">
+                         <widget class="QLabel" name="label_28">
+                          <property name="text">
+                           <string>Registration status</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="8" column="1">
+                         <widget class="QCheckBox" name="checkBox_registered_elem">
+                          <property name="font">
+                           <font>
+                            <weight>75</weight>
+                            <bold>true</bold>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>Currently Registered</string>
+                          </property>
+                          <property name="tristate">
+                           <bool>false</bool>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="9" column="1">
+                         <widget class="QCheckBox" name="checkBox_terms_elem">
+                          <property name="font">
+                           <font>
+                            <weight>75</weight>
+                            <bold>true</bold>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>I Accept Terms and Conditions</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="9" column="0">
+                         <widget class="QLabel" name="label_29">
+                          <property name="text">
+                           <string>Terms And Condition</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="bottom_frame_reg_pg_2">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_33">
+                 <property name="leftMargin">
+                  <number>600</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>30</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>600</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>30</number>
+                 </property>
+                 <item>
+                  <widget class="QPushButton" name="button_submit_data_elem">
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI Black</family>
+                     <pointsize>15</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>SUBMIT</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="bottom_version_frame_reg_pg_2">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_20">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item alignment="Qt::AlignHCenter">
+               <widget class="QLabel" name="label_version_number_4">
+                <property name="font">
+                 <font>
+                  <family>Segoe UI Black</family>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Version 1.0.0.00</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
       <widget class="QWidget" name="register_page">
        <layout class="QVBoxLayout" name="verticalLayout_14">
         <property name="spacing">
@@ -61,22 +609,49 @@
            <enum>QFrame::Raised</enum>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_10">
-           <property name="spacing">
-            <number>25</number>
-           </property>
-           <property name="leftMargin">
-            <number>25</number>
-           </property>
-           <property name="topMargin">
-            <number>15</number>
-           </property>
-           <property name="rightMargin">
-            <number>25</number>
-           </property>
-           <property name="bottomMargin">
-            <number>15</number>
-           </property>
-           <item alignment="Qt::AlignLeft">
+           <item>
+            <widget class="QFrame" name="left_header_frame">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_25">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item alignment="Qt::AlignLeft">
+               <widget class="QPushButton" name="btn_goto_elem_reg">
+                <property name="font">
+                 <font>
+                  <family>Segoe UI Black</family>
+                  <pointsize>15</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>ELEMENTARY</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
             <widget class="QFrame" name="center_header_frame">
              <property name="font">
               <font>
@@ -92,7 +667,7 @@
              <property name="frameShadow">
               <enum>QFrame::Raised</enum>
              </property>
-             <layout class="QVBoxLayout" name="verticalLayout_16">
+             <layout class="QHBoxLayout" name="horizontalLayout_26">
               <property name="spacing">
                <number>0</number>
               </property>
@@ -111,7 +686,7 @@
               <item alignment="Qt::AlignHCenter">
                <widget class="QLabel" name="lbl_registration">
                 <property name="text">
-                 <string>REGISTRATION</string>
+                 <string>COLLEGE REGISTRATION</string>
                 </property>
                </widget>
               </item>
@@ -196,7 +771,7 @@
               <property name="geometry">
                <rect>
                 <x>0</x>
-                <y>0</y>
+                <y>-103</y>
                 <width>1310</width>
                 <height>664</height>
                </rect>
@@ -514,7 +1089,7 @@
               </font>
              </property>
              <property name="text">
-              <string>Version 1.0.0</string>
+              <string>Version 1.0.0.00</string>
              </property>
             </widget>
            </item>
@@ -786,7 +1361,7 @@
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_11">
               <item alignment="Qt::AlignRight">
-               <widget class="QPushButton" name="back_button_">
+               <widget class="QPushButton" name="btn_back_second_page">
                 <property name="font">
                  <font>
                   <family>Segoe UI Black</family>
@@ -928,45 +1503,6 @@
                    </property>
                   </spacer>
                  </item>
-                 <item row="5" column="1">
-                  <spacer name="verticalSpacer_2">
-                   <property name="orientation">
-                    <enum>Qt::Vertical</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>20</width>
-                     <height>40</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                 <item row="10" column="1">
-                  <spacer name="verticalSpacer_6">
-                   <property name="orientation">
-                    <enum>Qt::Vertical</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>20</width>
-                     <height>40</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                 <item row="0" column="1">
-                  <spacer name="verticalSpacer_5">
-                   <property name="orientation">
-                    <enum>Qt::Vertical</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>20</width>
-                     <height>40</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
                  <item row="11" column="1">
                   <spacer name="verticalSpacer_7">
                    <property name="orientation">
@@ -982,6 +1518,29 @@
                  </item>
                  <item row="1" column="1">
                   <spacer name="verticalSpacer_4">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="9" column="0">
+                  <widget class="QPushButton" name="college_page_button">
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <spacer name="verticalSpacer_5">
                    <property name="orientation">
                     <enum>Qt::Vertical</enum>
                    </property>
@@ -1023,18 +1582,8 @@
                    </property>
                   </spacer>
                  </item>
-                 <item row="9" column="0">
-                  <widget class="QPushButton" name="college_page_button">
-                   <property name="styleSheet">
-                    <string notr="true"/>
-                   </property>
-                   <property name="text">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="13" column="1">
-                  <spacer name="verticalSpacer_9">
+                 <item row="5" column="1">
+                  <spacer name="verticalSpacer_2">
                    <property name="orientation">
                     <enum>Qt::Vertical</enum>
                    </property>
@@ -1045,26 +1594,6 @@
                     </size>
                    </property>
                   </spacer>
-                 </item>
-                 <item row="6" column="1">
-                  <widget class="QLabel" name="label_6">
-                   <property name="font">
-                    <font>
-                     <family>Segoe UI Black</family>
-                     <pointsize>9</pointsize>
-                     <weight>75</weight>
-                     <italic>true</italic>
-                     <bold>true</bold>
-                     <underline>true</underline>
-                    </font>
-                   </property>
-                   <property name="text">
-                    <string>NAVIGATE TABLES:</string>
-                   </property>
-                   <property name="margin">
-                    <number>5</number>
-                   </property>
-                  </widget>
                  </item>
                  <item row="8" column="0">
                   <widget class="QPushButton" name="elementary_page_button">
@@ -1093,6 +1622,19 @@
                    </property>
                   </widget>
                  </item>
+                 <item row="13" column="1">
+                  <spacer name="verticalSpacer_9">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
                  <item row="7" column="1">
                   <widget class="QLabel" name="lbl_reg_queue_db">
                    <property name="font">
@@ -1110,6 +1652,26 @@
                    </property>
                   </widget>
                  </item>
+                 <item row="6" column="1">
+                  <widget class="QLabel" name="label_6">
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI Black</family>
+                     <pointsize>9</pointsize>
+                     <weight>75</weight>
+                     <italic>true</italic>
+                     <bold>true</bold>
+                     <underline>true</underline>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>NAVIGATE TABLES:</string>
+                   </property>
+                   <property name="margin">
+                    <number>5</number>
+                   </property>
+                  </widget>
+                 </item>
                  <item row="7" column="0">
                   <widget class="QPushButton" name="queue_data">
                    <property name="styleSheet">
@@ -1119,6 +1681,19 @@
                     <string/>
                    </property>
                   </widget>
+                 </item>
+                 <item row="10" column="1">
+                  <spacer name="verticalSpacer_6">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
                  </item>
                 </layout>
                </widget>
@@ -1282,6 +1857,11 @@
                        </column>
                        <column>
                         <property name="text">
+                         <string>Grade</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
                          <string>Registration</string>
                         </property>
                        </column>
@@ -1430,6 +2010,11 @@
                        </property>
                        <column>
                         <property name="text">
+                         <string>IDnumber</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
                          <string>Firstname</string>
                         </property>
                        </column>
@@ -1440,7 +2025,7 @@
                        </column>
                        <column>
                         <property name="text">
-                         <string>Title</string>
+                         <string>Gender</string>
                         </property>
                        </column>
                        <column>
@@ -1456,16 +2041,6 @@
                        <column>
                         <property name="text">
                          <string>Registration</string>
-                        </property>
-                       </column>
-                       <column>
-                        <property name="text">
-                         <string>Semester</string>
-                        </property>
-                       </column>
-                       <column>
-                        <property name="text">
-                         <string>Course</string>
                         </property>
                        </column>
                       </widget>
@@ -1588,6 +2163,11 @@
                        </property>
                        <column>
                         <property name="text">
+                         <string>IDnumber</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
                          <string>Firstname</string>
                         </property>
                        </column>
@@ -1598,7 +2178,7 @@
                        </column>
                        <column>
                         <property name="text">
-                         <string>Title</string>
+                         <string>Gender</string>
                         </property>
                        </column>
                        <column>

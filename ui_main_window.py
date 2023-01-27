@@ -35,6 +35,267 @@ class Ui_MainWindow(object):
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.stackedWidgetfront = QStackedWidget(self.centralwidget)
         self.stackedWidgetfront.setObjectName(u"stackedWidgetfront")
+        self.elem_reg_page = QWidget()
+        self.elem_reg_page.setObjectName(u"elem_reg_page")
+        self.verticalLayout_7 = QVBoxLayout(self.elem_reg_page)
+        self.verticalLayout_7.setSpacing(0)
+        self.verticalLayout_7.setObjectName(u"verticalLayout_7")
+        self.verticalLayout_7.setContentsMargins(0, 0, 0, 0)
+        self.frm_elem_reg_page = QFrame(self.elem_reg_page)
+        self.frm_elem_reg_page.setObjectName(u"frm_elem_reg_page")
+        self.frm_elem_reg_page.setFrameShape(QFrame.StyledPanel)
+        self.frm_elem_reg_page.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_21 = QVBoxLayout(self.frm_elem_reg_page)
+        self.verticalLayout_21.setSpacing(0)
+        self.verticalLayout_21.setObjectName(u"verticalLayout_21")
+        self.verticalLayout_21.setContentsMargins(0, 0, 0, 0)
+        self.top_frame_reg_pg_2 = QFrame(self.frm_elem_reg_page)
+        self.top_frame_reg_pg_2.setObjectName(u"top_frame_reg_pg_2")
+        self.top_frame_reg_pg_2.setFrameShape(QFrame.StyledPanel)
+        self.top_frame_reg_pg_2.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_27 = QHBoxLayout(self.top_frame_reg_pg_2)
+        self.horizontalLayout_27.setObjectName(u"horizontalLayout_27")
+        self.left_header_frame_2 = QFrame(self.top_frame_reg_pg_2)
+        self.left_header_frame_2.setObjectName(u"left_header_frame_2")
+        self.left_header_frame_2.setFrameShape(QFrame.StyledPanel)
+        self.left_header_frame_2.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_28 = QHBoxLayout(self.left_header_frame_2)
+        self.horizontalLayout_28.setSpacing(0)
+        self.horizontalLayout_28.setObjectName(u"horizontalLayout_28")
+        self.horizontalLayout_28.setContentsMargins(0, 0, 0, 0)
+
+        self.horizontalLayout_27.addWidget(self.left_header_frame_2)
+
+        self.center_header_frame_2 = QFrame(self.top_frame_reg_pg_2)
+        self.center_header_frame_2.setObjectName(u"center_header_frame_2")
+        font = QFont()
+        font.setFamilies([u"Segoe UI Black"])
+        font.setPointSize(15)
+        font.setBold(True)
+        self.center_header_frame_2.setFont(font)
+        self.center_header_frame_2.setFrameShape(QFrame.StyledPanel)
+        self.center_header_frame_2.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_29 = QHBoxLayout(self.center_header_frame_2)
+        self.horizontalLayout_29.setSpacing(0)
+        self.horizontalLayout_29.setObjectName(u"horizontalLayout_29")
+        self.horizontalLayout_29.setContentsMargins(0, 0, 0, 0)
+        self.lbl_registration_2 = QLabel(self.center_header_frame_2)
+        self.lbl_registration_2.setObjectName(u"lbl_registration_2")
+
+        self.horizontalLayout_29.addWidget(self.lbl_registration_2, 0, Qt.AlignHCenter)
+
+
+        self.horizontalLayout_27.addWidget(self.center_header_frame_2)
+
+        self.right_header_frame_2 = QFrame(self.top_frame_reg_pg_2)
+        self.right_header_frame_2.setObjectName(u"right_header_frame_2")
+        self.right_header_frame_2.setFrameShape(QFrame.StyledPanel)
+        self.right_header_frame_2.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_30 = QHBoxLayout(self.right_header_frame_2)
+        self.horizontalLayout_30.setSpacing(0)
+        self.horizontalLayout_30.setObjectName(u"horizontalLayout_30")
+        self.horizontalLayout_30.setContentsMargins(0, 0, 0, 0)
+        self.button_back_reg_pg_2 = QPushButton(self.right_header_frame_2)
+        self.button_back_reg_pg_2.setObjectName(u"button_back_reg_pg_2")
+        self.button_back_reg_pg_2.setFont(font)
+
+        self.horizontalLayout_30.addWidget(self.button_back_reg_pg_2, 0, Qt.AlignRight)
+
+
+        self.horizontalLayout_27.addWidget(self.right_header_frame_2)
+
+
+        self.verticalLayout_21.addWidget(self.top_frame_reg_pg_2)
+
+        self.body_middle_frame_2 = QFrame(self.frm_elem_reg_page)
+        self.body_middle_frame_2.setObjectName(u"body_middle_frame_2")
+        self.body_middle_frame_2.setFrameShape(QFrame.StyledPanel)
+        self.body_middle_frame_2.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_18 = QVBoxLayout(self.body_middle_frame_2)
+        self.verticalLayout_18.setSpacing(0)
+        self.verticalLayout_18.setObjectName(u"verticalLayout_18")
+        self.verticalLayout_18.setContentsMargins(0, 0, 0, 0)
+        self.scrollArea_2 = QScrollArea(self.body_middle_frame_2)
+        self.scrollArea_2.setObjectName(u"scrollArea_2")
+        self.scrollArea_2.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_2 = QWidget()
+        self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, -145, 1297, 648))
+        self.horizontalLayout_31 = QHBoxLayout(self.scrollAreaWidgetContents_2)
+        self.horizontalLayout_31.setSpacing(0)
+        self.horizontalLayout_31.setObjectName(u"horizontalLayout_31")
+        self.horizontalLayout_31.setContentsMargins(0, 0, 0, 0)
+        self.middle_frame_2 = QFrame(self.scrollAreaWidgetContents_2)
+        self.middle_frame_2.setObjectName(u"middle_frame_2")
+        self.middle_frame_2.setFrameShape(QFrame.StyledPanel)
+        self.middle_frame_2.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_32 = QHBoxLayout(self.middle_frame_2)
+        self.horizontalLayout_32.setSpacing(0)
+        self.horizontalLayout_32.setObjectName(u"horizontalLayout_32")
+        self.horizontalLayout_32.setContentsMargins(0, 0, 0, 0)
+        self.frame_22 = QFrame(self.middle_frame_2)
+        self.frame_22.setObjectName(u"frame_22")
+        font1 = QFont()
+        font1.setPointSize(15)
+        font1.setBold(False)
+        self.frame_22.setFont(font1)
+        self.frame_22.setFrameShape(QFrame.StyledPanel)
+        self.frame_22.setFrameShadow(QFrame.Raised)
+        self.formLayout_2 = QFormLayout(self.frame_22)
+        self.formLayout_2.setObjectName(u"formLayout_2")
+        self.formLayout_2.setHorizontalSpacing(50)
+        self.formLayout_2.setVerticalSpacing(30)
+        self.formLayout_2.setContentsMargins(300, 30, 300, 30)
+        self.label_21 = QLabel(self.frame_22)
+        self.label_21.setObjectName(u"label_21")
+
+        self.formLayout_2.setWidget(2, QFormLayout.LabelRole, self.label_21)
+
+        self.lineEdit_firstname_elem = QLineEdit(self.frame_22)
+        self.lineEdit_firstname_elem.setObjectName(u"lineEdit_firstname_elem")
+
+        self.formLayout_2.setWidget(2, QFormLayout.FieldRole, self.lineEdit_firstname_elem)
+
+        self.label_22 = QLabel(self.frame_22)
+        self.label_22.setObjectName(u"label_22")
+
+        self.formLayout_2.setWidget(3, QFormLayout.LabelRole, self.label_22)
+
+        self.line_Edit_lastname_elem = QLineEdit(self.frame_22)
+        self.line_Edit_lastname_elem.setObjectName(u"line_Edit_lastname_elem")
+
+        self.formLayout_2.setWidget(3, QFormLayout.FieldRole, self.line_Edit_lastname_elem)
+
+        self.label_23 = QLabel(self.frame_22)
+        self.label_23.setObjectName(u"label_23")
+
+        self.formLayout_2.setWidget(4, QFormLayout.LabelRole, self.label_23)
+
+        self.cmbbox_gender_elem = QComboBox(self.frame_22)
+        self.cmbbox_gender_elem.addItem("")
+        self.cmbbox_gender_elem.addItem("")
+        self.cmbbox_gender_elem.setObjectName(u"cmbbox_gender_elem")
+        self.cmbbox_gender_elem.setEditable(True)
+
+        self.formLayout_2.setWidget(4, QFormLayout.FieldRole, self.cmbbox_gender_elem)
+
+        self.label_24 = QLabel(self.frame_22)
+        self.label_24.setObjectName(u"label_24")
+
+        self.formLayout_2.setWidget(5, QFormLayout.LabelRole, self.label_24)
+
+        self.spinBox_age_elem = QSpinBox(self.frame_22)
+        self.spinBox_age_elem.setObjectName(u"spinBox_age_elem")
+
+        self.formLayout_2.setWidget(5, QFormLayout.FieldRole, self.spinBox_age_elem)
+
+        self.label_25 = QLabel(self.frame_22)
+        self.label_25.setObjectName(u"label_25")
+
+        self.formLayout_2.setWidget(6, QFormLayout.LabelRole, self.label_25)
+
+        self.cmbbox_nationality_elem = QComboBox(self.frame_22)
+        self.cmbbox_nationality_elem.addItem("")
+        self.cmbbox_nationality_elem.addItem("")
+        self.cmbbox_nationality_elem.setObjectName(u"cmbbox_nationality_elem")
+        self.cmbbox_nationality_elem.setEditable(True)
+
+        self.formLayout_2.setWidget(6, QFormLayout.FieldRole, self.cmbbox_nationality_elem)
+
+        self.cmbbox_grade_lvl_elem = QComboBox(self.frame_22)
+        self.cmbbox_grade_lvl_elem.addItem("")
+        self.cmbbox_grade_lvl_elem.addItem("")
+        self.cmbbox_grade_lvl_elem.addItem("")
+        self.cmbbox_grade_lvl_elem.addItem("")
+        self.cmbbox_grade_lvl_elem.addItem("")
+        self.cmbbox_grade_lvl_elem.addItem("")
+        self.cmbbox_grade_lvl_elem.setObjectName(u"cmbbox_grade_lvl_elem")
+
+        self.formLayout_2.setWidget(7, QFormLayout.FieldRole, self.cmbbox_grade_lvl_elem)
+
+        self.label_27 = QLabel(self.frame_22)
+        self.label_27.setObjectName(u"label_27")
+
+        self.formLayout_2.setWidget(7, QFormLayout.LabelRole, self.label_27)
+
+        self.label_28 = QLabel(self.frame_22)
+        self.label_28.setObjectName(u"label_28")
+
+        self.formLayout_2.setWidget(8, QFormLayout.LabelRole, self.label_28)
+
+        self.checkBox_registered_elem = QCheckBox(self.frame_22)
+        self.checkBox_registered_elem.setObjectName(u"checkBox_registered_elem")
+        font2 = QFont()
+        font2.setBold(True)
+        self.checkBox_registered_elem.setFont(font2)
+        self.checkBox_registered_elem.setTristate(False)
+
+        self.formLayout_2.setWidget(8, QFormLayout.FieldRole, self.checkBox_registered_elem)
+
+        self.checkBox_terms_elem = QCheckBox(self.frame_22)
+        self.checkBox_terms_elem.setObjectName(u"checkBox_terms_elem")
+        self.checkBox_terms_elem.setFont(font2)
+
+        self.formLayout_2.setWidget(9, QFormLayout.FieldRole, self.checkBox_terms_elem)
+
+        self.label_29 = QLabel(self.frame_22)
+        self.label_29.setObjectName(u"label_29")
+
+        self.formLayout_2.setWidget(9, QFormLayout.LabelRole, self.label_29)
+
+
+        self.horizontalLayout_32.addWidget(self.frame_22)
+
+
+        self.horizontalLayout_31.addWidget(self.middle_frame_2)
+
+        self.scrollArea_2.setWidget(self.scrollAreaWidgetContents_2)
+
+        self.verticalLayout_18.addWidget(self.scrollArea_2)
+
+        self.bottom_frame_reg_pg_2 = QFrame(self.body_middle_frame_2)
+        self.bottom_frame_reg_pg_2.setObjectName(u"bottom_frame_reg_pg_2")
+        self.bottom_frame_reg_pg_2.setFrameShape(QFrame.StyledPanel)
+        self.bottom_frame_reg_pg_2.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_33 = QHBoxLayout(self.bottom_frame_reg_pg_2)
+        self.horizontalLayout_33.setObjectName(u"horizontalLayout_33")
+        self.horizontalLayout_33.setContentsMargins(600, 30, 600, 30)
+        self.button_submit_data_elem = QPushButton(self.bottom_frame_reg_pg_2)
+        self.button_submit_data_elem.setObjectName(u"button_submit_data_elem")
+        self.button_submit_data_elem.setFont(font)
+
+        self.horizontalLayout_33.addWidget(self.button_submit_data_elem)
+
+
+        self.verticalLayout_18.addWidget(self.bottom_frame_reg_pg_2)
+
+
+        self.verticalLayout_21.addWidget(self.body_middle_frame_2)
+
+        self.bottom_version_frame_reg_pg_2 = QFrame(self.frm_elem_reg_page)
+        self.bottom_version_frame_reg_pg_2.setObjectName(u"bottom_version_frame_reg_pg_2")
+        self.bottom_version_frame_reg_pg_2.setFrameShape(QFrame.StyledPanel)
+        self.bottom_version_frame_reg_pg_2.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_20 = QVBoxLayout(self.bottom_version_frame_reg_pg_2)
+        self.verticalLayout_20.setSpacing(0)
+        self.verticalLayout_20.setObjectName(u"verticalLayout_20")
+        self.verticalLayout_20.setContentsMargins(0, 0, 0, 0)
+        self.label_version_number_4 = QLabel(self.bottom_version_frame_reg_pg_2)
+        self.label_version_number_4.setObjectName(u"label_version_number_4")
+        font3 = QFont()
+        font3.setFamilies([u"Segoe UI Black"])
+        font3.setBold(True)
+        self.label_version_number_4.setFont(font3)
+
+        self.verticalLayout_20.addWidget(self.label_version_number_4, 0, Qt.AlignHCenter)
+
+
+        self.verticalLayout_21.addWidget(self.bottom_version_frame_reg_pg_2)
+
+
+        self.verticalLayout_7.addWidget(self.frm_elem_reg_page)
+
+        self.stackedWidgetfront.addWidget(self.elem_reg_page)
         self.register_page = QWidget()
         self.register_page.setObjectName(u"register_page")
         self.verticalLayout_14 = QVBoxLayout(self.register_page)
@@ -46,29 +307,40 @@ class Ui_MainWindow(object):
         self.top_frame_reg_pg.setFrameShape(QFrame.StyledPanel)
         self.top_frame_reg_pg.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_10 = QHBoxLayout(self.top_frame_reg_pg)
-        self.horizontalLayout_10.setSpacing(25)
         self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
-        self.horizontalLayout_10.setContentsMargins(25, 15, 25, 15)
+        self.left_header_frame = QFrame(self.top_frame_reg_pg)
+        self.left_header_frame.setObjectName(u"left_header_frame")
+        self.left_header_frame.setFrameShape(QFrame.StyledPanel)
+        self.left_header_frame.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_25 = QHBoxLayout(self.left_header_frame)
+        self.horizontalLayout_25.setSpacing(0)
+        self.horizontalLayout_25.setObjectName(u"horizontalLayout_25")
+        self.horizontalLayout_25.setContentsMargins(0, 0, 0, 0)
+        self.btn_goto_elem_reg = QPushButton(self.left_header_frame)
+        self.btn_goto_elem_reg.setObjectName(u"btn_goto_elem_reg")
+        self.btn_goto_elem_reg.setFont(font)
+
+        self.horizontalLayout_25.addWidget(self.btn_goto_elem_reg, 0, Qt.AlignLeft)
+
+
+        self.horizontalLayout_10.addWidget(self.left_header_frame)
+
         self.center_header_frame = QFrame(self.top_frame_reg_pg)
         self.center_header_frame.setObjectName(u"center_header_frame")
-        font = QFont()
-        font.setFamilies([u"Segoe UI Black"])
-        font.setPointSize(15)
-        font.setBold(True)
         self.center_header_frame.setFont(font)
         self.center_header_frame.setFrameShape(QFrame.StyledPanel)
         self.center_header_frame.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_16 = QVBoxLayout(self.center_header_frame)
-        self.verticalLayout_16.setSpacing(0)
-        self.verticalLayout_16.setObjectName(u"verticalLayout_16")
-        self.verticalLayout_16.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_26 = QHBoxLayout(self.center_header_frame)
+        self.horizontalLayout_26.setSpacing(0)
+        self.horizontalLayout_26.setObjectName(u"horizontalLayout_26")
+        self.horizontalLayout_26.setContentsMargins(0, 0, 0, 0)
         self.lbl_registration = QLabel(self.center_header_frame)
         self.lbl_registration.setObjectName(u"lbl_registration")
 
-        self.verticalLayout_16.addWidget(self.lbl_registration, 0, Qt.AlignHCenter)
+        self.horizontalLayout_26.addWidget(self.lbl_registration, 0, Qt.AlignHCenter)
 
 
-        self.horizontalLayout_10.addWidget(self.center_header_frame, 0, Qt.AlignLeft)
+        self.horizontalLayout_10.addWidget(self.center_header_frame)
 
         self.right_header_frame = QFrame(self.top_frame_reg_pg)
         self.right_header_frame.setObjectName(u"right_header_frame")
@@ -103,7 +375,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 1310, 664))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, -103, 1310, 664))
         self.horizontalLayout_12 = QHBoxLayout(self.scrollAreaWidgetContents)
         self.horizontalLayout_12.setSpacing(0)
         self.horizontalLayout_12.setObjectName(u"horizontalLayout_12")
@@ -118,9 +390,6 @@ class Ui_MainWindow(object):
         self.horizontalLayout_20.setContentsMargins(0, 0, 0, 0)
         self.frame_21 = QFrame(self.middle_frame)
         self.frame_21.setObjectName(u"frame_21")
-        font1 = QFont()
-        font1.setPointSize(15)
-        font1.setBold(False)
         self.frame_21.setFont(font1)
         self.frame_21.setFrameShape(QFrame.StyledPanel)
         self.frame_21.setFrameShadow(QFrame.Raised)
@@ -212,8 +481,6 @@ class Ui_MainWindow(object):
 
         self.checkBox_registered = QCheckBox(self.frame_21)
         self.checkBox_registered.setObjectName(u"checkBox_registered")
-        font2 = QFont()
-        font2.setBold(True)
         self.checkBox_registered.setFont(font2)
         self.checkBox_registered.setTristate(False)
 
@@ -269,9 +536,6 @@ class Ui_MainWindow(object):
         self.verticalLayout_15.setContentsMargins(0, 0, 0, 0)
         self.label_version_number = QLabel(self.bottom_version_frame_reg_pg)
         self.label_version_number.setObjectName(u"label_version_number")
-        font3 = QFont()
-        font3.setFamilies([u"Segoe UI Black"])
-        font3.setBold(True)
         self.label_version_number.setFont(font3)
 
         self.verticalLayout_15.addWidget(self.label_version_number, 0, Qt.AlignHCenter)
@@ -436,11 +700,11 @@ class Ui_MainWindow(object):
         self.header_right_frame.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_11 = QHBoxLayout(self.header_right_frame)
         self.horizontalLayout_11.setObjectName(u"horizontalLayout_11")
-        self.back_button_ = QPushButton(self.header_right_frame)
-        self.back_button_.setObjectName(u"back_button_")
-        self.back_button_.setFont(font6)
+        self.btn_back_second_page = QPushButton(self.header_right_frame)
+        self.btn_back_second_page.setObjectName(u"btn_back_second_page")
+        self.btn_back_second_page.setFont(font6)
 
-        self.horizontalLayout_11.addWidget(self.back_button_, 0, Qt.AlignRight)
+        self.horizontalLayout_11.addWidget(self.btn_back_second_page, 0, Qt.AlignRight)
 
 
         self.horizontalLayout_2.addWidget(self.header_right_frame)
@@ -488,18 +752,6 @@ class Ui_MainWindow(object):
 
         self.gridLayout.addItem(self.verticalSpacer, 3, 1, 1, 1)
 
-        self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
-
-        self.gridLayout.addItem(self.verticalSpacer_2, 5, 1, 1, 1)
-
-        self.verticalSpacer_6 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
-
-        self.gridLayout.addItem(self.verticalSpacer_6, 10, 1, 1, 1)
-
-        self.verticalSpacer_5 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
-
-        self.gridLayout.addItem(self.verticalSpacer_5, 0, 1, 1, 1)
-
         self.verticalSpacer_7 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
         self.gridLayout.addItem(self.verticalSpacer_7, 11, 1, 1, 1)
@@ -507,6 +759,16 @@ class Ui_MainWindow(object):
         self.verticalSpacer_4 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
         self.gridLayout.addItem(self.verticalSpacer_4, 1, 1, 1, 1)
+
+        self.college_page_button = QPushButton(self.menu_frame)
+        self.college_page_button.setObjectName(u"college_page_button")
+        self.college_page_button.setStyleSheet(u"")
+
+        self.gridLayout.addWidget(self.college_page_button, 9, 0, 1, 1)
+
+        self.verticalSpacer_5 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.gridLayout.addItem(self.verticalSpacer_5, 0, 1, 1, 1)
 
         self.lbl_college_db = QLabel(self.menu_frame)
         self.lbl_college_db.setObjectName(u"lbl_college_db")
@@ -519,28 +781,9 @@ class Ui_MainWindow(object):
 
         self.gridLayout.addItem(self.verticalSpacer_8, 12, 1, 1, 1)
 
-        self.college_page_button = QPushButton(self.menu_frame)
-        self.college_page_button.setObjectName(u"college_page_button")
-        self.college_page_button.setStyleSheet(u"")
+        self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
-        self.gridLayout.addWidget(self.college_page_button, 9, 0, 1, 1)
-
-        self.verticalSpacer_9 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
-
-        self.gridLayout.addItem(self.verticalSpacer_9, 13, 1, 1, 1)
-
-        self.label_6 = QLabel(self.menu_frame)
-        self.label_6.setObjectName(u"label_6")
-        font8 = QFont()
-        font8.setFamilies([u"Segoe UI Black"])
-        font8.setPointSize(9)
-        font8.setBold(True)
-        font8.setItalic(True)
-        font8.setUnderline(True)
-        self.label_6.setFont(font8)
-        self.label_6.setMargin(5)
-
-        self.gridLayout.addWidget(self.label_6, 6, 1, 1, 1)
+        self.gridLayout.addItem(self.verticalSpacer_2, 5, 1, 1, 1)
 
         self.elementary_page_button = QPushButton(self.menu_frame)
         self.elementary_page_button.setObjectName(u"elementary_page_button")
@@ -555,6 +798,10 @@ class Ui_MainWindow(object):
 
         self.gridLayout.addWidget(self.lbl_elem_db, 8, 1, 1, 1)
 
+        self.verticalSpacer_9 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.gridLayout.addItem(self.verticalSpacer_9, 13, 1, 1, 1)
+
         self.lbl_reg_queue_db = QLabel(self.menu_frame)
         self.lbl_reg_queue_db.setObjectName(u"lbl_reg_queue_db")
         self.lbl_reg_queue_db.setFont(font3)
@@ -562,11 +809,28 @@ class Ui_MainWindow(object):
 
         self.gridLayout.addWidget(self.lbl_reg_queue_db, 7, 1, 1, 1)
 
+        self.label_6 = QLabel(self.menu_frame)
+        self.label_6.setObjectName(u"label_6")
+        font8 = QFont()
+        font8.setFamilies([u"Segoe UI Black"])
+        font8.setPointSize(9)
+        font8.setBold(True)
+        font8.setItalic(True)
+        font8.setUnderline(True)
+        self.label_6.setFont(font8)
+        self.label_6.setMargin(5)
+
+        self.gridLayout.addWidget(self.label_6, 6, 1, 1, 1)
+
         self.queue_data = QPushButton(self.menu_frame)
         self.queue_data.setObjectName(u"queue_data")
         self.queue_data.setStyleSheet(u"")
 
         self.gridLayout.addWidget(self.queue_data, 7, 0, 1, 1)
+
+        self.verticalSpacer_6 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.gridLayout.addItem(self.verticalSpacer_6, 10, 1, 1, 1)
 
 
         self.horizontalLayout_6.addWidget(self.menu_frame)
@@ -632,8 +896,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_15.setObjectName(u"horizontalLayout_15")
         self.horizontalLayout_15.setContentsMargins(0, 0, 0, 0)
         self.tableWidget = QTableWidget(self.frame_10)
-        if (self.tableWidget.columnCount() < 9):
-            self.tableWidget.setColumnCount(9)
+        if (self.tableWidget.columnCount() < 10):
+            self.tableWidget.setColumnCount(10)
         __qtablewidgetitem = QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(0, __qtablewidgetitem)
         __qtablewidgetitem1 = QTableWidgetItem()
@@ -652,6 +916,8 @@ class Ui_MainWindow(object):
         self.tableWidget.setHorizontalHeaderItem(7, __qtablewidgetitem7)
         __qtablewidgetitem8 = QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(8, __qtablewidgetitem8)
+        __qtablewidgetitem9 = QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(9, __qtablewidgetitem9)
         self.tableWidget.setObjectName(u"tableWidget")
         self.tableWidget.setMinimumSize(QSize(527, 0))
 
@@ -713,24 +979,22 @@ class Ui_MainWindow(object):
         self.verticalLayout_9.setObjectName(u"verticalLayout_9")
         self.verticalLayout_9.setContentsMargins(0, 0, 0, 0)
         self.tableWidget_elem = QTableWidget(self.frame_14)
-        if (self.tableWidget_elem.columnCount() < 8):
-            self.tableWidget_elem.setColumnCount(8)
-        __qtablewidgetitem9 = QTableWidgetItem()
-        self.tableWidget_elem.setHorizontalHeaderItem(0, __qtablewidgetitem9)
+        if (self.tableWidget_elem.columnCount() < 7):
+            self.tableWidget_elem.setColumnCount(7)
         __qtablewidgetitem10 = QTableWidgetItem()
-        self.tableWidget_elem.setHorizontalHeaderItem(1, __qtablewidgetitem10)
+        self.tableWidget_elem.setHorizontalHeaderItem(0, __qtablewidgetitem10)
         __qtablewidgetitem11 = QTableWidgetItem()
-        self.tableWidget_elem.setHorizontalHeaderItem(2, __qtablewidgetitem11)
+        self.tableWidget_elem.setHorizontalHeaderItem(1, __qtablewidgetitem11)
         __qtablewidgetitem12 = QTableWidgetItem()
-        self.tableWidget_elem.setHorizontalHeaderItem(3, __qtablewidgetitem12)
+        self.tableWidget_elem.setHorizontalHeaderItem(2, __qtablewidgetitem12)
         __qtablewidgetitem13 = QTableWidgetItem()
-        self.tableWidget_elem.setHorizontalHeaderItem(4, __qtablewidgetitem13)
+        self.tableWidget_elem.setHorizontalHeaderItem(3, __qtablewidgetitem13)
         __qtablewidgetitem14 = QTableWidgetItem()
-        self.tableWidget_elem.setHorizontalHeaderItem(5, __qtablewidgetitem14)
+        self.tableWidget_elem.setHorizontalHeaderItem(4, __qtablewidgetitem14)
         __qtablewidgetitem15 = QTableWidgetItem()
-        self.tableWidget_elem.setHorizontalHeaderItem(6, __qtablewidgetitem15)
+        self.tableWidget_elem.setHorizontalHeaderItem(5, __qtablewidgetitem15)
         __qtablewidgetitem16 = QTableWidgetItem()
-        self.tableWidget_elem.setHorizontalHeaderItem(7, __qtablewidgetitem16)
+        self.tableWidget_elem.setHorizontalHeaderItem(6, __qtablewidgetitem16)
         self.tableWidget_elem.setObjectName(u"tableWidget_elem")
         self.tableWidget_elem.setMinimumSize(QSize(527, 0))
 
@@ -790,8 +1054,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_11.setObjectName(u"verticalLayout_11")
         self.verticalLayout_11.setContentsMargins(0, 0, 0, 0)
         self.tableWidget_college = QTableWidget(self.frame_18)
-        if (self.tableWidget_college.columnCount() < 8):
-            self.tableWidget_college.setColumnCount(8)
+        if (self.tableWidget_college.columnCount() < 9):
+            self.tableWidget_college.setColumnCount(9)
         __qtablewidgetitem17 = QTableWidgetItem()
         self.tableWidget_college.setHorizontalHeaderItem(0, __qtablewidgetitem17)
         __qtablewidgetitem18 = QTableWidgetItem()
@@ -808,6 +1072,8 @@ class Ui_MainWindow(object):
         self.tableWidget_college.setHorizontalHeaderItem(6, __qtablewidgetitem23)
         __qtablewidgetitem24 = QTableWidgetItem()
         self.tableWidget_college.setHorizontalHeaderItem(7, __qtablewidgetitem24)
+        __qtablewidgetitem25 = QTableWidgetItem()
+        self.tableWidget_college.setHorizontalHeaderItem(8, __qtablewidgetitem25)
         self.tableWidget_college.setObjectName(u"tableWidget_college")
         self.tableWidget_college.setMinimumSize(QSize(527, 0))
 
@@ -966,7 +1232,9 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidgetfront.setCurrentIndex(1)
+        self.stackedWidgetfront.setCurrentIndex(2)
+        self.cmbbox_gender_elem.setCurrentIndex(0)
+        self.cmbbox_nationality_elem.setCurrentIndex(0)
         self.cmbbox_title.setCurrentIndex(0)
         self.cmbbox_nationality.setCurrentIndex(0)
         self.main_body_stackedWidget.setCurrentIndex(0)
@@ -977,7 +1245,37 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.lbl_registration.setText(QCoreApplication.translate("MainWindow", u"REGISTRATION", None))
+        self.lbl_registration_2.setText(QCoreApplication.translate("MainWindow", u"ELEMENTARY REGISTRATION", None))
+        self.button_back_reg_pg_2.setText(QCoreApplication.translate("MainWindow", u"BACK", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"Firstname", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Lastname", None))
+        self.label_23.setText(QCoreApplication.translate("MainWindow", u"Gender", None))
+        self.cmbbox_gender_elem.setItemText(0, QCoreApplication.translate("MainWindow", u"Male", None))
+        self.cmbbox_gender_elem.setItemText(1, QCoreApplication.translate("MainWindow", u"Female", None))
+
+        self.cmbbox_gender_elem.setCurrentText(QCoreApplication.translate("MainWindow", u"Male", None))
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"Age", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Nationality", None))
+        self.cmbbox_nationality_elem.setItemText(0, QCoreApplication.translate("MainWindow", u"Filipino", None))
+        self.cmbbox_nationality_elem.setItemText(1, QCoreApplication.translate("MainWindow", u"American", None))
+
+        self.cmbbox_nationality_elem.setCurrentText(QCoreApplication.translate("MainWindow", u"Filipino", None))
+        self.cmbbox_grade_lvl_elem.setItemText(0, QCoreApplication.translate("MainWindow", u"1", None))
+        self.cmbbox_grade_lvl_elem.setItemText(1, QCoreApplication.translate("MainWindow", u"2", None))
+        self.cmbbox_grade_lvl_elem.setItemText(2, QCoreApplication.translate("MainWindow", u"3", None))
+        self.cmbbox_grade_lvl_elem.setItemText(3, QCoreApplication.translate("MainWindow", u"4", None))
+        self.cmbbox_grade_lvl_elem.setItemText(4, QCoreApplication.translate("MainWindow", u"5", None))
+        self.cmbbox_grade_lvl_elem.setItemText(5, QCoreApplication.translate("MainWindow", u"6", None))
+
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"Grade level", None))
+        self.label_28.setText(QCoreApplication.translate("MainWindow", u"Registration status", None))
+        self.checkBox_registered_elem.setText(QCoreApplication.translate("MainWindow", u"Currently Registered", None))
+        self.checkBox_terms_elem.setText(QCoreApplication.translate("MainWindow", u"I Accept Terms and Conditions", None))
+        self.label_29.setText(QCoreApplication.translate("MainWindow", u"Terms And Condition", None))
+        self.button_submit_data_elem.setText(QCoreApplication.translate("MainWindow", u"SUBMIT", None))
+        self.label_version_number_4.setText(QCoreApplication.translate("MainWindow", u"Version 1.0.0.00", None))
+        self.btn_goto_elem_reg.setText(QCoreApplication.translate("MainWindow", u"ELEMENTARY", None))
+        self.lbl_registration.setText(QCoreApplication.translate("MainWindow", u"COLLEGE REGISTRATION", None))
         self.button_back_reg_pg.setText(QCoreApplication.translate("MainWindow", u"BACK", None))
         self.label_12.setText(QCoreApplication.translate("MainWindow", u"Firstname", None))
         self.label_13.setText(QCoreApplication.translate("MainWindow", u"Lastname", None))
@@ -999,19 +1297,19 @@ class Ui_MainWindow(object):
         self.label_20.setText(QCoreApplication.translate("MainWindow", u"Terms And Condition", None))
         self.checkBox_terms.setText(QCoreApplication.translate("MainWindow", u"I Accept Terms and Conditions", None))
         self.button_submit_data.setText(QCoreApplication.translate("MainWindow", u"SUBMIT", None))
-        self.label_version_number.setText(QCoreApplication.translate("MainWindow", u"Version 1.0.0", None))
+        self.label_version_number.setText(QCoreApplication.translate("MainWindow", u"Version 1.0.0.00", None))
         self.register_button.setText(QCoreApplication.translate("MainWindow", u"REGISTER", None))
         self.view_button.setText(QCoreApplication.translate("MainWindow", u"VIEW", None))
         self.open_close_side_bar_button.setText("")
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"MENU", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Database Manager", None))
-        self.back_button_.setText(QCoreApplication.translate("MainWindow", u"BACK", None))
-        self.lbl_college_db.setText(QCoreApplication.translate("MainWindow", u"COLLEGE", None))
+        self.btn_back_second_page.setText(QCoreApplication.translate("MainWindow", u"BACK", None))
         self.college_page_button.setText("")
-        self.label_6.setText(QCoreApplication.translate("MainWindow", u"NAVIGATE TABLES:", None))
+        self.lbl_college_db.setText(QCoreApplication.translate("MainWindow", u"COLLEGE", None))
         self.elementary_page_button.setText("")
         self.lbl_elem_db.setText(QCoreApplication.translate("MainWindow", u"ELEMENTARY", None))
         self.lbl_reg_queue_db.setText(QCoreApplication.translate("MainWindow", u"REGISTRATION QUEUE", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"NAVIGATE TABLES:", None))
         self.queue_data.setText("")
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"Registration Queue Database", None))
         self.label_8.setText(QCoreApplication.translate("MainWindow", u"FILTER DATA:", None))
@@ -1029,49 +1327,51 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem5 = self.tableWidget.horizontalHeaderItem(5)
         ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"Nationality", None));
         ___qtablewidgetitem6 = self.tableWidget.horizontalHeaderItem(6)
-        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"Registration", None));
+        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"Grade", None));
         ___qtablewidgetitem7 = self.tableWidget.horizontalHeaderItem(7)
-        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"Semester", None));
+        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"Registration", None));
         ___qtablewidgetitem8 = self.tableWidget.horizontalHeaderItem(8)
-        ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"Course", None));
+        ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"Semester", None));
+        ___qtablewidgetitem9 = self.tableWidget.horizontalHeaderItem(9)
+        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"Course", None));
         self.label_9.setText(QCoreApplication.translate("MainWindow", u"ELEMENTARY DATA", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"FILTER DATA:", None))
         self.searchLineEdit_elem.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Search Data", None))
-        ___qtablewidgetitem9 = self.tableWidget_elem.horizontalHeaderItem(0)
-        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"Firstname", None));
-        ___qtablewidgetitem10 = self.tableWidget_elem.horizontalHeaderItem(1)
-        ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"Lastname", None));
-        ___qtablewidgetitem11 = self.tableWidget_elem.horizontalHeaderItem(2)
-        ___qtablewidgetitem11.setText(QCoreApplication.translate("MainWindow", u"Title", None));
-        ___qtablewidgetitem12 = self.tableWidget_elem.horizontalHeaderItem(3)
-        ___qtablewidgetitem12.setText(QCoreApplication.translate("MainWindow", u"Age", None));
-        ___qtablewidgetitem13 = self.tableWidget_elem.horizontalHeaderItem(4)
-        ___qtablewidgetitem13.setText(QCoreApplication.translate("MainWindow", u"Nationality", None));
-        ___qtablewidgetitem14 = self.tableWidget_elem.horizontalHeaderItem(5)
-        ___qtablewidgetitem14.setText(QCoreApplication.translate("MainWindow", u"Registration", None));
-        ___qtablewidgetitem15 = self.tableWidget_elem.horizontalHeaderItem(6)
-        ___qtablewidgetitem15.setText(QCoreApplication.translate("MainWindow", u"Semester", None));
-        ___qtablewidgetitem16 = self.tableWidget_elem.horizontalHeaderItem(7)
-        ___qtablewidgetitem16.setText(QCoreApplication.translate("MainWindow", u"Course", None));
+        ___qtablewidgetitem10 = self.tableWidget_elem.horizontalHeaderItem(0)
+        ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"IDnumber", None));
+        ___qtablewidgetitem11 = self.tableWidget_elem.horizontalHeaderItem(1)
+        ___qtablewidgetitem11.setText(QCoreApplication.translate("MainWindow", u"Firstname", None));
+        ___qtablewidgetitem12 = self.tableWidget_elem.horizontalHeaderItem(2)
+        ___qtablewidgetitem12.setText(QCoreApplication.translate("MainWindow", u"Lastname", None));
+        ___qtablewidgetitem13 = self.tableWidget_elem.horizontalHeaderItem(3)
+        ___qtablewidgetitem13.setText(QCoreApplication.translate("MainWindow", u"Gender", None));
+        ___qtablewidgetitem14 = self.tableWidget_elem.horizontalHeaderItem(4)
+        ___qtablewidgetitem14.setText(QCoreApplication.translate("MainWindow", u"Age", None));
+        ___qtablewidgetitem15 = self.tableWidget_elem.horizontalHeaderItem(5)
+        ___qtablewidgetitem15.setText(QCoreApplication.translate("MainWindow", u"Nationality", None));
+        ___qtablewidgetitem16 = self.tableWidget_elem.horizontalHeaderItem(6)
+        ___qtablewidgetitem16.setText(QCoreApplication.translate("MainWindow", u"Registration", None));
         self.label_10.setText(QCoreApplication.translate("MainWindow", u"COLLEGE DATA", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"FILTER DATA:", None))
         self.searchLineEdit_college.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Search Data", None))
         ___qtablewidgetitem17 = self.tableWidget_college.horizontalHeaderItem(0)
-        ___qtablewidgetitem17.setText(QCoreApplication.translate("MainWindow", u"Firstname", None));
+        ___qtablewidgetitem17.setText(QCoreApplication.translate("MainWindow", u"IDnumber", None));
         ___qtablewidgetitem18 = self.tableWidget_college.horizontalHeaderItem(1)
-        ___qtablewidgetitem18.setText(QCoreApplication.translate("MainWindow", u"Lastname", None));
+        ___qtablewidgetitem18.setText(QCoreApplication.translate("MainWindow", u"Firstname", None));
         ___qtablewidgetitem19 = self.tableWidget_college.horizontalHeaderItem(2)
-        ___qtablewidgetitem19.setText(QCoreApplication.translate("MainWindow", u"Title", None));
+        ___qtablewidgetitem19.setText(QCoreApplication.translate("MainWindow", u"Lastname", None));
         ___qtablewidgetitem20 = self.tableWidget_college.horizontalHeaderItem(3)
-        ___qtablewidgetitem20.setText(QCoreApplication.translate("MainWindow", u"Age", None));
+        ___qtablewidgetitem20.setText(QCoreApplication.translate("MainWindow", u"Gender", None));
         ___qtablewidgetitem21 = self.tableWidget_college.horizontalHeaderItem(4)
-        ___qtablewidgetitem21.setText(QCoreApplication.translate("MainWindow", u"Nationality", None));
+        ___qtablewidgetitem21.setText(QCoreApplication.translate("MainWindow", u"Age", None));
         ___qtablewidgetitem22 = self.tableWidget_college.horizontalHeaderItem(5)
-        ___qtablewidgetitem22.setText(QCoreApplication.translate("MainWindow", u"Registration", None));
+        ___qtablewidgetitem22.setText(QCoreApplication.translate("MainWindow", u"Nationality", None));
         ___qtablewidgetitem23 = self.tableWidget_college.horizontalHeaderItem(6)
-        ___qtablewidgetitem23.setText(QCoreApplication.translate("MainWindow", u"Semester", None));
+        ___qtablewidgetitem23.setText(QCoreApplication.translate("MainWindow", u"Registration", None));
         ___qtablewidgetitem24 = self.tableWidget_college.horizontalHeaderItem(7)
-        ___qtablewidgetitem24.setText(QCoreApplication.translate("MainWindow", u"Course", None));
+        ___qtablewidgetitem24.setText(QCoreApplication.translate("MainWindow", u"Semester", None));
+        ___qtablewidgetitem25 = self.tableWidget_college.horizontalHeaderItem(8)
+        ___qtablewidgetitem25.setText(QCoreApplication.translate("MainWindow", u"Course", None));
         self.lbl_apply.setText(QCoreApplication.translate("MainWindow", u"APPLY CHANGES :", None))
         self.btn_save_all_data.setText(QCoreApplication.translate("MainWindow", u"SAVE", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"DELETE SELECTED :", None))
