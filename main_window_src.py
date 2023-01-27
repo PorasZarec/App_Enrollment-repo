@@ -65,8 +65,23 @@ class Program_Window(QMainWindow,Ui_MainWindow):
         
         # Buttons located at Second page
         self.ui.queue_data.clicked.connect(lambda: self.ui.main_body_stackedWidget.setCurrentWidget(self.ui.mixData))
+        self.ui.queue_data.clicked.connect(lambda: self.slideBottomButtons_UP())
+        
+        
+        
         self.ui.elementary_page_button.clicked.connect(lambda: self.ui.main_body_stackedWidget.setCurrentWidget(self.ui.elementary_data))
+        self.ui.elementary_page_button.clicked.connect(lambda: self.slideBottomButtons_DOWN())
+        
+        
         self.ui.college_page_button.clicked.connect(lambda: self.ui.main_body_stackedWidget.setCurrentWidget(self.ui.college_data))
+        self.ui.college_page_button.clicked.connect(lambda: self.slideBottomButtons_DOWN())
+        
+        # Approve buttons
+        self.ui.btn_approve_college.clicked.connect(lambda: self.approve_to_college_db())
+        
+        self.ui.btn_approve_elem.clicked.connect(lambda: self.approve_to_elem_db())
+        
+        
         
         # Connect the save_all_data button to the save_data function
         self.ui.btn_save_all_data.clicked.connect(self.save_table_execute)
@@ -76,6 +91,9 @@ class Program_Window(QMainWindow,Ui_MainWindow):
         
         # filter
         self.ui.searchLineEdit.textChanged.connect(self.filter_all_data)
+        
+        self.ui.searchLineEdit_elem.textChanged.connect(self.filter_elem_data)
+        
         
         # Delete Selected button
         self.ui.btn_delete_selected.clicked.connect(self.delete_selected_row)
@@ -108,6 +126,31 @@ class Program_Window(QMainWindow,Ui_MainWindow):
             for col, data in enumerate(row):
                 self.ui.tableWidget.setItem(row_index, col, QtWidgets.QTableWidgetItem(str(data)))
             row_index += 1
+        
+        create_table_elem_query = '''CREATE TABLE IF NOT EXISTS Elementary_Student_Data
+            (IDnumber INTEGER PRIMARY KEY AUTOINCREMENT,
+            firstname TEXT,
+            lastname TEXT,
+            gender TEXT,
+            age INT,
+            nationality TEXT,
+            grade INT,
+            Registration TEXT
+            )
+        '''
+        conn.execute(create_table_elem_query)
+        cursor = conn.cursor()
+        conn.commit()
+        sqlquery = "SELECT * FROM Elementary_Student_Data"
+        rows = cursor.execute(sqlquery).fetchall()
+        self.ui.tableWidget.setRowCount(len(rows))
+        self.add_checkbox()
+        row_index = 0
+        
+        for row in rows:
+            for col, data in enumerate(row):
+                self.ui.tableWidget_elem.setItem(row_index, col, QtWidgets.QTableWidgetItem(str(data)))
+            row_index += 1
         conn.close()
 
     def refresh_data(self):
@@ -124,9 +167,6 @@ class Program_Window(QMainWindow,Ui_MainWindow):
         self.refresh_data()
         QMessageBox.information(self, "Info", "Refreshed", QMessageBox.Ok)
         
-        
-
-
 
     def reset_id_numbers(self):
         conn = sqlite3.connect('queue.db')
@@ -154,6 +194,18 @@ class Program_Window(QMainWindow,Ui_MainWindow):
         for row in rows:
             for col, data in enumerate(row):
                 self.ui.tableWidget.setItem(row_index, col, QtWidgets.QTableWidgetItem(str(data)))
+            row_index += 1
+        conn.close()
+        
+        conn = sqlite3.connect('queue.db')
+        cursor = conn.cursor()
+        sqlquery = "SELECT * FROM Elementary_Student_Data"
+        rows = cursor.execute(sqlquery).fetchall()
+        self.ui.tableWidget_elem.setRowCount(len(rows))
+        row_index = 0
+        for row in rows:
+            for col, data in enumerate(row):
+                self.ui.tableWidget_elem.setItem(row_index, col, QtWidgets.QTableWidgetItem(str(data)))
             row_index += 1
         conn.close()
 
@@ -251,21 +303,40 @@ class Program_Window(QMainWindow,Ui_MainWindow):
         self.refresh_data()
         
 
+    def approve_to_elem_db(self):
+        conn = sqlite3.connect('queue.db')
+        with conn:
+            cursor = conn.cursor()
+            for row in self.selected_rows:
+                    cursor.execute("INSERT INTO Elementary_Student_Data (firstname, lastname, gender, age, nationality, grade, Registration) SELECT firstname, lastname, gender, age, nationality, grade, Registration FROM Queue_Student_Data WHERE IDnumber = ?", (row,))
+                    conn.commit()
+                    
+                    
+        QMessageBox.information(self, "Info", "Data Updated Successfully")
+        conn.close()
+        self.refresh_data()
+                                                                                            
 
 
 
 
-
-
-
-
-
-
-
+    def approve_to_college_db(self):
+        QMessageBox.information(self, "Info", "Not Implemented Yet:>", QMessageBox.Ok)
 
 
 
         # filter data from the table
+    def filter_elem_data(self):
+        search_text = self.ui.searchLineEdit_elem.text().lower()
+        for i in range(self.ui.tableWidget.rowCount()):
+            match = False
+            for j in range(self.ui.tableWidget_elem.columnCount()):
+                item = self.ui.tableWidget_elem.item(i, j)
+                if item and search_text in item.text().lower():
+                    match = True
+                    break
+            self.ui.tableWidget_elem.setRowHidden(i, not match)
+
     def filter_all_data(self):
         search_text = self.ui.searchLineEdit.text().lower()
         for i in range(self.ui.tableWidget.rowCount()):
@@ -276,9 +347,26 @@ class Program_Window(QMainWindow,Ui_MainWindow):
                     match = True
                     break
             self.ui.tableWidget.setRowHidden(i, not match)
-            
+
+
+        # Toggle footer buttons
+    def slideBottomButtons_UP(self):
+        height = self.ui.frm_footer_cont_approve.height()
+        height = 40
+        self.ui.frm_footer_cont_approve.setFixedHeight(height)
+        self.ui.footer_frame.setFixedHeight(height)
+
+    def slideBottomButtons_DOWN(self):
+        height = self.ui.frm_footer_cont_approve.height()
+        height = 1
+        self.ui.frm_footer_cont_approve.setFixedHeight(height)
+        self.ui.footer_frame.setFixedHeight(height)
+        
+          
+    
         # Slide left menu function second page
     def slideLeftMenu(self):
+        
         # Get current left menu width
         width = self.ui.left_menu_cont_frame.width()
         # If minimized 
@@ -291,7 +379,6 @@ class Program_Window(QMainWindow,Ui_MainWindow):
             # Restore menu
             newWidth = 60
             self.ui.left_menu_cont_frame.setMinimumSize(newWidth,0)
-
 
         # Catch Empty data from user inputs
     def data_validation_register(self):
@@ -323,7 +410,7 @@ class Program_Window(QMainWindow,Ui_MainWindow):
                 QMessageBox.warning(self, "Warning", "Accepting the terms are required.")
                 return
             
-        
+        # Enter data from the elemenetary register page
     def enter_data_elementary(self):
         first_name = self.ui.lineEdit_firstname_elem.text()
         last_name = self.ui.line_Edit_lastname_elem.text()
@@ -331,8 +418,6 @@ class Program_Window(QMainWindow,Ui_MainWindow):
         age = self.ui.spinBox_age_elem.value()
         nationality = self.ui.cmbbox_nationality_elem.currentText()
         grade_level = self.ui.cmbbox_grade_lvl_elem.currentText()
-        
-        
         
         if self.ui.checkBox_registered_elem.isChecked():
             register_value = "Registered"
@@ -396,7 +481,7 @@ class Program_Window(QMainWindow,Ui_MainWindow):
         
         QMessageBox.information(self, "Info", "Data inserted successfully")
         
-        # Executes and sends data after passing Data Validation function
+        # Enter data from the college register page
     def enter_data_college(self):
         first_name = self.ui.lineEdit_firstname.text()
         last_name = self.ui.line_Edit_lastname.text()

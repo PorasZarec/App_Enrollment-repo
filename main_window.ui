@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1313</width>
+    <width>1315</width>
     <height>776</height>
    </rect>
   </property>
@@ -188,6 +188,9 @@
                      <bold>true</bold>
                     </font>
                    </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
                    <property name="text">
                     <string>BACK</string>
                    </property>
@@ -232,9 +235,9 @@
                  <property name="geometry">
                   <rect>
                    <x>0</x>
-                   <y>-145</y>
+                   <y>-115</y>
                    <width>1297</width>
-                   <height>648</height>
+                   <height>618</height>
                   </rect>
                  </property>
                  <layout class="QHBoxLayout" name="horizontalLayout_31">
@@ -526,6 +529,9 @@
                      <bold>true</bold>
                     </font>
                    </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
                    <property name="text">
                     <string>SUBMIT</string>
                    </property>
@@ -643,6 +649,9 @@
                   <bold>true</bold>
                  </font>
                 </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
                 <property name="text">
                  <string>ELEMENTARY</string>
                 </property>
@@ -727,6 +736,9 @@
                   <bold>true</bold>
                  </font>
                 </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
                 <property name="text">
                  <string>BACK</string>
                 </property>
@@ -771,7 +783,7 @@
               <property name="geometry">
                <rect>
                 <x>0</x>
-                <y>-103</y>
+                <y>-159</y>
                 <width>1310</width>
                 <height>664</height>
                </rect>
@@ -1044,6 +1056,9 @@
                   <bold>true</bold>
                  </font>
                 </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
                 <property name="text">
                  <string>SUBMIT</string>
                 </property>
@@ -1163,6 +1178,9 @@
                   <bold>true</bold>
                  </font>
                 </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
                 <property name="text">
                  <string>REGISTER</string>
                 </property>
@@ -1205,6 +1223,9 @@
                   <italic>false</italic>
                   <bold>true</bold>
                  </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
                 </property>
                 <property name="text">
                  <string>VIEW</string>
@@ -1300,6 +1321,9 @@
                 <layout class="QHBoxLayout" name="horizontalLayout_7">
                  <item alignment="Qt::AlignLeft|Qt::AlignTop">
                   <widget class="QPushButton" name="open_close_side_bar_button">
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
                    <property name="text">
                     <string/>
                    </property>
@@ -1369,6 +1393,9 @@
                   <weight>75</weight>
                   <bold>true</bold>
                  </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
                 </property>
                 <property name="text">
                  <string>BACK</string>
@@ -1531,6 +1558,9 @@
                  </item>
                  <item row="9" column="0">
                   <widget class="QPushButton" name="college_page_button">
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
                    <property name="styleSheet">
                     <string notr="true"/>
                    </property>
@@ -1597,6 +1627,9 @@
                  </item>
                  <item row="8" column="0">
                   <widget class="QPushButton" name="elementary_page_button">
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
                    <property name="styleSheet">
                     <string notr="true"/>
                    </property>
@@ -1674,6 +1707,9 @@
                  </item>
                  <item row="7" column="0">
                   <widget class="QPushButton" name="queue_data">
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
                    <property name="styleSheet">
                     <string notr="true"/>
                    </property>
@@ -1728,7 +1764,7 @@
               <item>
                <widget class="QStackedWidget" name="main_body_stackedWidget">
                 <property name="currentIndex">
-                 <number>0</number>
+                 <number>1</number>
                 </property>
                 <widget class="QWidget" name="mixData">
                  <layout class="QVBoxLayout" name="verticalLayout_6">
@@ -2040,6 +2076,11 @@
                        </column>
                        <column>
                         <property name="text">
+                         <string>Grade</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
                          <string>Registration</string>
                         </property>
                        </column>
@@ -2223,6 +2264,12 @@
         </item>
         <item>
          <widget class="QFrame" name="footer_frame">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
           <property name="frameShape">
            <enum>QFrame::StyledPanel</enum>
           </property>
@@ -2245,7 +2292,7 @@
            <property name="bottomMargin">
             <number>0</number>
            </property>
-           <item alignment="Qt::AlignLeft">
+           <item alignment="Qt::AlignRight">
             <widget class="QFrame" name="frm_apply_changes">
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
@@ -2269,19 +2316,6 @@
               <property name="bottomMargin">
                <number>0</number>
               </property>
-              <item>
-               <spacer name="horizontalSpacer">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>240</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
               <item>
                <widget class="QLabel" name="lbl_apply">
                 <property name="font">
@@ -2313,28 +2347,18 @@
                   <underline>false</underline>
                  </font>
                 </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
                 <property name="text">
                  <string>SAVE</string>
                 </property>
                </widget>
               </item>
-              <item>
-               <spacer name="horizontalSpacer_2">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>90</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
              </layout>
             </widget>
            </item>
-           <item alignment="Qt::AlignLeft">
+           <item alignment="Qt::AlignRight">
             <widget class="QFrame" name="frm_delete_select">
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
@@ -2367,6 +2391,7 @@
                   <weight>75</weight>
                   <italic>true</italic>
                   <bold>true</bold>
+                  <kerning>true</kerning>
                  </font>
                 </property>
                 <property name="text">
@@ -2384,28 +2409,18 @@
                   <bold>true</bold>
                  </font>
                 </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
                 <property name="text">
                  <string>DELETE</string>
                 </property>
                </widget>
               </item>
-              <item>
-               <spacer name="horizontalSpacer_3">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>90</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
              </layout>
             </widget>
            </item>
-           <item>
+           <item alignment="Qt::AlignRight">
             <widget class="QFrame" name="frm_refresh">
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
@@ -2455,9 +2470,189 @@
                   <bold>true</bold>
                  </font>
                 </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
                 <property name="text">
                  <string>REFRESH</string>
                 </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frm_footer_cont_approve">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_34">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QFrame" name="frm_footer_approve">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_37">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="lbl_frm_approve">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_35">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item alignment="Qt::AlignRight">
+                  <widget class="QLabel" name="lbl_approve">
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI Black</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>APPROVE SELECTED :</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frm_btn_elem_college">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_36">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>269</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item alignment="Qt::AlignLeft">
+                  <widget class="QPushButton" name="btn_approve_college">
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI Black</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>COLLEGE</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignLeft">
+                  <widget class="QPushButton" name="btn_approve_elem">
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI Black</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>ELEMENTARY</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
                </widget>
               </item>
              </layout>
@@ -2518,7 +2713,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1313</width>
+     <width>1315</width>
      <height>26</height>
     </rect>
    </property>
