@@ -54,121 +54,16 @@ class Program_Window(QMainWindow,Ui_MainWindow):
 
         
         # Connect the button's clicked signal to the refresh_btn function
-        self.ui.btn_refresh_page.clicked.connect(self.refresh_btn)
+        self.ui.btn_refresh_page.clicked.connect(self.refresh_data)
+        
+        # filter
         self.ui.searchLineEdit.textChanged.connect(self.filter_all_data)
         
         
          # Delete Selected button
         self.ui.btn_delete_selected.clicked.connect(self.delete_selected_row)
 
-    def refresh_btn(self):
-        self.ui.tableWidget.setRowCount(0) #clear the existing data 
-        self.ui.tableWidget.clearContents()
-        self.ui.tableWidget.removeColumn(self.ui.tableWidget.columnCount()-1)
-        self.reset_id_numbers()
-        self.load_queue_database()
-        self.reset_selection_of_rows()
-        self.add_checkbox()
-            
-    def reset_selection_of_rows(self):
-        self.selected_rows = []        
-    
-    def delete_selected_row(self):
-        
-        conn = sqlite3.connect('queue.db')
-        with conn:
-            cursor = conn.cursor()
-            for row in self.selected_rows:
-                cursor.execute("DELETE FROM Queue_Student_Data WHERE IDnumber = ?", (row,))
-        self.refresh_btn()
-
-    def on_checkbox_state_changed(self, state, row):
-        
-        if state:
-            self.selected_rows.append(row+1)
-            print(row+1)
-        else:
-            self.selected_rows.remove(row+1)
-            print(row+1)
-
-    def update_(self):
-        conn = sqlite3.connect('queue.db')
-        with conn:
-            cursor = conn.cursor()
-            for row in self.selected_rows:
-                cursor.execute("SELECT * FROM Queue_Student_Data WHERE IDnumber > ?", (row,))
-                rows = cursor.fetchall()
-                for deleted_row in rows:
-                    updated_IDnumber = deleted_row[0] - 1
-                    cursor.execute("UPDATE Queue_Student_Data SET IDnumber = ? WHERE IDnumber = ?", (updated_IDnumber, deleted_row[0]))
-
-    def load_queue_database(self):
-        conn = sqlite3.connect('queue.db')
-        cursor = conn.cursor()
-        sqlquery = "SELECT * FROM Queue_Student_Data"
-        rows = cursor.execute(sqlquery).fetchall()
-        self.ui.tableWidget.setRowCount(len(rows))
-        row_index = 0
-        for row in rows:
-            for col, data in enumerate(row):
-                self.ui.tableWidget.setItem(row_index, col, QtWidgets.QTableWidgetItem(str(data)))
-            row_index += 1
-        conn.close()
-
-    def delete_row_tableWidget(self,row):
-        selected_rows = [item.row() for item in self.ui.tableWidget.selectedIndexes()]
-        for row in sorted(selected_rows, reverse=True):
-            self.ui.tableWidget.removeRow(row)
-
-    def add_checkbox(self):
-        if "SELECT ROW" not in [self.ui.tableWidget.horizontalHeaderItem(i).text() for i in range(self.ui.tableWidget.columnCount())]:
-            if self.checkbox_column_index is None:
-                self.checkbox_column_index = self.ui.tableWidget.columnCount()
-            self.ui.tableWidget.insertColumn(self.checkbox_column_index)
-            self.ui.tableWidget.setSelectionMode(QAbstractItemView.MultiSelection)
-
-            # adding checkbox for every row
-            for i in range(self.ui.tableWidget.rowCount()):
-                check_box = QtWidgets.QCheckBox()
-                self.ui.tableWidget.setCellWidget(i, self.checkbox_column_index, check_box)
-                check_box.setStyleSheet("QCheckBox {margin-left: 43px;}")
-                check_box.stateChanged.connect(lambda state, row=i: self.on_checkbox_state_changed(state, row))
-
-            # Changing header name
-            header_labels = [self.ui.tableWidget.horizontalHeaderItem(i).text() for i in range(self.ui.tableWidget.columnCount()-1)]
-            # Insert the new label at the end
-            header_labels.append("SELECT ROW")
-            self.ui.tableWidget.setHorizontalHeaderLabels(header_labels)
-        else:
-            pass
-
-    def save_table_execute(self):
-        # # Connect to the database
-        # connection = sqlite3.connect("queue.db")
-        # cursor = connection.cursor()
-        
-        # # Iterate through the rows and columns of the tableWidget and update the database
-        # for i in range(self.ui.tableWidget.rowCount()):
-            
-        #     # Get the values from the tableWidget
-        #     values = [self.ui.tableWidget.item(i, j).text() for j in range(self.ui.tableWidget.columnCount()-1)]
-            
-        #     # Update the corresponding row in the database
-        # try:
-        #     cursor.execute("UPDATE Queue_Student_Data SET firstname=?, lastname=?, gender=?, age=?, nationality=?, Registration=?, Semester=?, Course=?", values)
-            
-        #     connection.commit()
-                
-        # Close the connection to the database
-        # connection.close()
-        try:
-            QMessageBox.information(self, "Info", "Under Maintenance")
-        except Exception as e:
-            QMessageBox.warning(self, "Error", "Error saving data : {}".format(e))
-            print(e)
-            
     def start_queue_db(self):
-        self.ui.searchLineEdit.textChanged.connect(self.filter_all_data)
         conn = sqlite3.connect('queue.db')
         table_create_query = '''CREATE TABLE IF NOT EXISTS Queue_Student_Data
             (IDnumber INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -197,7 +92,171 @@ class Program_Window(QMainWindow,Ui_MainWindow):
             row_index += 1
         conn.close()
 
-        self.update_()
+    def refresh_data(self):
+        self.ui.tableWidget.setRowCount(0) #clear the existing data 
+        self.ui.tableWidget.clearContents()
+        self.ui.tableWidget.removeColumn(self.ui.tableWidget.columnCount()-1)
+        self.reset_id_numbers()
+        self.load_queue_database()
+        self.reset_selection_of_rows()
+        self.add_checkbox()
+
+    def refresh_btn(self):
+        
+        self.refresh_data()
+
+        QMessageBox.information(self, "Info", "Refreshed", QMessageBox.Ok)
+        
+
+
+
+    def reset_id_numbers(self):
+        conn = sqlite3.connect('queue.db')
+        cursor = conn.cursor()
+
+        cursor.execute("SELECT * FROM Queue_Student_Data")
+        rows = cursor.fetchall()
+
+        # Start a counter at 1
+        counter = 1
+        # Iterate through the rows and update the IDnumber
+        for row in rows:
+            cursor.execute("UPDATE Queue_Student_Data SET IDnumber = ? WHERE IDnumber = ?", (counter, row[0]))
+            counter += 1
+
+        conn.commit()
+
+    def load_queue_database(self):
+        conn = sqlite3.connect('queue.db')
+        cursor = conn.cursor()
+        sqlquery = "SELECT * FROM Queue_Student_Data"
+        rows = cursor.execute(sqlquery).fetchall()
+        self.ui.tableWidget.setRowCount(len(rows))
+        row_index = 0
+        for row in rows:
+            for col, data in enumerate(row):
+                self.ui.tableWidget.setItem(row_index, col, QtWidgets.QTableWidgetItem(str(data)))
+            row_index += 1
+        conn.close()
+
+    def reset_selection_of_rows(self):
+        self.selected_rows = []        
+
+    def add_checkbox(self):
+        if "SELECT ROW" not in [self.ui.tableWidget.horizontalHeaderItem(i).text() for i in range(self.ui.tableWidget.columnCount())]:
+            if self.checkbox_column_index is None:
+                self.checkbox_column_index = self.ui.tableWidget.columnCount()
+            self.ui.tableWidget.insertColumn(self.checkbox_column_index)
+            self.ui.tableWidget.setSelectionMode(QAbstractItemView.MultiSelection)
+
+            # adding checkbox for every row
+            for i in range(self.ui.tableWidget.rowCount()):
+                check_box = QtWidgets.QCheckBox()
+                self.ui.tableWidget.setCellWidget(i, self.checkbox_column_index, check_box)
+                check_box.setStyleSheet("QCheckBox {margin-left: 43px;}")
+                check_box.stateChanged.connect(lambda state, row=i: self.on_checkbox_state_changed(state, row))
+
+            # Changing header name
+            header_labels = [self.ui.tableWidget.horizontalHeaderItem(i).text() for i in range(self.ui.tableWidget.columnCount()-1)]
+            # Insert the new label at the end
+            header_labels.append("SELECT ROW")
+            self.ui.tableWidget.setHorizontalHeaderLabels(header_labels)
+        else:
+            pass
+
+
+
+
+
+
+
+
+    def delete_selected_row(self):
+        result = QMessageBox.question(self, 'Confirm', "Are you sure you want to Delete the selected data?", QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+        
+        if result == QMessageBox.Yes:
+            conn = sqlite3.connect('queue.db')
+            with conn:
+                cursor = conn.cursor()
+                for row in self.selected_rows:
+                    cursor.execute("DELETE FROM Queue_Student_Data WHERE IDnumber = ?", (row,))
+            self.refresh_data()
+        else:
+            # cancel operation
+            pass
+        
+    def on_checkbox_state_changed(self, state, row):
+        
+        if state:
+            self.selected_rows.append(row+1)
+            print(row+1)
+        else:
+            self.selected_rows.remove(row+1)
+            print(row+1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    def save_table_execute(self):
+        result = QMessageBox.question(self, 'Confirm', "Are you sure you want to Update the data?", QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+
+        if result == QMessageBox.Yes:
+            # code to update data in database
+            connection = sqlite3.connect("queue.db")
+            cursor = connection.cursor()
+
+            # Iterate through the rows of the tableWidget
+            for i in range(self.ui.tableWidget.rowCount()):
+                IDnumber = self.ui.tableWidget.item(i, 0).text()
+                firstname = self.ui.tableWidget.item(i, 1).text()
+                lastname = self.ui.tableWidget.item(i, 2).text()
+                gender = self.ui.tableWidget.item(i, 3).text()
+                age = self.ui.tableWidget.item(i, 4).text()
+                nationality = self.ui.tableWidget.item(i, 5).text()
+                Registration = self.ui.tableWidget.item(i, 6).text()
+                Semester = self.ui.tableWidget.item(i, 7).text()
+                Course = self.ui.tableWidget.item(i, 8).text()
+                
+                try:
+                    # Update the corresponding row in the database
+                    cursor.execute("UPDATE Queue_Student_Data SET firstname=?, lastname=?, gender=?, age=?, nationality=?, Registration=?, Semester=?, Course=? WHERE IDnumber=?", (firstname, lastname, gender, age, nationality, Registration, Semester, Course, IDnumber))
+                    connection.commit()
+                    
+                except Exception as e:
+                    QMessageBox.warning(self, "Error", "Error saving data : {}".format(e))
+                    print(e)
+                    
+            QMessageBox.information(self, "Info", "Data Updated Successfully")
+        else:
+            # cancel operation
+            pass
+        connection.close()
+        self.refresh_data()
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         # filter data from the table
     def filter_all_data(self):
@@ -210,6 +269,7 @@ class Program_Window(QMainWindow,Ui_MainWindow):
                     match = True
                     break
             self.ui.tableWidget.setRowHidden(i, not match)
+            
         # Slide left menu function second page
     def slideLeftMenu(self):
         # Get current left menu width
@@ -224,6 +284,7 @@ class Program_Window(QMainWindow,Ui_MainWindow):
             # Restore menu
             newWidth = 60
             self.ui.left_menu_cont_frame.setMinimumSize(newWidth,0)
+            
         # Catch errors from user inputs
     def data_validation_register(self):
         # Terms and Conditions Checking
@@ -237,6 +298,7 @@ class Program_Window(QMainWindow,Ui_MainWindow):
         else:
             QMessageBox.warning(self, "Warning", "Accepting the terms are required.")
             return
+            
         # Executes and sends data after passing Data Validation function
     def enter_data(self):
         first_name = self.ui.lineEdit_firstname.text()
@@ -304,28 +366,10 @@ class Program_Window(QMainWindow,Ui_MainWindow):
         conn.close()
         
         QMessageBox.information(self, "Info", "Data inserted successfully")
-        
-    def reset_id_numbers(self):
-        conn = sqlite3.connect('queue.db')
-        cursor = conn.cursor()
-
-        # Get all rows in the table
-        cursor.execute("SELECT * FROM Queue_Student_Data")
-        rows = cursor.fetchall()
-
-        # Start a counter at 1
-        counter = 1
-        # Iterate through the rows and update the IDnumber
-        for row in rows:
-            cursor.execute("UPDATE Queue_Student_Data SET IDnumber = ? WHERE IDnumber = ?", (counter, row[0]))
-            counter += 1
-
-        # Commit the changes to the database
-        conn.commit()
 
     def clear_reg_inputs(self):
         # Clearing the last input of a user
-        lineEdits = [self.ui.lineEdit_firstname, self.ui.line_Edit_lastname, self.ui.cmbbox_nationality]
+        lineEdits = [self.ui.lineEdit_firstname, self.ui.line_Edit_lastname]
         for lineEdit in lineEdits:
             lineEdit.clear()
         self.ui.cmbbox_title.setCurrentIndex(0)

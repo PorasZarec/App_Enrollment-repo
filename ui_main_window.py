@@ -968,6 +968,7 @@ class Ui_MainWindow(object):
 
         self.stackedWidgetfront.setCurrentIndex(1)
         self.cmbbox_title.setCurrentIndex(0)
+        self.cmbbox_nationality.setCurrentIndex(0)
         self.main_body_stackedWidget.setCurrentIndex(0)
 
 

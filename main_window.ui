@@ -350,6 +350,9 @@
                        <property name="currentText">
                         <string>Filipino</string>
                        </property>
+                       <property name="currentIndex">
+                        <number>0</number>
+                       </property>
                        <item>
                         <property name="text">
                          <string>Filipino</string>
