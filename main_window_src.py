@@ -1,6 +1,6 @@
 from PySide6.QtWidgets import QApplication, QMainWindow, QMessageBox, QAbstractItemView
-from PySide6 import QtWidgets, QtCore 
-from ui_main_window import Ui_MainWindow
+from PySide6 import QtWidgets 
+from ui_main_window import *
 
 import sqlite3
 import sys 
@@ -85,6 +85,7 @@ class Program_Window(QMainWindow,Ui_MainWindow):
         
         # Delete Selected button
         self.ui.btn_delete_selected.clicked.connect(self.delete_selected_row)
+        
 
     def start_queue_db(self):
         conn = sqlite3.connect('queue.db')
@@ -526,8 +527,9 @@ class Program_Window(QMainWindow,Ui_MainWindow):
 
         # filter data from the table
     def filter_BSIT_data(self):
-        search_text = self.ui.tableWidget_BSIT.text().lower()
-        for i in range(self.ui.tableWidget.rowCount()):
+        
+        search_text = self.ui.searchLineEdit_BSIT.text().lower()
+        for i in range(self.ui.tableWidget_BSIT.rowCount()):
             match = False
             for j in range(self.ui.tableWidget_BSIT.columnCount()):
                 item = self.ui.tableWidget_BSIT.item(i, j)
@@ -567,14 +569,14 @@ class Program_Window(QMainWindow,Ui_MainWindow):
         # Get current left menu width
         width = self.ui.left_menu_cont_frame.width()
         # If minimized 
-        if width == 60:
+        if width == 50:
             # Expand menu
             newWidth = 220
             self.ui.left_menu_cont_frame.setMinimumSize(newWidth,0)
         # If maximized
         else:
             # Restore menu
-            newWidth = 60
+            newWidth = 50
             self.ui.left_menu_cont_frame.setMinimumSize(newWidth,0)
 
         # Catch Empty data from user inputs
