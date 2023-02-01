@@ -53,15 +53,16 @@ class Program_Window(QMainWindow,Ui_MainWindow):
         
         # Buttons located at Second page
         self.ui.queue_data.clicked.connect(lambda: self.ui.main_body_stackedWidget.setCurrentWidget(self.ui.mixData))
-        
+        self.ui.queue_data.clicked.connect(lambda: self.refresh_data)
         
         
         
         self.ui.BSIT_page_button.clicked.connect(lambda: self.ui.main_body_stackedWidget.setCurrentWidget(self.ui.BSIT_table_data))
+        self.ui.BSIT_page_button.clicked.connect(lambda: self.refresh_data)
         
         
         self.ui.COMSCI_page_button.clicked.connect(lambda: self.ui.main_body_stackedWidget.setCurrentWidget(self.ui.COMSCI_table_data))
-        
+        self.ui.COMSCI_page_button.clicked.connect(lambda: self.refresh_data)
         # Approve buttons
         self.ui.btn_approve_BSIT.clicked.connect(lambda: self.approve_to_BSIT_db())
         
@@ -93,6 +94,13 @@ class Program_Window(QMainWindow,Ui_MainWindow):
             (IDnumber INTEGER PRIMARY KEY AUTOINCREMENT,
             firstname TEXT,
             lastname TEXT,
+            
+            middlename TEXT,
+            level TEXT ,
+            address TEXT,
+            telephone TEXT,
+            birthDate TEXT,
+
             gender TEXT,
             age INT,
             nationality TEXT,
@@ -122,6 +130,13 @@ class Program_Window(QMainWindow,Ui_MainWindow):
             (IDnumber INTEGER PRIMARY KEY AUTOINCREMENT,
             firstname TEXT,
             lastname TEXT,
+
+            middlename TEXT,
+            level TEXT ,
+            address TEXT,
+            telephone TEXT,
+            birthDate TEXT,
+            
             gender TEXT,
             age INT,
             nationality TEXT,
@@ -152,6 +167,13 @@ class Program_Window(QMainWindow,Ui_MainWindow):
             (IDnumber INTEGER PRIMARY KEY AUTOINCREMENT,
             firstname TEXT,
             lastname TEXT,
+            
+            middlename TEXT,
+            level TEXT ,
+            address TEXT,
+            telephone TEXT,
+            birthDate TEXT,
+            
             gender TEXT,
             age INT,
             nationality TEXT,
@@ -286,7 +308,6 @@ class Program_Window(QMainWindow,Ui_MainWindow):
 
     def reset_selection_of_rows(self):
         self.selected_rows = []        
-
 
 
     def add_checkbox_BSIT(self):
@@ -437,36 +458,119 @@ class Program_Window(QMainWindow,Ui_MainWindow):
                     IDnumber = self.ui.tableWidget.item(i, 0).text()
                     firstname = self.ui.tableWidget.item(i, 1).text()
                     lastname = self.ui.tableWidget.item(i, 2).text()
-                    gender = self.ui.tableWidget.item(i, 3).text()
-                    age = self.ui.tableWidget.item(i, 4).text()
-                    nationality = self.ui.tableWidget.item(i, 5).text()
-                    Registration = self.ui.tableWidget.item(i, 6).text()
-                    Semester = self.ui.tableWidget.item(i, 7).text()
-                    Course = self.ui.tableWidget.item(i, 8).text()
+                    
+                    middlename = self.ui.tableWidget.item(i, 3).text()
+                    gradeLevel = self.ui.tableWidget.item(i, 4).text()
+                    address = self.ui.tableWidget.item(i, 5).text()
+                    telephone = self.ui.tableWidget.item(i, 6).text()
+                    birthDate = self.ui.tableWidget.item(i, 7).text()
+                    
+                    gender = self.ui.tableWidget.item(i, 8).text()
+                    age = self.ui.tableWidget.item(i, 9).text()
+                    nationality = self.ui.tableWidget.item(i, 10).text()
+                    Registration = self.ui.tableWidget.item(i, 11).text()
+                    Semester = self.ui.tableWidget.item(i, 12).text()
+                    Course = self.ui.tableWidget.item(i, 13).text()
                     
                     try:
                         # Update the corresponding row in the database
-                        cursor.execute("UPDATE Queue_Student_Data SET firstname=?, lastname=?, gender=?, age=?, nationality=?, Registration=?, Semester=?, Course=? WHERE IDnumber=?", (firstname, lastname, gender, age, nationality, Registration, Semester, Course, IDnumber))
+                        cursor.execute("UPDATE Queue_Student_Data SET firstname=?, lastname=?, middlename=?, level=?, address=?, telephone=?, birthDate=?, gender=?, age=?, nationality=?, Registration=?, Semester=?, Course=? WHERE IDnumber=?", (firstname, lastname, middlename, gradeLevel, address, telephone, birthDate, gender, age, nationality, Registration, Semester, Course, IDnumber))
                         connection.commit()
-                        QMessageBox.information(self, "Info", "Data Updated Successfully")
-                        
                     except Exception as e:
                         QMessageBox.warning(self, "Error", "Error saving data : {}".format(e))
                         print(e)
-                        
+                QMessageBox.information(self, "Info", "Data Updated Successfully")        
                 connection.close()
                 
             else:
                 # cancel operation
                 pass
-
-        else:
-            QMessageBox.information(self, "Info", "Save Changes Unavailable")
-            pass
+            ######
+        if self.ui.main_body_stackedWidget.currentWidget() == self.ui.BSIT_table_data:
             
-        
-        self.refresh_data()
+            result = QMessageBox.question(self, 'Confirm', "Are you sure you want to Update the data?", QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+            
+            if result == QMessageBox.Yes:
+                # code to update data in database
+                connection = sqlite3.connect("queue.db")
+                cursor = connection.cursor()
 
+                # Iterate through the rows of the tableWidget
+                for i in range(self.ui.tableWidget_BSIT.rowCount()):
+                    IDnumber = self.ui.tableWidget_BSIT.item(i, 0).text()
+                    firstname = self.ui.tableWidget_BSIT.item(i, 1).text()
+                    lastname = self.ui.tableWidget_BSIT.item(i, 2).text()
+                    
+                    middlename = self.ui.tableWidget_BSIT.item(i, 3).text()
+                    gradeLevel = self.ui.tableWidget_BSIT.item(i, 4).text()
+                    address = self.ui.tableWidget_BSIT.item(i, 5).text()
+                    telephone = self.ui.tableWidget_BSIT.item(i, 6).text()
+                    birthDate = self.ui.tableWidget_BSIT.item(i, 7).text()
+                    
+                    gender = self.ui.tableWidget_BSIT.item(i, 8).text()
+                    age = self.ui.tableWidget_BSIT.item(i, 9).text()
+                    nationality = self.ui.tableWidget_BSIT.item(i, 10).text()
+                    Registration = self.ui.tableWidget_BSIT.item(i, 11).text()
+                    Semester = self.ui.tableWidget_BSIT.item(i, 12).text()
+                    Course = self.ui.tableWidget_BSIT.item(i, 13).text()
+                    
+                    try:
+                        # Update the corresponding row in the database
+                        cursor.execute("UPDATE BSIT_Student_Data SET firstname=?, lastname=?, middlename=?, level=?, address=?, telephone=?, birthDate=?, gender=?, age=?, nationality=?, Registration=?, Semester=?, Course=? WHERE IDnumber=?", (firstname, lastname, middlename, gradeLevel, address, telephone, birthDate, gender, age, nationality, Registration, Semester, Course, IDnumber))
+                        connection.commit()
+                    except Exception as e:
+                        QMessageBox.warning(self, "Error", "Error saving data : {}".format(e))
+                        print(e)
+                QMessageBox.information(self, "Info", "Data Updated Successfully")        
+                connection.close()
+                
+            else:
+                # cancel operation
+                pass
+            
+        if self.ui.main_body_stackedWidget.currentWidget() == self.ui.COMSCI_table_data:
+            
+            result = QMessageBox.question(self, 'Confirm', "Are you sure you want to Update the data?", QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+            
+            if result == QMessageBox.Yes:
+                # code to update data in database
+                connection = sqlite3.connect("queue.db")
+                cursor = connection.cursor()
+
+                # Iterate through the rows of the tableWidget
+                for i in range(self.ui.tableWidget_COMSCI.rowCount()):
+                    IDnumber = self.ui.tableWidget_COMSCI.item(i, 0).text()
+                    firstname = self.ui.tableWidget_COMSCI.item(i, 1).text()
+                    lastname = self.ui.tableWidget_COMSCI.item(i, 2).text()
+                    
+                    middlename = self.ui.tableWidget_COMSCI.item(i, 3).text()
+                    gradeLevel = self.ui.tableWidget_COMSCI.item(i, 4).text()
+                    address = self.ui.tableWidget_COMSCI.item(i, 5).text()
+                    telephone = self.ui.tableWidget_COMSCI.item(i, 6).text()
+                    birthDate = self.ui.tableWidget_COMSCI.item(i, 7).text()
+                    
+                    gender = self.ui.tableWidget_COMSCI.item(i, 8).text()
+                    age = self.ui.tableWidget_COMSCI.item(i, 9).text()
+                    nationality = self.ui.tableWidget_COMSCI.item(i, 10).text()
+                    Registration = self.ui.tableWidget_COMSCI.item(i, 11).text()
+                    Semester = self.ui.tableWidget_COMSCI.item(i, 12).text()
+                    Course = self.ui.tableWidget_COMSCI.item(i, 13).text()
+                    
+                    try:
+                        # Update the corresponding row in the database
+                        cursor.execute("UPDATE COMSCI_Student_Data SET firstname=?, lastname=?, middlename=?, level=?, address=?, telephone=?, birthDate=?, gender=?, age=?, nationality=?, Registration=?, Semester=?, Course=? WHERE IDnumber=?", (firstname, lastname, middlename, gradeLevel, address, telephone, birthDate, gender, age, nationality, Registration, Semester, Course, IDnumber))
+                        connection.commit()
+                    except Exception as e:
+                        QMessageBox.warning(self, "Error", "Error saving data : {}".format(e))
+                        print(e)
+                QMessageBox.information(self, "Info", "Data Updated Successfully")        
+                connection.close()
+            else:
+                # cancel operation
+                pass
+        else:   
+            self.refresh_data()
+        self.refresh_data()
 
 
     def approve_to_BSIT_db(self):
@@ -480,7 +584,8 @@ class Program_Window(QMainWindow,Ui_MainWindow):
                 with conn:
                     cursor = conn.cursor()
                     for row in self.selected_rows:
-                            cursor.execute("INSERT INTO BSIT_Student_Data (firstname, lastname, gender, age, nationality, Registration, Semester, Course) SELECT firstname, lastname, gender, age, nationality, Registration, Semester, Course FROM Queue_Student_Data WHERE IDnumber = ?", (row,))
+                      
+                            cursor.execute("INSERT INTO BSIT_Student_Data (firstname, lastname, middlename, level, address, telephone, birthDate, gender, age, nationality, Registration, Semester, Course) SELECT firstname, lastname, middlename, level, address, telephone, birthDate, gender, age, nationality, Registration, Semester, Course FROM Queue_Student_Data WHERE IDnumber = ?", (row,))
                             conn.commit()
                             
                     for row in self.selected_rows:
@@ -507,7 +612,7 @@ class Program_Window(QMainWindow,Ui_MainWindow):
                 with conn:
                     cursor = conn.cursor()
                     for row in self.selected_rows:
-                            cursor.execute("INSERT INTO COMSCI_Student_Data (firstname, lastname, gender, age, nationality, Registration, Semester, Course) SELECT firstname, lastname, gender, age, nationality, Registration, Semester, Course FROM Queue_Student_Data WHERE IDnumber = ?", (row,))
+                            cursor.execute("INSERT INTO C_Student_Data (firstname, lastname, middlename, level, address, telephone, birthDate, gender, age, nationality, Registration, Semester, Course) SELECT firstname, lastname, middlename, level, address, telephone, birthDate, gender, age, nationality, Registration, Semester, Course FROM Queue_Student_Data WHERE IDnumber = ?", (row,))
                             conn.commit()
                             
                     for row in self.selected_rows:
@@ -598,6 +703,13 @@ class Program_Window(QMainWindow,Ui_MainWindow):
     def enter_data_college(self):
         first_name = self.ui.lineEdit_firstname.text()
         last_name = self.ui.line_Edit_lastname.text()
+        
+        middle_name = self.ui.lineEdit_middleName.text()
+        grade_level = self.ui.lineEdit_grade_year_lvl.text()
+        address = self.ui.lineEdit_address.text()
+        telephone_number = self.ui.lineEdit_telephone.text()
+        birth_date = self.ui.birth_dateEdit.text()
+        
         gender = self.ui.cmbbox_title.currentText()
         age = self.ui.spinBox_age.value()
         nationality = self.ui.cmbbox_nationality.currentText()
@@ -612,25 +724,22 @@ class Program_Window(QMainWindow,Ui_MainWindow):
             register_value = "Registered"
         else:
             register_value = "Unregistered"
+
+        
         conn = sqlite3.connect('queue.db')
-        table_create_query = '''CREATE TABLE IF NOT EXISTS Queue_Student_Data
-            (IDnumber INTEGER PRIMARY KEY AUTOINCREMENT,
-            firstname TEXT,
-            lastname TEXT,
-            gender TEXT,
-            age INT,
-            nationality TEXT,
-            Registration TEXT,
-            Semester INT,
-            Course TEXT
-            )
-        '''
-        conn.execute(table_create_query)
+        
         # Insert Data
-        data_insert_query = '''INSERT INTO Queue_Student_Data ( firstname, lastname, gender, age, nationality, Registration, Semester, Course) VALUES (?, ?, ?, ?, ?, ?, ?, ?)''' 
+        data_insert_query = '''INSERT INTO Queue_Student_Data ( firstname, lastname, middlename, level, address, telephone, birthDate, gender, age, nationality, Registration, Semester, Course) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''' 
         data_insert_tuple =(
                     first_name,
                     last_name,
+                    
+                    middle_name,
+                    grade_level,
+                    address,
+                    telephone_number,
+                    birth_date,
+                    
                     gender,
                     age,
                     nationality,
@@ -638,6 +747,7 @@ class Program_Window(QMainWindow,Ui_MainWindow):
                     completed_semester,
                     course
                 )
+        
         cursor = conn.cursor()
         cursor.execute(data_insert_query, data_insert_tuple)
         conn.commit()
@@ -670,9 +780,11 @@ class Program_Window(QMainWindow,Ui_MainWindow):
     def clear_reg_inputs(self):
         
         # Clearing the last input of a user
-        lineEdits = [self.ui.lineEdit_firstname, self.ui.line_Edit_lastname]
+        lineEdits = [self.ui.lineEdit_firstname, self.ui.line_Edit_lastname,self.ui.lineEdit_middleName,self.ui.lineEdit_address,self.ui.lineEdit_grade_year_lvl,self.ui.lineEdit_telephone]
         for lineEdit in lineEdits:
             lineEdit.clear()
+            
+        self.ui.birth_dateEdit.setDate(QDate.currentDate())
         self.ui.cmbbox_title.setCurrentIndex(0)
         self.ui.cmbbox_nationality.setCurrentIndex(0)
         self.ui.cmbbox_course.setCurrentIndex(0)
@@ -686,7 +798,7 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = Program_Window()
     
-    window.setWindowTitle("SQL DATABASE PROJECT")
+    window.setWindowTitle("Dominican College")
     
     window.start_queue_db()
 

@@ -15,19 +15,20 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QDateEdit,
-    QFormLayout, QFrame, QGridLayout, QHBoxLayout,
-    QHeaderView, QLabel, QLineEdit, QMainWindow,
-    QMenuBar, QPushButton, QScrollArea, QSizePolicy,
-    QSpacerItem, QSpinBox, QStackedWidget, QStatusBar,
-    QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QAbstractSpinBox, QApplication, QCheckBox, QComboBox,
+    QDateEdit, QDateTimeEdit, QFormLayout, QFrame,
+    QGridLayout, QHBoxLayout, QHeaderView, QLabel,
+    QLineEdit, QMainWindow, QMenuBar, QPushButton,
+    QScrollArea, QSizePolicy, QSpacerItem, QSpinBox,
+    QStackedWidget, QStatusBar, QTableWidget, QTableWidgetItem,
+    QVBoxLayout, QWidget)
 import icons_rc_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1313, 776)
+        MainWindow.resize(1100, 731)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
@@ -114,7 +115,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(-14, 0, 1826, 545))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 1826, 520))
         self.horizontalLayout_12 = QHBoxLayout(self.scrollAreaWidgetContents)
         self.horizontalLayout_12.setSpacing(0)
         self.horizontalLayout_12.setObjectName(u"horizontalLayout_12")
@@ -141,142 +142,40 @@ class Ui_MainWindow(object):
         self.gridLayout.setHorizontalSpacing(70)
         self.gridLayout.setVerticalSpacing(30)
         self.gridLayout.setContentsMargins(100, 10, 100, 10)
-        self.label_12 = QLabel(self.frame_21)
-        self.label_12.setObjectName(u"label_12")
-
-        self.gridLayout.addWidget(self.label_12, 0, 0, 1, 1)
-
         self.lineEdit_firstname = QLineEdit(self.frame_21)
         self.lineEdit_firstname.setObjectName(u"lineEdit_firstname")
 
         self.gridLayout.addWidget(self.lineEdit_firstname, 0, 1, 1, 1)
 
-        self.label_20 = QLabel(self.frame_21)
-        self.label_20.setObjectName(u"label_20")
+        self.lbl_firstname = QLabel(self.frame_21)
+        self.lbl_firstname.setObjectName(u"lbl_firstname")
 
-        self.gridLayout.addWidget(self.label_20, 11, 2, 1, 1)
+        self.gridLayout.addWidget(self.lbl_firstname, 0, 0, 1, 1)
 
-        self.checkBox_terms = QCheckBox(self.frame_21)
-        self.checkBox_terms.setObjectName(u"checkBox_terms")
-        font2 = QFont()
-        font2.setBold(True)
-        self.checkBox_terms.setFont(font2)
+        self.lbl_lastname = QLabel(self.frame_21)
+        self.lbl_lastname.setObjectName(u"lbl_lastname")
 
-        self.gridLayout.addWidget(self.checkBox_terms, 11, 3, 1, 1)
-
-        self.lineEdit_grade_year_lvl = QLineEdit(self.frame_21)
-        self.lineEdit_grade_year_lvl.setObjectName(u"lineEdit_grade_year_lvl")
-
-        self.gridLayout.addWidget(self.lineEdit_grade_year_lvl, 1, 3, 1, 1)
-
-        self.cmbbox_title = QComboBox(self.frame_21)
-        self.cmbbox_title.addItem("")
-        self.cmbbox_title.addItem("")
-        self.cmbbox_title.setObjectName(u"cmbbox_title")
-        self.cmbbox_title.setCursor(QCursor(Qt.CrossCursor))
-        self.cmbbox_title.setLayoutDirection(Qt.RightToLeft)
-        self.cmbbox_title.setEditable(True)
-
-        self.gridLayout.addWidget(self.cmbbox_title, 5, 3, 1, 1)
-
-        self.label_24 = QLabel(self.frame_21)
-        self.label_24.setObjectName(u"label_24")
-
-        self.gridLayout.addWidget(self.label_24, 1, 2, 1, 1)
-
-        self.spinBox_semester = QSpinBox(self.frame_21)
-        self.spinBox_semester.setObjectName(u"spinBox_semester")
-        self.spinBox_semester.setCursor(QCursor(Qt.CrossCursor))
-        self.spinBox_semester.setLayoutDirection(Qt.LeftToRight)
-        self.spinBox_semester.setMinimum(0)
-        self.spinBox_semester.setMaximum(2)
-        self.spinBox_semester.setValue(0)
-
-        self.gridLayout.addWidget(self.spinBox_semester, 6, 3, 1, 1)
-
-        self.cmbbox_course = QComboBox(self.frame_21)
-        self.cmbbox_course.addItem("")
-        self.cmbbox_course.addItem("")
-        self.cmbbox_course.setObjectName(u"cmbbox_course")
-        self.cmbbox_course.setCursor(QCursor(Qt.CrossCursor))
-        self.cmbbox_course.setLayoutDirection(Qt.LeftToRight)
-
-        self.gridLayout.addWidget(self.cmbbox_course, 6, 1, 1, 1)
+        self.gridLayout.addWidget(self.lbl_lastname, 1, 0, 1, 1)
 
         self.line_Edit_lastname = QLineEdit(self.frame_21)
         self.line_Edit_lastname.setObjectName(u"line_Edit_lastname")
 
         self.gridLayout.addWidget(self.line_Edit_lastname, 1, 1, 1, 1)
 
-        self.label_13 = QLabel(self.frame_21)
-        self.label_13.setObjectName(u"label_13")
+        self.lbl_address = QLabel(self.frame_21)
+        self.lbl_address.setObjectName(u"lbl_address")
 
-        self.gridLayout.addWidget(self.label_13, 1, 0, 1, 1)
-
-        self.birth_dateEdit = QDateEdit(self.frame_21)
-        self.birth_dateEdit.setObjectName(u"birth_dateEdit")
-        self.birth_dateEdit.setCursor(QCursor(Qt.CrossCursor))
-        self.birth_dateEdit.setLayoutDirection(Qt.LeftToRight)
-        self.birth_dateEdit.setCalendarPopup(True)
-
-        self.gridLayout.addWidget(self.birth_dateEdit, 5, 1, 1, 1)
-
-        self.label_7 = QLabel(self.frame_21)
-        self.label_7.setObjectName(u"label_7")
-
-        self.gridLayout.addWidget(self.label_7, 2, 0, 1, 1)
+        self.gridLayout.addWidget(self.lbl_address, 3, 0, 1, 1)
 
         self.lineEdit_address = QLineEdit(self.frame_21)
         self.lineEdit_address.setObjectName(u"lineEdit_address")
 
-        self.gridLayout.addWidget(self.lineEdit_address, 2, 1, 1, 1)
+        self.gridLayout.addWidget(self.lineEdit_address, 3, 1, 1, 1)
 
-        self.label_22 = QLabel(self.frame_21)
-        self.label_22.setObjectName(u"label_22")
+        self.lbl_nationality = QLabel(self.frame_21)
+        self.lbl_nationality.setObjectName(u"lbl_nationality")
 
-        self.gridLayout.addWidget(self.label_22, 5, 0, 1, 1)
-
-        self.label_19 = QLabel(self.frame_21)
-        self.label_19.setObjectName(u"label_19")
-
-        self.gridLayout.addWidget(self.label_19, 6, 2, 1, 1)
-
-        self.label_17 = QLabel(self.frame_21)
-        self.label_17.setObjectName(u"label_17")
-
-        self.gridLayout.addWidget(self.label_17, 11, 0, 1, 1)
-
-        self.label_18 = QLabel(self.frame_21)
-        self.label_18.setObjectName(u"label_18")
-
-        self.gridLayout.addWidget(self.label_18, 6, 0, 1, 1)
-
-        self.checkBox_registered = QCheckBox(self.frame_21)
-        self.checkBox_registered.setObjectName(u"checkBox_registered")
-        self.checkBox_registered.setFont(font2)
-        self.checkBox_registered.setTristate(False)
-
-        self.gridLayout.addWidget(self.checkBox_registered, 11, 1, 1, 1)
-
-        self.label_14 = QLabel(self.frame_21)
-        self.label_14.setObjectName(u"label_14")
-
-        self.gridLayout.addWidget(self.label_14, 5, 2, 1, 1)
-
-        self.label_23 = QLabel(self.frame_21)
-        self.label_23.setObjectName(u"label_23")
-
-        self.gridLayout.addWidget(self.label_23, 0, 2, 1, 1)
-
-        self.lineEdit_middleName = QLineEdit(self.frame_21)
-        self.lineEdit_middleName.setObjectName(u"lineEdit_middleName")
-
-        self.gridLayout.addWidget(self.lineEdit_middleName, 0, 3, 1, 1)
-
-        self.label_16 = QLabel(self.frame_21)
-        self.label_16.setObjectName(u"label_16")
-
-        self.gridLayout.addWidget(self.label_16, 4, 0, 1, 1)
+        self.gridLayout.addWidget(self.lbl_nationality, 4, 0, 1, 1)
 
         self.cmbbox_nationality = QComboBox(self.frame_21)
         self.cmbbox_nationality.addItem("")
@@ -288,27 +187,136 @@ class Ui_MainWindow(object):
 
         self.gridLayout.addWidget(self.cmbbox_nationality, 4, 1, 1, 1)
 
+        self.lbl_birthddate = QLabel(self.frame_21)
+        self.lbl_birthddate.setObjectName(u"lbl_birthddate")
+
+        self.gridLayout.addWidget(self.lbl_birthddate, 6, 0, 1, 1)
+
+        self.birth_dateEdit = QDateEdit(self.frame_21)
+        self.birth_dateEdit.setObjectName(u"birth_dateEdit")
+        self.birth_dateEdit.setCursor(QCursor(Qt.OpenHandCursor))
+        self.birth_dateEdit.setLayoutDirection(Qt.RightToLeft)
+        self.birth_dateEdit.setButtonSymbols(QAbstractSpinBox.UpDownArrows)
+        self.birth_dateEdit.setProperty("showGroupSeparator", False)
+        self.birth_dateEdit.setMaximumDateTime(QDateTime(QDate(3000, 12, 31), QTime(23, 59, 59)))
+        self.birth_dateEdit.setMinimumDateTime(QDateTime(QDate(1900, 9, 14), QTime(0, 0, 0)))
+        self.birth_dateEdit.setCurrentSection(QDateTimeEdit.DaySection)
+        self.birth_dateEdit.setCalendarPopup(True)
+        self.birth_dateEdit.setCurrentSectionIndex(1)
+        self.birth_dateEdit.setDate(QDate(2000, 1, 1))
+
+        self.gridLayout.addWidget(self.birth_dateEdit, 6, 1, 1, 1)
+
+        self.lbl_course = QLabel(self.frame_21)
+        self.lbl_course.setObjectName(u"lbl_course")
+
+        self.gridLayout.addWidget(self.lbl_course, 7, 0, 1, 1)
+
+        self.cmbbox_course = QComboBox(self.frame_21)
+        self.cmbbox_course.addItem("")
+        self.cmbbox_course.addItem("")
+        self.cmbbox_course.setObjectName(u"cmbbox_course")
+        self.cmbbox_course.setCursor(QCursor(Qt.OpenHandCursor))
+        self.cmbbox_course.setLayoutDirection(Qt.LeftToRight)
+
+        self.gridLayout.addWidget(self.cmbbox_course, 7, 1, 1, 1)
+
+        self.lbl_regtrationStatus = QLabel(self.frame_21)
+        self.lbl_regtrationStatus.setObjectName(u"lbl_regtrationStatus")
+
+        self.gridLayout.addWidget(self.lbl_regtrationStatus, 8, 0, 1, 1)
+
+        self.checkBox_registered = QCheckBox(self.frame_21)
+        self.checkBox_registered.setObjectName(u"checkBox_registered")
+        font2 = QFont()
+        font2.setBold(True)
+        self.checkBox_registered.setFont(font2)
+        self.checkBox_registered.setTristate(False)
+
+        self.gridLayout.addWidget(self.checkBox_registered, 8, 1, 1, 1)
+
+        self.lbl_middlename = QLabel(self.frame_21)
+        self.lbl_middlename.setObjectName(u"lbl_middlename")
+
+        self.gridLayout.addWidget(self.lbl_middlename, 0, 2, 1, 1)
+
+        self.lineEdit_middleName = QLineEdit(self.frame_21)
+        self.lineEdit_middleName.setObjectName(u"lineEdit_middleName")
+
+        self.gridLayout.addWidget(self.lineEdit_middleName, 0, 3, 1, 1)
+
+        self.lbl_gradelevel = QLabel(self.frame_21)
+        self.lbl_gradelevel.setObjectName(u"lbl_gradelevel")
+
+        self.gridLayout.addWidget(self.lbl_gradelevel, 1, 2, 1, 1)
+
+        self.lineEdit_grade_year_lvl = QLineEdit(self.frame_21)
+        self.lineEdit_grade_year_lvl.setObjectName(u"lineEdit_grade_year_lvl")
+
+        self.gridLayout.addWidget(self.lineEdit_grade_year_lvl, 1, 3, 1, 1)
+
+        self.lbl_telephone = QLabel(self.frame_21)
+        self.lbl_telephone.setObjectName(u"lbl_telephone")
+
+        self.gridLayout.addWidget(self.lbl_telephone, 3, 2, 1, 1)
+
         self.lineEdit_telephone = QLineEdit(self.frame_21)
         self.lineEdit_telephone.setObjectName(u"lineEdit_telephone")
 
-        self.gridLayout.addWidget(self.lineEdit_telephone, 2, 3, 1, 1)
+        self.gridLayout.addWidget(self.lineEdit_telephone, 3, 3, 1, 1)
 
-        self.label_25 = QLabel(self.frame_21)
-        self.label_25.setObjectName(u"label_25")
+        self.lbl_age = QLabel(self.frame_21)
+        self.lbl_age.setObjectName(u"lbl_age")
 
-        self.gridLayout.addWidget(self.label_25, 2, 2, 1, 1)
-
-        self.label_15 = QLabel(self.frame_21)
-        self.label_15.setObjectName(u"label_15")
-
-        self.gridLayout.addWidget(self.label_15, 4, 2, 1, 1)
+        self.gridLayout.addWidget(self.lbl_age, 4, 2, 1, 1)
 
         self.spinBox_age = QSpinBox(self.frame_21)
         self.spinBox_age.setObjectName(u"spinBox_age")
-        self.spinBox_age.setCursor(QCursor(Qt.CrossCursor))
+        self.spinBox_age.setCursor(QCursor(Qt.OpenHandCursor))
         self.spinBox_age.setLayoutDirection(Qt.LeftToRight)
 
         self.gridLayout.addWidget(self.spinBox_age, 4, 3, 1, 1)
+
+        self.lbl_gender = QLabel(self.frame_21)
+        self.lbl_gender.setObjectName(u"lbl_gender")
+
+        self.gridLayout.addWidget(self.lbl_gender, 6, 2, 1, 1)
+
+        self.cmbbox_title = QComboBox(self.frame_21)
+        self.cmbbox_title.addItem("")
+        self.cmbbox_title.addItem("")
+        self.cmbbox_title.setObjectName(u"cmbbox_title")
+        self.cmbbox_title.setCursor(QCursor(Qt.OpenHandCursor))
+        self.cmbbox_title.setLayoutDirection(Qt.LeftToRight)
+        self.cmbbox_title.setEditable(True)
+
+        self.gridLayout.addWidget(self.cmbbox_title, 6, 3, 1, 1)
+
+        self.lbl_completedSemester = QLabel(self.frame_21)
+        self.lbl_completedSemester.setObjectName(u"lbl_completedSemester")
+
+        self.gridLayout.addWidget(self.lbl_completedSemester, 7, 2, 1, 1)
+
+        self.spinBox_semester = QSpinBox(self.frame_21)
+        self.spinBox_semester.setObjectName(u"spinBox_semester")
+        self.spinBox_semester.setCursor(QCursor(Qt.OpenHandCursor))
+        self.spinBox_semester.setLayoutDirection(Qt.LeftToRight)
+        self.spinBox_semester.setMinimum(0)
+        self.spinBox_semester.setMaximum(2)
+        self.spinBox_semester.setValue(0)
+
+        self.gridLayout.addWidget(self.spinBox_semester, 7, 3, 1, 1)
+
+        self.lbl_termsAndCondition = QLabel(self.frame_21)
+        self.lbl_termsAndCondition.setObjectName(u"lbl_termsAndCondition")
+
+        self.gridLayout.addWidget(self.lbl_termsAndCondition, 8, 2, 1, 1)
+
+        self.checkBox_terms = QCheckBox(self.frame_21)
+        self.checkBox_terms.setObjectName(u"checkBox_terms")
+        self.checkBox_terms.setFont(font2)
+
+        self.gridLayout.addWidget(self.checkBox_terms, 8, 3, 1, 1)
 
 
         self.horizontalLayout_20.addWidget(self.frame_21)
@@ -325,9 +333,9 @@ class Ui_MainWindow(object):
         self.bottom_frame_reg_pg.setFrameShape(QFrame.StyledPanel)
         self.bottom_frame_reg_pg.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_21 = QHBoxLayout(self.bottom_frame_reg_pg)
-        self.horizontalLayout_21.setSpacing(8)
+        self.horizontalLayout_21.setSpacing(0)
         self.horizontalLayout_21.setObjectName(u"horizontalLayout_21")
-        self.horizontalLayout_21.setContentsMargins(600, 10, 600, 10)
+        self.horizontalLayout_21.setContentsMargins(0, 0, 0, 0)
         self.button_submit_data = QPushButton(self.bottom_frame_reg_pg)
         self.button_submit_data.setObjectName(u"button_submit_data")
         self.button_submit_data.setFont(font)
@@ -336,7 +344,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_21.addWidget(self.button_submit_data)
 
 
-        self.verticalLayout_17.addWidget(self.bottom_frame_reg_pg)
+        self.verticalLayout_17.addWidget(self.bottom_frame_reg_pg, 0, Qt.AlignHCenter)
 
 
         self.verticalLayout_14.addWidget(self.body_middle_frame)
@@ -789,8 +797,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_15.setObjectName(u"horizontalLayout_15")
         self.horizontalLayout_15.setContentsMargins(0, 0, 0, 0)
         self.tableWidget = QTableWidget(self.frame_10)
-        if (self.tableWidget.columnCount() < 9):
-            self.tableWidget.setColumnCount(9)
+        if (self.tableWidget.columnCount() < 14):
+            self.tableWidget.setColumnCount(14)
         __qtablewidgetitem = QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(0, __qtablewidgetitem)
         __qtablewidgetitem1 = QTableWidgetItem()
@@ -809,6 +817,16 @@ class Ui_MainWindow(object):
         self.tableWidget.setHorizontalHeaderItem(7, __qtablewidgetitem7)
         __qtablewidgetitem8 = QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(8, __qtablewidgetitem8)
+        __qtablewidgetitem9 = QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(9, __qtablewidgetitem9)
+        __qtablewidgetitem10 = QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(10, __qtablewidgetitem10)
+        __qtablewidgetitem11 = QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(11, __qtablewidgetitem11)
+        __qtablewidgetitem12 = QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(12, __qtablewidgetitem12)
+        __qtablewidgetitem13 = QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(13, __qtablewidgetitem13)
         self.tableWidget.setObjectName(u"tableWidget")
         self.tableWidget.setMinimumSize(QSize(527, 0))
 
@@ -891,26 +909,36 @@ class Ui_MainWindow(object):
         self.horizontalLayout_30.setObjectName(u"horizontalLayout_30")
         self.horizontalLayout_30.setContentsMargins(0, 0, 0, 0)
         self.tableWidget_BSIT = QTableWidget(self.frame_14)
-        if (self.tableWidget_BSIT.columnCount() < 9):
-            self.tableWidget_BSIT.setColumnCount(9)
-        __qtablewidgetitem9 = QTableWidgetItem()
-        self.tableWidget_BSIT.setHorizontalHeaderItem(0, __qtablewidgetitem9)
-        __qtablewidgetitem10 = QTableWidgetItem()
-        self.tableWidget_BSIT.setHorizontalHeaderItem(1, __qtablewidgetitem10)
-        __qtablewidgetitem11 = QTableWidgetItem()
-        self.tableWidget_BSIT.setHorizontalHeaderItem(2, __qtablewidgetitem11)
-        __qtablewidgetitem12 = QTableWidgetItem()
-        self.tableWidget_BSIT.setHorizontalHeaderItem(3, __qtablewidgetitem12)
-        __qtablewidgetitem13 = QTableWidgetItem()
-        self.tableWidget_BSIT.setHorizontalHeaderItem(4, __qtablewidgetitem13)
+        if (self.tableWidget_BSIT.columnCount() < 14):
+            self.tableWidget_BSIT.setColumnCount(14)
         __qtablewidgetitem14 = QTableWidgetItem()
-        self.tableWidget_BSIT.setHorizontalHeaderItem(5, __qtablewidgetitem14)
+        self.tableWidget_BSIT.setHorizontalHeaderItem(0, __qtablewidgetitem14)
         __qtablewidgetitem15 = QTableWidgetItem()
-        self.tableWidget_BSIT.setHorizontalHeaderItem(6, __qtablewidgetitem15)
+        self.tableWidget_BSIT.setHorizontalHeaderItem(1, __qtablewidgetitem15)
         __qtablewidgetitem16 = QTableWidgetItem()
-        self.tableWidget_BSIT.setHorizontalHeaderItem(7, __qtablewidgetitem16)
+        self.tableWidget_BSIT.setHorizontalHeaderItem(2, __qtablewidgetitem16)
         __qtablewidgetitem17 = QTableWidgetItem()
-        self.tableWidget_BSIT.setHorizontalHeaderItem(8, __qtablewidgetitem17)
+        self.tableWidget_BSIT.setHorizontalHeaderItem(3, __qtablewidgetitem17)
+        __qtablewidgetitem18 = QTableWidgetItem()
+        self.tableWidget_BSIT.setHorizontalHeaderItem(4, __qtablewidgetitem18)
+        __qtablewidgetitem19 = QTableWidgetItem()
+        self.tableWidget_BSIT.setHorizontalHeaderItem(5, __qtablewidgetitem19)
+        __qtablewidgetitem20 = QTableWidgetItem()
+        self.tableWidget_BSIT.setHorizontalHeaderItem(6, __qtablewidgetitem20)
+        __qtablewidgetitem21 = QTableWidgetItem()
+        self.tableWidget_BSIT.setHorizontalHeaderItem(7, __qtablewidgetitem21)
+        __qtablewidgetitem22 = QTableWidgetItem()
+        self.tableWidget_BSIT.setHorizontalHeaderItem(8, __qtablewidgetitem22)
+        __qtablewidgetitem23 = QTableWidgetItem()
+        self.tableWidget_BSIT.setHorizontalHeaderItem(9, __qtablewidgetitem23)
+        __qtablewidgetitem24 = QTableWidgetItem()
+        self.tableWidget_BSIT.setHorizontalHeaderItem(10, __qtablewidgetitem24)
+        __qtablewidgetitem25 = QTableWidgetItem()
+        self.tableWidget_BSIT.setHorizontalHeaderItem(11, __qtablewidgetitem25)
+        __qtablewidgetitem26 = QTableWidgetItem()
+        self.tableWidget_BSIT.setHorizontalHeaderItem(12, __qtablewidgetitem26)
+        __qtablewidgetitem27 = QTableWidgetItem()
+        self.tableWidget_BSIT.setHorizontalHeaderItem(13, __qtablewidgetitem27)
         self.tableWidget_BSIT.setObjectName(u"tableWidget_BSIT")
         self.tableWidget_BSIT.setMinimumSize(QSize(527, 0))
 
@@ -990,26 +1018,36 @@ class Ui_MainWindow(object):
         self.horizontalLayout_31.setObjectName(u"horizontalLayout_31")
         self.horizontalLayout_31.setContentsMargins(0, 0, 0, 0)
         self.tableWidget_COMSCI = QTableWidget(self.frame_18)
-        if (self.tableWidget_COMSCI.columnCount() < 9):
-            self.tableWidget_COMSCI.setColumnCount(9)
-        __qtablewidgetitem18 = QTableWidgetItem()
-        self.tableWidget_COMSCI.setHorizontalHeaderItem(0, __qtablewidgetitem18)
-        __qtablewidgetitem19 = QTableWidgetItem()
-        self.tableWidget_COMSCI.setHorizontalHeaderItem(1, __qtablewidgetitem19)
-        __qtablewidgetitem20 = QTableWidgetItem()
-        self.tableWidget_COMSCI.setHorizontalHeaderItem(2, __qtablewidgetitem20)
-        __qtablewidgetitem21 = QTableWidgetItem()
-        self.tableWidget_COMSCI.setHorizontalHeaderItem(3, __qtablewidgetitem21)
-        __qtablewidgetitem22 = QTableWidgetItem()
-        self.tableWidget_COMSCI.setHorizontalHeaderItem(4, __qtablewidgetitem22)
-        __qtablewidgetitem23 = QTableWidgetItem()
-        self.tableWidget_COMSCI.setHorizontalHeaderItem(5, __qtablewidgetitem23)
-        __qtablewidgetitem24 = QTableWidgetItem()
-        self.tableWidget_COMSCI.setHorizontalHeaderItem(6, __qtablewidgetitem24)
-        __qtablewidgetitem25 = QTableWidgetItem()
-        self.tableWidget_COMSCI.setHorizontalHeaderItem(7, __qtablewidgetitem25)
-        __qtablewidgetitem26 = QTableWidgetItem()
-        self.tableWidget_COMSCI.setHorizontalHeaderItem(8, __qtablewidgetitem26)
+        if (self.tableWidget_COMSCI.columnCount() < 14):
+            self.tableWidget_COMSCI.setColumnCount(14)
+        __qtablewidgetitem28 = QTableWidgetItem()
+        self.tableWidget_COMSCI.setHorizontalHeaderItem(0, __qtablewidgetitem28)
+        __qtablewidgetitem29 = QTableWidgetItem()
+        self.tableWidget_COMSCI.setHorizontalHeaderItem(1, __qtablewidgetitem29)
+        __qtablewidgetitem30 = QTableWidgetItem()
+        self.tableWidget_COMSCI.setHorizontalHeaderItem(2, __qtablewidgetitem30)
+        __qtablewidgetitem31 = QTableWidgetItem()
+        self.tableWidget_COMSCI.setHorizontalHeaderItem(3, __qtablewidgetitem31)
+        __qtablewidgetitem32 = QTableWidgetItem()
+        self.tableWidget_COMSCI.setHorizontalHeaderItem(4, __qtablewidgetitem32)
+        __qtablewidgetitem33 = QTableWidgetItem()
+        self.tableWidget_COMSCI.setHorizontalHeaderItem(5, __qtablewidgetitem33)
+        __qtablewidgetitem34 = QTableWidgetItem()
+        self.tableWidget_COMSCI.setHorizontalHeaderItem(6, __qtablewidgetitem34)
+        __qtablewidgetitem35 = QTableWidgetItem()
+        self.tableWidget_COMSCI.setHorizontalHeaderItem(7, __qtablewidgetitem35)
+        __qtablewidgetitem36 = QTableWidgetItem()
+        self.tableWidget_COMSCI.setHorizontalHeaderItem(8, __qtablewidgetitem36)
+        __qtablewidgetitem37 = QTableWidgetItem()
+        self.tableWidget_COMSCI.setHorizontalHeaderItem(9, __qtablewidgetitem37)
+        __qtablewidgetitem38 = QTableWidgetItem()
+        self.tableWidget_COMSCI.setHorizontalHeaderItem(10, __qtablewidgetitem38)
+        __qtablewidgetitem39 = QTableWidgetItem()
+        self.tableWidget_COMSCI.setHorizontalHeaderItem(11, __qtablewidgetitem39)
+        __qtablewidgetitem40 = QTableWidgetItem()
+        self.tableWidget_COMSCI.setHorizontalHeaderItem(12, __qtablewidgetitem40)
+        __qtablewidgetitem41 = QTableWidgetItem()
+        self.tableWidget_COMSCI.setHorizontalHeaderItem(13, __qtablewidgetitem41)
         self.tableWidget_COMSCI.setObjectName(u"tableWidget_COMSCI")
         self.tableWidget_COMSCI.setMinimumSize(QSize(527, 0))
 
@@ -1166,7 +1204,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 1313, 26))
+        self.menubar.setGeometry(QRect(0, 0, 1100, 26))
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -1175,9 +1213,9 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
 
         self.stackedWidgetfront.setCurrentIndex(0)
-        self.cmbbox_title.setCurrentIndex(0)
         self.cmbbox_nationality.setCurrentIndex(0)
-        self.main_body_stackedWidget.setCurrentIndex(2)
+        self.cmbbox_title.setCurrentIndex(0)
+        self.main_body_stackedWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1190,36 +1228,36 @@ class Ui_MainWindow(object):
 #if QT_CONFIG(accessibility)
         self.frame_21.setAccessibleDescription("")
 #endif // QT_CONFIG(accessibility)
-        self.label_12.setText(QCoreApplication.translate("MainWindow", u"First name", None))
-        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Terms And Condition", None))
-        self.checkBox_terms.setText(QCoreApplication.translate("MainWindow", u"I Accept Terms and Conditions", None))
-        self.cmbbox_title.setItemText(0, QCoreApplication.translate("MainWindow", u"Male", None))
-        self.cmbbox_title.setItemText(1, QCoreApplication.translate("MainWindow", u"Female", None))
-
-        self.cmbbox_title.setCurrentText(QCoreApplication.translate("MainWindow", u"Male", None))
-        self.label_24.setText(QCoreApplication.translate("MainWindow", u"Grade / Year Level", None))
-        self.cmbbox_course.setItemText(0, QCoreApplication.translate("MainWindow", u"Bachelor of Science in Information Technology", None))
-        self.cmbbox_course.setItemText(1, QCoreApplication.translate("MainWindow", u"Bachelor of Science in Computer Science", None))
-
-        self.label_13.setText(QCoreApplication.translate("MainWindow", u"Last name", None))
-#if QT_CONFIG(accessibility)
-        self.birth_dateEdit.setAccessibleDescription("")
-#endif // QT_CONFIG(accessibility)
-        self.label_7.setText(QCoreApplication.translate("MainWindow", u"Address", None))
-        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Date of Birth", None))
-        self.label_19.setText(QCoreApplication.translate("MainWindow", u"#Completed Semester", None))
-        self.label_17.setText(QCoreApplication.translate("MainWindow", u"Registration status", None))
-        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Course", None))
-        self.checkBox_registered.setText(QCoreApplication.translate("MainWindow", u"Currently Registered", None))
-        self.label_14.setText(QCoreApplication.translate("MainWindow", u"Gender", None))
-        self.label_23.setText(QCoreApplication.translate("MainWindow", u"Middle name", None))
-        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Nationality", None))
+        self.lbl_firstname.setText(QCoreApplication.translate("MainWindow", u"First name", None))
+        self.lbl_lastname.setText(QCoreApplication.translate("MainWindow", u"Last name", None))
+        self.lbl_address.setText(QCoreApplication.translate("MainWindow", u"Address", None))
+        self.lbl_nationality.setText(QCoreApplication.translate("MainWindow", u"Nationality", None))
         self.cmbbox_nationality.setItemText(0, QCoreApplication.translate("MainWindow", u"Filipino", None))
         self.cmbbox_nationality.setItemText(1, QCoreApplication.translate("MainWindow", u"American", None))
 
         self.cmbbox_nationality.setCurrentText(QCoreApplication.translate("MainWindow", u"Filipino", None))
-        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Telephone Number", None))
-        self.label_15.setText(QCoreApplication.translate("MainWindow", u"Age", None))
+        self.lbl_birthddate.setText(QCoreApplication.translate("MainWindow", u"Date of Birth", None))
+#if QT_CONFIG(accessibility)
+        self.birth_dateEdit.setAccessibleDescription("")
+#endif // QT_CONFIG(accessibility)
+        self.lbl_course.setText(QCoreApplication.translate("MainWindow", u"Course", None))
+        self.cmbbox_course.setItemText(0, QCoreApplication.translate("MainWindow", u"Bachelor of Science in Information Technology", None))
+        self.cmbbox_course.setItemText(1, QCoreApplication.translate("MainWindow", u"Bachelor of Science in Computer Science", None))
+
+        self.lbl_regtrationStatus.setText(QCoreApplication.translate("MainWindow", u"Registration status", None))
+        self.checkBox_registered.setText(QCoreApplication.translate("MainWindow", u"Currently Registered", None))
+        self.lbl_middlename.setText(QCoreApplication.translate("MainWindow", u"Middle name", None))
+        self.lbl_gradelevel.setText(QCoreApplication.translate("MainWindow", u"Grade / Year Level", None))
+        self.lbl_telephone.setText(QCoreApplication.translate("MainWindow", u"Telephone Number", None))
+        self.lbl_age.setText(QCoreApplication.translate("MainWindow", u"Age", None))
+        self.lbl_gender.setText(QCoreApplication.translate("MainWindow", u"Gender", None))
+        self.cmbbox_title.setItemText(0, QCoreApplication.translate("MainWindow", u"Male", None))
+        self.cmbbox_title.setItemText(1, QCoreApplication.translate("MainWindow", u"Female", None))
+
+        self.cmbbox_title.setCurrentText(QCoreApplication.translate("MainWindow", u"Male", None))
+        self.lbl_completedSemester.setText(QCoreApplication.translate("MainWindow", u"#Completed Semester", None))
+        self.lbl_termsAndCondition.setText(QCoreApplication.translate("MainWindow", u"Terms And Condition", None))
+        self.checkBox_terms.setText(QCoreApplication.translate("MainWindow", u"I Accept Terms and Conditions", None))
         self.button_submit_data.setText(QCoreApplication.translate("MainWindow", u"SUBMIT", None))
         self.label_version_number.setText(QCoreApplication.translate("MainWindow", u"Version 1.0.0.00", None))
         self.register_button.setText(QCoreApplication.translate("MainWindow", u"REGISTER", None))
@@ -1245,67 +1283,97 @@ class Ui_MainWindow(object):
         self.label_8.setText(QCoreApplication.translate("MainWindow", u"FILTER DATA:", None))
         self.searchLineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Search Data", None))
         ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
-        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"IDnumber", None));
+        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"ID number", None));
         ___qtablewidgetitem1 = self.tableWidget.horizontalHeaderItem(1)
-        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"Firstname", None));
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"First name", None));
         ___qtablewidgetitem2 = self.tableWidget.horizontalHeaderItem(2)
-        ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"Lastname", None));
+        ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"Last name", None));
         ___qtablewidgetitem3 = self.tableWidget.horizontalHeaderItem(3)
-        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"Gender", None));
+        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"Middle name", None));
         ___qtablewidgetitem4 = self.tableWidget.horizontalHeaderItem(4)
-        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"Age", None));
+        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"Grade Level", None));
         ___qtablewidgetitem5 = self.tableWidget.horizontalHeaderItem(5)
-        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"Nationality", None));
+        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"Address", None));
         ___qtablewidgetitem6 = self.tableWidget.horizontalHeaderItem(6)
-        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"Registration", None));
+        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"Telephone", None));
         ___qtablewidgetitem7 = self.tableWidget.horizontalHeaderItem(7)
-        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"Semester", None));
+        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"Birth Date", None));
         ___qtablewidgetitem8 = self.tableWidget.horizontalHeaderItem(8)
-        ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"Course", None));
+        ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"Gender", None));
+        ___qtablewidgetitem9 = self.tableWidget.horizontalHeaderItem(9)
+        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"Age", None));
+        ___qtablewidgetitem10 = self.tableWidget.horizontalHeaderItem(10)
+        ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"Nationality", None));
+        ___qtablewidgetitem11 = self.tableWidget.horizontalHeaderItem(11)
+        ___qtablewidgetitem11.setText(QCoreApplication.translate("MainWindow", u"Registration", None));
+        ___qtablewidgetitem12 = self.tableWidget.horizontalHeaderItem(12)
+        ___qtablewidgetitem12.setText(QCoreApplication.translate("MainWindow", u"Semester", None));
+        ___qtablewidgetitem13 = self.tableWidget.horizontalHeaderItem(13)
+        ___qtablewidgetitem13.setText(QCoreApplication.translate("MainWindow", u"Course", None));
         self.pushButton.setText("")
         self.label_9.setText(QCoreApplication.translate("MainWindow", u"BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY ( BSIT )", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"FILTER DATA:", None))
         self.searchLineEdit_BSIT.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Search Data", None))
-        ___qtablewidgetitem9 = self.tableWidget_BSIT.horizontalHeaderItem(0)
-        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"IDnumber", None));
-        ___qtablewidgetitem10 = self.tableWidget_BSIT.horizontalHeaderItem(1)
-        ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"Firstname", None));
-        ___qtablewidgetitem11 = self.tableWidget_BSIT.horizontalHeaderItem(2)
-        ___qtablewidgetitem11.setText(QCoreApplication.translate("MainWindow", u"Lastname", None));
-        ___qtablewidgetitem12 = self.tableWidget_BSIT.horizontalHeaderItem(3)
-        ___qtablewidgetitem12.setText(QCoreApplication.translate("MainWindow", u"Gender", None));
-        ___qtablewidgetitem13 = self.tableWidget_BSIT.horizontalHeaderItem(4)
-        ___qtablewidgetitem13.setText(QCoreApplication.translate("MainWindow", u"Age", None));
-        ___qtablewidgetitem14 = self.tableWidget_BSIT.horizontalHeaderItem(5)
-        ___qtablewidgetitem14.setText(QCoreApplication.translate("MainWindow", u"Nationality", None));
-        ___qtablewidgetitem15 = self.tableWidget_BSIT.horizontalHeaderItem(6)
-        ___qtablewidgetitem15.setText(QCoreApplication.translate("MainWindow", u"Registration", None));
-        ___qtablewidgetitem16 = self.tableWidget_BSIT.horizontalHeaderItem(7)
-        ___qtablewidgetitem16.setText(QCoreApplication.translate("MainWindow", u"Semester", None));
-        ___qtablewidgetitem17 = self.tableWidget_BSIT.horizontalHeaderItem(8)
-        ___qtablewidgetitem17.setText(QCoreApplication.translate("MainWindow", u"Course", None));
+        ___qtablewidgetitem14 = self.tableWidget_BSIT.horizontalHeaderItem(0)
+        ___qtablewidgetitem14.setText(QCoreApplication.translate("MainWindow", u"ID number", None));
+        ___qtablewidgetitem15 = self.tableWidget_BSIT.horizontalHeaderItem(1)
+        ___qtablewidgetitem15.setText(QCoreApplication.translate("MainWindow", u"First name", None));
+        ___qtablewidgetitem16 = self.tableWidget_BSIT.horizontalHeaderItem(2)
+        ___qtablewidgetitem16.setText(QCoreApplication.translate("MainWindow", u"Last name", None));
+        ___qtablewidgetitem17 = self.tableWidget_BSIT.horizontalHeaderItem(3)
+        ___qtablewidgetitem17.setText(QCoreApplication.translate("MainWindow", u"Middle name", None));
+        ___qtablewidgetitem18 = self.tableWidget_BSIT.horizontalHeaderItem(4)
+        ___qtablewidgetitem18.setText(QCoreApplication.translate("MainWindow", u"Grade Level", None));
+        ___qtablewidgetitem19 = self.tableWidget_BSIT.horizontalHeaderItem(5)
+        ___qtablewidgetitem19.setText(QCoreApplication.translate("MainWindow", u"Address", None));
+        ___qtablewidgetitem20 = self.tableWidget_BSIT.horizontalHeaderItem(6)
+        ___qtablewidgetitem20.setText(QCoreApplication.translate("MainWindow", u"Telephone", None));
+        ___qtablewidgetitem21 = self.tableWidget_BSIT.horizontalHeaderItem(7)
+        ___qtablewidgetitem21.setText(QCoreApplication.translate("MainWindow", u"Birth Date", None));
+        ___qtablewidgetitem22 = self.tableWidget_BSIT.horizontalHeaderItem(8)
+        ___qtablewidgetitem22.setText(QCoreApplication.translate("MainWindow", u"Gender", None));
+        ___qtablewidgetitem23 = self.tableWidget_BSIT.horizontalHeaderItem(9)
+        ___qtablewidgetitem23.setText(QCoreApplication.translate("MainWindow", u"Age", None));
+        ___qtablewidgetitem24 = self.tableWidget_BSIT.horizontalHeaderItem(10)
+        ___qtablewidgetitem24.setText(QCoreApplication.translate("MainWindow", u"Nationality", None));
+        ___qtablewidgetitem25 = self.tableWidget_BSIT.horizontalHeaderItem(11)
+        ___qtablewidgetitem25.setText(QCoreApplication.translate("MainWindow", u"Registration", None));
+        ___qtablewidgetitem26 = self.tableWidget_BSIT.horizontalHeaderItem(12)
+        ___qtablewidgetitem26.setText(QCoreApplication.translate("MainWindow", u"Semester", None));
+        ___qtablewidgetitem27 = self.tableWidget_BSIT.horizontalHeaderItem(13)
+        ___qtablewidgetitem27.setText(QCoreApplication.translate("MainWindow", u"Course", None));
         self.pushButton_2.setText("")
         self.label_10.setText(QCoreApplication.translate("MainWindow", u"BACHELOR OF SCIENCE IN COMPUTER SCIENCE ( COMSCI )", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"FILTER DATA:", None))
         self.searchLineEdit_COMSCI.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Search Data", None))
-        ___qtablewidgetitem18 = self.tableWidget_COMSCI.horizontalHeaderItem(0)
-        ___qtablewidgetitem18.setText(QCoreApplication.translate("MainWindow", u"IDnumber", None));
-        ___qtablewidgetitem19 = self.tableWidget_COMSCI.horizontalHeaderItem(1)
-        ___qtablewidgetitem19.setText(QCoreApplication.translate("MainWindow", u"Firstname", None));
-        ___qtablewidgetitem20 = self.tableWidget_COMSCI.horizontalHeaderItem(2)
-        ___qtablewidgetitem20.setText(QCoreApplication.translate("MainWindow", u"Lastname", None));
-        ___qtablewidgetitem21 = self.tableWidget_COMSCI.horizontalHeaderItem(3)
-        ___qtablewidgetitem21.setText(QCoreApplication.translate("MainWindow", u"Gender", None));
-        ___qtablewidgetitem22 = self.tableWidget_COMSCI.horizontalHeaderItem(4)
-        ___qtablewidgetitem22.setText(QCoreApplication.translate("MainWindow", u"Age", None));
-        ___qtablewidgetitem23 = self.tableWidget_COMSCI.horizontalHeaderItem(5)
-        ___qtablewidgetitem23.setText(QCoreApplication.translate("MainWindow", u"Nationality", None));
-        ___qtablewidgetitem24 = self.tableWidget_COMSCI.horizontalHeaderItem(6)
-        ___qtablewidgetitem24.setText(QCoreApplication.translate("MainWindow", u"Registration", None));
-        ___qtablewidgetitem25 = self.tableWidget_COMSCI.horizontalHeaderItem(7)
-        ___qtablewidgetitem25.setText(QCoreApplication.translate("MainWindow", u"Semester", None));
-        ___qtablewidgetitem26 = self.tableWidget_COMSCI.horizontalHeaderItem(8)
-        ___qtablewidgetitem26.setText(QCoreApplication.translate("MainWindow", u"Course", None));
+        ___qtablewidgetitem28 = self.tableWidget_COMSCI.horizontalHeaderItem(0)
+        ___qtablewidgetitem28.setText(QCoreApplication.translate("MainWindow", u"ID number", None));
+        ___qtablewidgetitem29 = self.tableWidget_COMSCI.horizontalHeaderItem(1)
+        ___qtablewidgetitem29.setText(QCoreApplication.translate("MainWindow", u"First name", None));
+        ___qtablewidgetitem30 = self.tableWidget_COMSCI.horizontalHeaderItem(2)
+        ___qtablewidgetitem30.setText(QCoreApplication.translate("MainWindow", u"Last name", None));
+        ___qtablewidgetitem31 = self.tableWidget_COMSCI.horizontalHeaderItem(3)
+        ___qtablewidgetitem31.setText(QCoreApplication.translate("MainWindow", u"Middle name", None));
+        ___qtablewidgetitem32 = self.tableWidget_COMSCI.horizontalHeaderItem(4)
+        ___qtablewidgetitem32.setText(QCoreApplication.translate("MainWindow", u"Grade Level", None));
+        ___qtablewidgetitem33 = self.tableWidget_COMSCI.horizontalHeaderItem(5)
+        ___qtablewidgetitem33.setText(QCoreApplication.translate("MainWindow", u"Address", None));
+        ___qtablewidgetitem34 = self.tableWidget_COMSCI.horizontalHeaderItem(6)
+        ___qtablewidgetitem34.setText(QCoreApplication.translate("MainWindow", u"Telephone", None));
+        ___qtablewidgetitem35 = self.tableWidget_COMSCI.horizontalHeaderItem(7)
+        ___qtablewidgetitem35.setText(QCoreApplication.translate("MainWindow", u"Birth Date", None));
+        ___qtablewidgetitem36 = self.tableWidget_COMSCI.horizontalHeaderItem(8)
+        ___qtablewidgetitem36.setText(QCoreApplication.translate("MainWindow", u"Gender", None));
+        ___qtablewidgetitem37 = self.tableWidget_COMSCI.horizontalHeaderItem(9)
+        ___qtablewidgetitem37.setText(QCoreApplication.translate("MainWindow", u"Age", None));
+        ___qtablewidgetitem38 = self.tableWidget_COMSCI.horizontalHeaderItem(10)
+        ___qtablewidgetitem38.setText(QCoreApplication.translate("MainWindow", u"Nationality", None));
+        ___qtablewidgetitem39 = self.tableWidget_COMSCI.horizontalHeaderItem(11)
+        ___qtablewidgetitem39.setText(QCoreApplication.translate("MainWindow", u"Registration", None));
+        ___qtablewidgetitem40 = self.tableWidget_COMSCI.horizontalHeaderItem(12)
+        ___qtablewidgetitem40.setText(QCoreApplication.translate("MainWindow", u"Semester", None));
+        ___qtablewidgetitem41 = self.tableWidget_COMSCI.horizontalHeaderItem(13)
+        ___qtablewidgetitem41.setText(QCoreApplication.translate("MainWindow", u"Course", None));
         self.lbl_apply.setText(QCoreApplication.translate("MainWindow", u"APPLY TABLE CHANGES :", None))
         self.btn_save_all_data.setText(QCoreApplication.translate("MainWindow", u"SAVE", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"DELETE SELECTED :", None))
