@@ -1,0 +1,161 @@
+# Resource object code (Python 3)
+# Created by: object code
+# Created by: The Resource Compiler for Qt version 6.4.1
+# WARNING! All changes made in this file will be lost!
+
+from PySide6 import QtCore
+
+qt_resource_data = b"\
+\x00\x00\x01q\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2210\
+0\x22 height=\x22100\x22 \
+viewBox=\x220 0 24 \
+24\x22 fill=\x22none\x22 \
+stroke=\x22BLACK\x22 s\
+troke-width=\x222.5\
+\x22 stroke-linecap\
+=\x22round\x22 stroke-\
+linejoin=\x22round\x22\
+ class=\x22feather \
+feather-database\
+\x22><ellipse cx=\x221\
+2\x22 cy=\x225\x22 rx=\x229\x22\
+ ry=\x223\x22></ellips\
+e><path d=\x22M21 1\
+2c0 1.66-4 3-9 3\
+s-9-1.34-9-3\x22></\
+path><path d=\x22M3\
+ 5v14c0 1.66 4 3\
+ 9 3s9-1.34 9-3V\
+5\x22></path></svg>\
+\
+\x00\x00\x01\x8d\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2210\
+0\x22 height=\x22100\x22 \
+viewBox=\x220 0 24 \
+24\x22 fill=\x22none\x22 \
+stroke=\x22BLACK\x22 s\
+troke-width=\x222.5\
+\x22 stroke-linecap\
+=\x22round\x22 stroke-\
+linejoin=\x22round\x22\
+ class=\x22feather \
+feather-users\x22><\
+path d=\x22M17 21v-\
+2a4 4 0 0 0-4-4H\
+5a4 4 0 0 0-4 4v\
+2\x22></path><circl\
+e cx=\x229\x22 cy=\x227\x22 \
+r=\x224\x22></circle><\
+path d=\x22M23 21v-\
+2a4 4 0 0 0-3-3.\
+87\x22></path><path\
+ d=\x22M16 3.13a4 4\
+ 0 0 1 0 7.75\x22><\
+/path></svg>\
+\x00\x00\x01;\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2210\
+0\x22 height=\x22100\x22 \
+viewBox=\x220 0 24 \
+24\x22 fill=\x22none\x22 \
+stroke=\x22BLACK\x22 s\
+troke-width=\x222.5\
+\x22 stroke-linecap\
+=\x22round\x22 stroke-\
+linejoin=\x22round\x22\
+ class=\x22feather \
+feather-chevrons\
+-right\x22><polylin\
+e points=\x2213 17 \
+18 12 13 7\x22></po\
+lyline><polyline\
+ points=\x226 17 11\
+ 12 6 7\x22></polyl\
+ine></svg>\
+\x00\x00\x01\x8c\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2210\
+0\x22 height=\x22100\x22 \
+viewBox=\x220 0 24 \
+24\x22 fill=\x22none\x22 \
+stroke=\x22BLACK\x22 s\
+troke-width=\x222.5\
+\x22 stroke-linecap\
+=\x22round\x22 stroke-\
+linejoin=\x22round\x22\
+ class=\x22feather \
+feather-align-ju\
+stify\x22><line x1=\
+\x2221\x22 y1=\x2210\x22 x2=\
+\x223\x22 y2=\x2210\x22></li\
+ne><line x1=\x2221\x22\
+ y1=\x226\x22 x2=\x223\x22 y\
+2=\x226\x22></line><li\
+ne x1=\x2221\x22 y1=\x221\
+4\x22 x2=\x223\x22 y2=\x2214\
+\x22></line><line x\
+1=\x2221\x22 y1=\x2218\x22 x\
+2=\x223\x22 y2=\x2218\x22></\
+line></svg>\
+"
+
+qt_resource_name = b"\
+\x00\x05\
+\x00o\xa6S\
+\x00i\
+\x00c\x00o\x00n\x00s\
+\x00\x0c\
+\x05\xc9\x15\xc7\
+\x00d\
+\x00a\x00t\x00a\x00b\x00a\x00s\x00e\x00.\x00s\x00v\x00g\
+\x00\x09\
+\x0c\x96\xa3\xe7\
+\x00u\
+\x00s\x00e\x00r\x00s\x00.\x00s\x00v\x00g\
+\x00\x12\
+\x0b \xfdG\
+\x00c\
+\x00h\x00e\x00v\x00r\x00o\x00n\x00s\x00-\x00r\x00i\x00g\x00h\x00t\x00.\x00s\x00v\
+\x00g\
+\x00\x11\
+\x0b\xfbp\x07\
+\x00a\
+\x00l\x00i\x00g\x00n\x00-\x00j\x00u\x00s\x00t\x00i\x00f\x00y\x00.\x00s\x00v\x00g\
+\
+"
+
+qt_resource_struct = b"\
+\x00\x00\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\x01\
+\x00\x00\x00\x00\x00\x00\x00\x00\
+\x00\x00\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\x02\
+\x00\x00\x00\x00\x00\x00\x00\x00\
+\x00\x00\x00\x00\x00\x02\x00\x00\x00\x04\x00\x00\x00\x03\
+\x00\x00\x00\x00\x00\x00\x00\x00\
+\x00\x00\x00\x10\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\
+\x00\x00\x01\x86\xfep\xba\xb4\
+\x00\x00\x00F\x00\x00\x00\x00\x00\x01\x00\x00\x03\x06\
+\x00\x00\x01\x86\xfep\xb7\xc5\
+\x00\x00\x00p\x00\x00\x00\x00\x00\x01\x00\x00\x04E\
+\x00\x00\x01\x86\xfep\xb3x\
+\x00\x00\x00.\x00\x00\x00\x00\x00\x01\x00\x00\x01u\
+\x00\x00\x01\x86\xfep\xcb\xed\
+"
+
+def qInitResources():
+    QtCore.qRegisterResourceData(0x03, qt_resource_struct, qt_resource_name, qt_resource_data)
+
+def qCleanupResources():
+    QtCore.qUnregisterResourceData(0x03, qt_resource_struct, qt_resource_name, qt_resource_data)
+
+qInitResources()

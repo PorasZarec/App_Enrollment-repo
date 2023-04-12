@@ -1,0 +1,1534 @@
+('C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+ 'Copy\\App_Enrollment-repo-main\\dist\\MyApp.exe',
+ False,
+ False,
+ False,
+ 'C:\\Program '
+ 'Files\\Python311\\Lib\\site-packages\\PyInstaller\\bootloader\\images\\icon-windowed.ico',
+ None,
+ False,
+ False,
+ '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0"><assemblyIdentity type="win32" name="MyApp" processorArchitecture="amd64" version="1.0.0.0"/><trustInfo xmlns="urn:schemas-microsoft-com:asm.v3"><security><requestedPrivileges><requestedExecutionLevel level="asInvoker" uiAccess="false"/></requestedPrivileges></security></trustInfo><dependency><dependentAssembly><assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" language="*" processorArchitecture="*" version="6.0.0.0" publicKeyToken="6595b64144ccf1df"/></dependentAssembly></dependency><compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1"><application><supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"/><supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/><supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"/><supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/><supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}"/></application></compatibility><application xmlns="urn:schemas-microsoft-com:asm.v3"><windowsSettings><longPathAware xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">true</longPathAware></windowsSettings></application></assembly>',
+ True,
+ True,
+ False,
+ None,
+ None,
+ None,
+ 'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+ 'Copy\\App_Enrollment-repo-main\\build\\MyApp\\MyApp.pkg',
+ [('PYZ-00.pyz',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\build\\MyApp\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\build\\MyApp\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\build\\MyApp\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\build\\MyApp\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\build\\MyApp\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\build\\MyApp\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_pyside6',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pyside6.py',
+   'PYSOURCE'),
+  ('main_window_src',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\main_window_src.py',
+   'PYSOURCE'),
+  ('python311.dll', 'C:\\Program Files\\Python311\\python311.dll', 'BINARY'),
+  ('VCRUNTIME140.dll',
+   'C:\\Program Files\\Python311\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('PySide6\\plugins\\platforminputcontexts\\qtvirtualkeyboardplugin.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\plugins\\platforminputcontexts\\qtvirtualkeyboardplugin.dll',
+   'BINARY'),
+  ('PySide6\\plugins\\platforms\\qoffscreen.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\plugins\\platforms\\qoffscreen.dll',
+   'BINARY'),
+  ('PySide6\\plugins\\tls\\qcertonlybackend.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\plugins\\tls\\qcertonlybackend.dll',
+   'BINARY'),
+  ('PySide6\\plugins\\imageformats\\qtga.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\plugins\\imageformats\\qtga.dll',
+   'BINARY'),
+  ('PySide6\\plugins\\imageformats\\qwbmp.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\plugins\\imageformats\\qwbmp.dll',
+   'BINARY'),
+  ('PySide6\\opengl32sw.dll',
+   'C:\\Program Files\\Python311\\Lib\\site-packages\\PySide6\\opengl32sw.dll',
+   'BINARY'),
+  ('PySide6\\plugins\\iconengines\\qsvgicon.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\plugins\\iconengines\\qsvgicon.dll',
+   'BINARY'),
+  ('PySide6\\plugins\\platforms\\qdirect2d.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\plugins\\platforms\\qdirect2d.dll',
+   'BINARY'),
+  ('PySide6\\plugins\\imageformats\\qicns.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\plugins\\imageformats\\qicns.dll',
+   'BINARY'),
+  ('PySide6\\plugins\\platforms\\qminimal.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\plugins\\platforms\\qminimal.dll',
+   'BINARY'),
+  ('PySide6\\plugins\\tls\\qopensslbackend.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\plugins\\tls\\qopensslbackend.dll',
+   'BINARY'),
+  ('PySide6\\plugins\\styles\\qwindowsvistastyle.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\plugins\\styles\\qwindowsvistastyle.dll',
+   'BINARY'),
+  ('PySide6\\plugins\\networkinformation\\qnetworklistmanager.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\plugins\\networkinformation\\qnetworklistmanager.dll',
+   'BINARY'),
+  ('PySide6\\plugins\\imageformats\\qpdf.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\plugins\\imageformats\\qpdf.dll',
+   'BINARY'),
+  ('PySide6\\plugins\\imageformats\\qgif.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\plugins\\imageformats\\qgif.dll',
+   'BINARY'),
+  ('PySide6\\plugins\\imageformats\\qtiff.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\plugins\\imageformats\\qtiff.dll',
+   'BINARY'),
+  ('PySide6\\plugins\\imageformats\\qsvg.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\plugins\\imageformats\\qsvg.dll',
+   'BINARY'),
+  ('PySide6\\plugins\\generic\\qtuiotouchplugin.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\plugins\\generic\\qtuiotouchplugin.dll',
+   'BINARY'),
+  ('PySide6\\plugins\\tls\\qschannelbackend.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\plugins\\tls\\qschannelbackend.dll',
+   'BINARY'),
+  ('PySide6\\plugins\\imageformats\\qwebp.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\plugins\\imageformats\\qwebp.dll',
+   'BINARY'),
+  ('PySide6\\plugins\\imageformats\\qjpeg.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\plugins\\imageformats\\qjpeg.dll',
+   'BINARY'),
+  ('PySide6\\plugins\\platforms\\qwindows.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\plugins\\platforms\\qwindows.dll',
+   'BINARY'),
+  ('PySide6\\plugins\\imageformats\\qico.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\plugins\\imageformats\\qico.dll',
+   'BINARY'),
+  ('_decimal.pyd',
+   'C:\\Program Files\\Python311\\DLLs\\_decimal.pyd',
+   'EXTENSION'),
+  ('_hashlib.pyd',
+   'C:\\Program Files\\Python311\\DLLs\\_hashlib.pyd',
+   'EXTENSION'),
+  ('_lzma.pyd', 'C:\\Program Files\\Python311\\DLLs\\_lzma.pyd', 'EXTENSION'),
+  ('_bz2.pyd', 'C:\\Program Files\\Python311\\DLLs\\_bz2.pyd', 'EXTENSION'),
+  ('select.pyd', 'C:\\Program Files\\Python311\\DLLs\\select.pyd', 'EXTENSION'),
+  ('_socket.pyd',
+   'C:\\Program Files\\Python311\\DLLs\\_socket.pyd',
+   'EXTENSION'),
+  ('unicodedata.pyd',
+   'C:\\Program Files\\Python311\\DLLs\\unicodedata.pyd',
+   'EXTENSION'),
+  ('_ssl.pyd', 'C:\\Program Files\\Python311\\DLLs\\_ssl.pyd', 'EXTENSION'),
+  ('_sqlite3.pyd',
+   'C:\\Program Files\\Python311\\DLLs\\_sqlite3.pyd',
+   'EXTENSION'),
+  ('PySide6\\QtGui.pyd',
+   'C:\\Program Files\\Python311\\Lib\\site-packages\\PySide6\\QtGui.pyd',
+   'EXTENSION'),
+  ('PySide6\\QtCore.pyd',
+   'C:\\Program Files\\Python311\\Lib\\site-packages\\PySide6\\QtCore.pyd',
+   'EXTENSION'),
+  ('PySide6\\QtNetwork.pyd',
+   'C:\\Program Files\\Python311\\Lib\\site-packages\\PySide6\\QtNetwork.pyd',
+   'EXTENSION'),
+  ('shiboken6\\Shiboken.pyd',
+   'C:\\Program Files\\Python311\\Lib\\site-packages\\shiboken6\\Shiboken.pyd',
+   'EXTENSION'),
+  ('PySide6\\QtWidgets.pyd',
+   'C:\\Program Files\\Python311\\Lib\\site-packages\\PySide6\\QtWidgets.pyd',
+   'EXTENSION'),
+  ('PySide6\\Qt6Gui.dll',
+   'C:\\Program Files\\Python311\\Lib\\site-packages\\PySide6\\Qt6Gui.dll',
+   'BINARY'),
+  ('PySide6\\Qt6VirtualKeyboard.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\Qt6VirtualKeyboard.dll',
+   'BINARY'),
+  ('PySide6\\Qt6Core.dll',
+   'C:\\Program Files\\Python311\\Lib\\site-packages\\PySide6\\Qt6Core.dll',
+   'BINARY'),
+  ('PySide6\\Qt6Network.dll',
+   'C:\\Program Files\\Python311\\Lib\\site-packages\\PySide6\\Qt6Network.dll',
+   'BINARY'),
+  ('shiboken6\\MSVCP140.dll',
+   'C:\\Program Files\\Python311\\Lib\\site-packages\\shiboken6\\MSVCP140.dll',
+   'BINARY'),
+  ('shiboken6\\VCRUNTIME140_1.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\shiboken6\\VCRUNTIME140_1.dll',
+   'BINARY'),
+  ('PySide6\\Qt6Svg.dll',
+   'C:\\Program Files\\Python311\\Lib\\site-packages\\PySide6\\Qt6Svg.dll',
+   'BINARY'),
+  ('PySide6\\Qt6Widgets.dll',
+   'C:\\Program Files\\Python311\\Lib\\site-packages\\PySide6\\Qt6Widgets.dll',
+   'BINARY'),
+  ('PySide6\\Qt6Pdf.dll',
+   'C:\\Program Files\\Python311\\Lib\\site-packages\\PySide6\\Qt6Pdf.dll',
+   'BINARY'),
+  ('libcrypto-1_1.dll',
+   'C:\\Program Files\\Python311\\DLLs\\libcrypto-1_1.dll',
+   'BINARY'),
+  ('libssl-1_1.dll',
+   'C:\\Program Files\\Python311\\DLLs\\libssl-1_1.dll',
+   'BINARY'),
+  ('sqlite3.dll', 'C:\\Program Files\\Python311\\DLLs\\sqlite3.dll', 'BINARY'),
+  ('shiboken6\\MSVCP140_2.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\shiboken6\\MSVCP140_2.dll',
+   'BINARY'),
+  ('python3.dll', 'C:\\Program Files\\Python311\\python3.dll', 'BINARY'),
+  ('PySide6\\pyside6.abi3.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\pyside6.abi3.dll',
+   'BINARY'),
+  ('shiboken6\\shiboken6.abi3.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\shiboken6\\shiboken6.abi3.dll',
+   'BINARY'),
+  ('shiboken6\\MSVCP140_1.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\shiboken6\\MSVCP140_1.dll',
+   'BINARY'),
+  ('PySide6\\Qt6Quick.dll',
+   'C:\\Program Files\\Python311\\Lib\\site-packages\\PySide6\\Qt6Quick.dll',
+   'BINARY'),
+  ('PySide6\\Qt6Qml.dll',
+   'C:\\Program Files\\Python311\\Lib\\site-packages\\PySide6\\Qt6Qml.dll',
+   'BINARY'),
+  ('PySide6\\Qt6OpenGL.dll',
+   'C:\\Program Files\\Python311\\Lib\\site-packages\\PySide6\\Qt6OpenGL.dll',
+   'BINARY'),
+  ('PySide6\\Qt6QmlModels.dll',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\Qt6QmlModels.dll',
+   'BINARY'),
+  ('base_library.zip',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\build\\MyApp\\base_library.zip',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_da.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_da.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_fr.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_fr.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_ko.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_ko.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_en.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_en.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_pl.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_pl.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_he.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_he.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_zh_TW.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_zh_TW.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_pt_BR.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_pt_BR.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_zh_CN.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_zh_CN.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_bg.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_bg.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_ru.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_ru.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_ca.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_ca.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_sk.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_sk.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_ar.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_ar.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_fi.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_fi.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_tr.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_tr.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_nn.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_nn.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_fa.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_fa.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_gd.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_gd.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_cs.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_cs.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_de.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_de.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_uk.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_uk.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_hu.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_hu.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_lv.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_lv.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_es.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_es.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_hr.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_hr.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_ja.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_ja.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_nl.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_nl.qm',
+   'DATA'),
+  ('PySide6\\translations\\qtbase_it.qm',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PySide6\\translations\\qtbase_it.qm',
+   'DATA'),
+  ('icons\\chevron-up.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\chevron-up.svg',
+   'DATA'),
+  ('icons\\circle.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\circle.svg',
+   'DATA'),
+  ('icons\\corner-right-up.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\corner-right-up.svg',
+   'DATA'),
+  ('icons\\grid.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\grid.svg',
+   'DATA'),
+  ('icons\\link-2.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\link-2.svg',
+   'DATA'),
+  ('icons\\smile.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\smile.svg',
+   'DATA'),
+  ('icons\\smartphone.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\smartphone.svg',
+   'DATA'),
+  ('icons\\eye.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\eye.svg',
+   'DATA'),
+  ('icons\\slack.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\slack.svg',
+   'DATA'),
+  ('icons\\check-square.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\check-square.svg',
+   'DATA'),
+  ('icons\\triangle.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\triangle.svg',
+   'DATA'),
+  ('icons\\align-left.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\align-left.svg',
+   'DATA'),
+  ('icons\\edit-3.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\edit-3.svg',
+   'DATA'),
+  ('icons\\hard-drive.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\hard-drive.svg',
+   'DATA'),
+  ('icons\\anchor.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\anchor.svg',
+   'DATA'),
+  ('icons\\cloud-off.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\cloud-off.svg',
+   'DATA'),
+  ('icons\\pie-chart.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\pie-chart.svg',
+   'DATA'),
+  ('icons\\book-open.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\book-open.svg',
+   'DATA'),
+  ('icons\\rewind.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\rewind.svg',
+   'DATA'),
+  ('icons\\git-branch.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\git-branch.svg',
+   'DATA'),
+  ('icons\\cpu.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\cpu.svg',
+   'DATA'),
+  ('icons\\trash-2.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\trash-2.svg',
+   'DATA'),
+  ('icons\\underline.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\underline.svg',
+   'DATA'),
+  ('icons\\plus.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\plus.svg',
+   'DATA'),
+  ('icons\\corner-left-up.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\corner-left-up.svg',
+   'DATA'),
+  ('icons\\box.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\box.svg',
+   'DATA'),
+  ('icons\\chevrons-left.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\chevrons-left.svg',
+   'DATA'),
+  ('icons\\battery-charging.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\battery-charging.svg',
+   'DATA'),
+  ('icons\\shopping-bag.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\shopping-bag.svg',
+   'DATA'),
+  ('icons\\inbox.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\inbox.svg',
+   'DATA'),
+  ('icons\\plus-square.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\plus-square.svg',
+   'DATA'),
+  ('icons\\linkedin.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\linkedin.svg',
+   'DATA'),
+  ('icons\\more-horizontal.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\more-horizontal.svg',
+   'DATA'),
+  ('icons\\navigation.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\navigation.svg',
+   'DATA'),
+  ('icons\\zap.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\zap.svg',
+   'DATA'),
+  ('icons\\corner-right-down.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\corner-right-down.svg',
+   'DATA'),
+  ('icons\\bar-chart.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\bar-chart.svg',
+   'DATA'),
+  ('icons\\chevron-left.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\chevron-left.svg',
+   'DATA'),
+  ('icons\\loader.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\loader.svg',
+   'DATA'),
+  ('icons\\rotate-ccw.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\rotate-ccw.svg',
+   'DATA'),
+  ('icons\\feather.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\feather.svg',
+   'DATA'),
+  ('icons\\bar-chart-2.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\bar-chart-2.svg',
+   'DATA'),
+  ('icons\\headphones.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\headphones.svg',
+   'DATA'),
+  ('icons\\phone-missed.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\phone-missed.svg',
+   'DATA'),
+  ('icons\\menu.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\menu.svg',
+   'DATA'),
+  ('icons\\divide.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\divide.svg',
+   'DATA'),
+  ('icons\\cloud.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\cloud.svg',
+   'DATA'),
+  ('icons\\pause-circle.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\pause-circle.svg',
+   'DATA'),
+  ('icons\\search.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\search.svg',
+   'DATA'),
+  ('icons\\x-square.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\x-square.svg',
+   'DATA'),
+  ('icons\\globe.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\globe.svg',
+   'DATA'),
+  ('icons\\cast.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\cast.svg',
+   'DATA'),
+  ('icons\\image.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\image.svg',
+   'DATA'),
+  ('icons\\user-check.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\user-check.svg',
+   'DATA'),
+  ('icons\\arrow-up-left.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\arrow-up-left.svg',
+   'DATA'),
+  ('icons\\edit-2.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\edit-2.svg',
+   'DATA'),
+  ('icons\\umbrella.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\umbrella.svg',
+   'DATA'),
+  ('icons\\align-justify.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\align-justify.svg',
+   'DATA'),
+  ('icons\\coffee.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\coffee.svg',
+   'DATA'),
+  ('icons\\volume-1.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\volume-1.svg',
+   'DATA'),
+  ('icons\\message-square.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\message-square.svg',
+   'DATA'),
+  ('icons\\cloud-snow.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\cloud-snow.svg',
+   'DATA'),
+  ('icons\\share-2.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\share-2.svg',
+   'DATA'),
+  ('icons\\wind.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\wind.svg',
+   'DATA'),
+  ('icons\\code.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\code.svg',
+   'DATA'),
+  ('icons\\slash.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\slash.svg',
+   'DATA'),
+  ('icons\\chrome.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\chrome.svg',
+   'DATA'),
+  ('icons\\fast-forward.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\fast-forward.svg',
+   'DATA'),
+  ('icons\\user-plus.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\user-plus.svg',
+   'DATA'),
+  ('icons\\cloud-rain.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\cloud-rain.svg',
+   'DATA'),
+  ('icons\\table.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\table.svg',
+   'DATA'),
+  ('icons\\git-commit.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\git-commit.svg',
+   'DATA'),
+  ('icons\\external-link.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\external-link.svg',
+   'DATA'),
+  ('icons\\trending-down.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\trending-down.svg',
+   'DATA'),
+  ('icons\\truck.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\truck.svg',
+   'DATA'),
+  ('icons\\copy.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\copy.svg',
+   'DATA'),
+  ('icons\\package.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\package.svg',
+   'DATA'),
+  ('icons\\share.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\share.svg',
+   'DATA'),
+  ('icons\\radio.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\radio.svg',
+   'DATA'),
+  ('icons\\camera.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\camera.svg',
+   'DATA'),
+  ('icons\\log-in.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\log-in.svg',
+   'DATA'),
+  ('icons\\shield-off.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\shield-off.svg',
+   'DATA'),
+  ('icons\\git-merge.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\git-merge.svg',
+   'DATA'),
+  ('icons\\figma.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\figma.svg',
+   'DATA'),
+  ('icons\\scissors.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\scissors.svg',
+   'DATA'),
+  ('icons\\square.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\square.svg',
+   'DATA'),
+  ('icons\\printer.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\printer.svg',
+   'DATA'),
+  ('icons\\video-off.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\video-off.svg',
+   'DATA'),
+  ('icons\\instagram.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\instagram.svg',
+   'DATA'),
+  ('icons\\key.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\key.svg',
+   'DATA'),
+  ('icons\\zoom-in.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\zoom-in.svg',
+   'DATA'),
+  ('icons\\trash.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\trash.svg',
+   'DATA'),
+  ('icons\\moon.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\moon.svg',
+   'DATA'),
+  ('icons\\tv.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\tv.svg',
+   'DATA'),
+  ('icons\\server.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\server.svg',
+   'DATA'),
+  ('icons\\toggle-right.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\toggle-right.svg',
+   'DATA'),
+  ('icons\\arrow-up.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\arrow-up.svg',
+   'DATA'),
+  ('icons\\framer.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\framer.svg',
+   'DATA'),
+  ('icons\\skip-forward.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\skip-forward.svg',
+   'DATA'),
+  ('icons\\arrow-right.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\arrow-right.svg',
+   'DATA'),
+  ('icons\\minimize.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\minimize.svg',
+   'DATA'),
+  ('icons\\toggle-left.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\toggle-left.svg',
+   'DATA'),
+  ('icons\\volume.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\volume.svg',
+   'DATA'),
+  ('icons\\divide-square.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\divide-square.svg',
+   'DATA'),
+  ('icons\\git-pull-request.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\git-pull-request.svg',
+   'DATA'),
+  ('icons\\info.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\info.svg',
+   'DATA'),
+  ('icons\\corner-down-right.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\corner-down-right.svg',
+   'DATA'),
+  ('icons\\hexagon.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\hexagon.svg',
+   'DATA'),
+  ('icons\\target.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\target.svg',
+   'DATA'),
+  ('icons\\chevron-down.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\chevron-down.svg',
+   'DATA'),
+  ('icons\\folder-minus.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\folder-minus.svg',
+   'DATA'),
+  ('icons\\thumbs-down.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\thumbs-down.svg',
+   'DATA'),
+  ('icons\\thumbs-up.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\thumbs-up.svg',
+   'DATA'),
+  ('icons\\gitlab.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\gitlab.svg',
+   'DATA'),
+  ('icons\\minus.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\minus.svg',
+   'DATA'),
+  ('icons\\crosshair.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\crosshair.svg',
+   'DATA'),
+  ('icons\\zap-off.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\zap-off.svg',
+   'DATA'),
+  ('icons\\zoom-out.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\zoom-out.svg',
+   'DATA'),
+  ('icons\\pen-tool.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\pen-tool.svg',
+   'DATA'),
+  ('icons\\phone.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\phone.svg',
+   'DATA'),
+  ('icons\\mic.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\mic.svg',
+   'DATA'),
+  ('icons\\monitor.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\monitor.svg',
+   'DATA'),
+  ('icons\\users.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\users.svg',
+   'DATA'),
+  ('icons\\star.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\star.svg',
+   'DATA'),
+  ('icons\\chevron-right.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\chevron-right.svg',
+   'DATA'),
+  ('icons\\link.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\link.svg',
+   'DATA'),
+  ('icons\\save.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\save.svg',
+   'DATA'),
+  ('icons\\arrow-down-circle.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\arrow-down-circle.svg',
+   'DATA'),
+  ('icons\\help-circle.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\help-circle.svg',
+   'DATA'),
+  ('icons\\play-circle.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\play-circle.svg',
+   'DATA'),
+  ('icons\\skip-back.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\skip-back.svg',
+   'DATA'),
+  ('icons\\upload-cloud.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\upload-cloud.svg',
+   'DATA'),
+  ('icons\\x-circle.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\x-circle.svg',
+   'DATA'),
+  ('icons\\alert-circle.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\alert-circle.svg',
+   'DATA'),
+  ('icons\\minimize-2.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\minimize-2.svg',
+   'DATA'),
+  ('icons\\list.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\list.svg',
+   'DATA'),
+  ('icons\\alert-triangle.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\alert-triangle.svg',
+   'DATA'),
+  ('icons\\mouse-pointer.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\mouse-pointer.svg',
+   'DATA'),
+  ('icons\\rotate-cw.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\rotate-cw.svg',
+   'DATA'),
+  ('icons\\tablet.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\tablet.svg',
+   'DATA'),
+  ('icons\\home.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\home.svg',
+   'DATA'),
+  ('icons\\stop-circle.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\stop-circle.svg',
+   'DATA'),
+  ('icons\\arrow-up-right.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\arrow-up-right.svg',
+   'DATA'),
+  ('icons\\clock.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\clock.svg',
+   'DATA'),
+  ('icons\\italic.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\italic.svg',
+   'DATA'),
+  ('icons\\volume-x.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\volume-x.svg',
+   'DATA'),
+  ('icons\\sunrise.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\sunrise.svg',
+   'DATA'),
+  ('icons\\battery.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\battery.svg',
+   'DATA'),
+  ('icons\\hash.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\hash.svg',
+   'DATA'),
+  ('icons\\camera-off.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\camera-off.svg',
+   'DATA'),
+  ('icons\\plus-circle.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\plus-circle.svg',
+   'DATA'),
+  ('icons\\log-out.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\log-out.svg',
+   'DATA'),
+  ('icons\\bell.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\bell.svg',
+   'DATA'),
+  ('icons\\more-vertical.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\more-vertical.svg',
+   'DATA'),
+  ('icons\\navigation-2.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\navigation-2.svg',
+   'DATA'),
+  ('icons\\arrow-down-right.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\arrow-down-right.svg',
+   'DATA'),
+  ('icons\\eye-off.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\eye-off.svg',
+   'DATA'),
+  ('icons\\film.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\film.svg',
+   'DATA'),
+  ('icons\\check.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\check.svg',
+   'DATA'),
+  ('icons\\gift.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\gift.svg',
+   'DATA'),
+  ('icons\\life-buoy.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\life-buoy.svg',
+   'DATA'),
+  ('icons\\folder.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\folder.svg',
+   'DATA'),
+  ('icons\\compass.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\compass.svg',
+   'DATA'),
+  ('icons\\dollar-sign.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\dollar-sign.svg',
+   'DATA'),
+  ('icons\\chevrons-down.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\chevrons-down.svg',
+   'DATA'),
+  ('icons\\shield.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\shield.svg',
+   'DATA'),
+  ('icons\\speaker.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\speaker.svg',
+   'DATA'),
+  ('icons\\thermometer.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\thermometer.svg',
+   'DATA'),
+  ('icons\\droplet.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\droplet.svg',
+   'DATA'),
+  ('icons\\twitter.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\twitter.svg',
+   'DATA'),
+  ('icons\\user-x.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\user-x.svg',
+   'DATA'),
+  ('icons\\voicemail.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\voicemail.svg',
+   'DATA'),
+  ('icons\\x-octagon.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\x-octagon.svg',
+   'DATA'),
+  ('icons\\airplay.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\airplay.svg',
+   'DATA'),
+  ('icons\\trending-up.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\trending-up.svg',
+   'DATA'),
+  ('icons\\codesandbox.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\codesandbox.svg',
+   'DATA'),
+  ('icons\\map.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\map.svg',
+   'DATA'),
+  ('icons\\alert-octagon.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\alert-octagon.svg',
+   'DATA'),
+  ('icons\\arrow-down.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\arrow-down.svg',
+   'DATA'),
+  ('icons\\command.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\command.svg',
+   'DATA'),
+  ('icons\\phone-outgoing.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\phone-outgoing.svg',
+   'DATA'),
+  ('icons\\minus-circle.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\minus-circle.svg',
+   'DATA'),
+  ('icons\\volume-2.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\volume-2.svg',
+   'DATA'),
+  ('icons\\flag.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\flag.svg',
+   'DATA'),
+  ('icons\\clipboard.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\clipboard.svg',
+   'DATA'),
+  ('icons\\book.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\book.svg',
+   'DATA'),
+  ('icons\\sunset.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\sunset.svg',
+   'DATA'),
+  ('icons\\corner-up-left.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\corner-up-left.svg',
+   'DATA'),
+  ('icons\\settings.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\settings.svg',
+   'DATA'),
+  ('icons\\twitch.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\twitch.svg',
+   'DATA'),
+  ('icons\\type.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\type.svg',
+   'DATA'),
+  ('icons\\octagon.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\octagon.svg',
+   'DATA'),
+  ('icons\\watch.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\watch.svg',
+   'DATA'),
+  ('icons\\pocket.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\pocket.svg',
+   'DATA'),
+  ('icons\\wifi.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\wifi.svg',
+   'DATA'),
+  ('icons\\phone-forwarded.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\phone-forwarded.svg',
+   'DATA'),
+  ('icons\\wifi-off.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\wifi-off.svg',
+   'DATA'),
+  ('icons\\delete.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\delete.svg',
+   'DATA'),
+  ('icons\\align-right.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\align-right.svg',
+   'DATA'),
+  ('icons\\tag.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\tag.svg',
+   'DATA'),
+  ('icons\\phone-incoming.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\phone-incoming.svg',
+   'DATA'),
+  ('icons\\corner-down-left.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\corner-down-left.svg',
+   'DATA'),
+  ('icons\\layers.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\layers.svg',
+   'DATA'),
+  ('icons\\shopping-cart.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\shopping-cart.svg',
+   'DATA'),
+  ('icons\\tool.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\tool.svg',
+   'DATA'),
+  ('icons\\cloud-drizzle.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\cloud-drizzle.svg',
+   'DATA'),
+  ('icons\\video.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\video.svg',
+   'DATA'),
+  ('icons\\archive.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\archive.svg',
+   'DATA'),
+  ('icons\\github.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\github.svg',
+   'DATA'),
+  ('icons\\download-cloud.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\download-cloud.svg',
+   'DATA'),
+  ('icons\\upload.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\upload.svg',
+   'DATA'),
+  ('icons\\minus-square.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\minus-square.svg',
+   'DATA'),
+  ('icons\\youtube.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\youtube.svg',
+   'DATA'),
+  ('icons\\check-circle.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\check-circle.svg',
+   'DATA'),
+  ('icons\\folder-plus.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\folder-plus.svg',
+   'DATA'),
+  ('icons\\arrow-down-left.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\arrow-down-left.svg',
+   'DATA'),
+  ('icons\\file.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\file.svg',
+   'DATA'),
+  ('icons\\maximize.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\maximize.svg',
+   'DATA'),
+  ('icons\\crop.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\crop.svg',
+   'DATA'),
+  ('icons\\play.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\play.svg',
+   'DATA'),
+  ('icons\\refresh-cw.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\refresh-cw.svg',
+   'DATA'),
+  ('icons\\refresh-ccw.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\refresh-ccw.svg',
+   'DATA'),
+  ('icons\\aperture.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\aperture.svg',
+   'DATA'),
+  ('icons\\at-sign.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\at-sign.svg',
+   'DATA'),
+  ('icons\\trello.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\trello.svg',
+   'DATA'),
+  ('icons\\divide-circle.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\divide-circle.svg',
+   'DATA'),
+  ('icons\\mic-off.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\mic-off.svg',
+   'DATA'),
+  ('icons\\arrow-up-circle.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\arrow-up-circle.svg',
+   'DATA'),
+  ('icons\\phone-call.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\phone-call.svg',
+   'DATA'),
+  ('icons\\bold.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\bold.svg',
+   'DATA'),
+  ('icons\\x.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\x.svg',
+   'DATA'),
+  ('icons\\arrow-left-circle.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\arrow-left-circle.svg',
+   'DATA'),
+  ('icons\\bookmark.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\bookmark.svg',
+   'DATA'),
+  ('icons\\paperclip.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\paperclip.svg',
+   'DATA'),
+  ('icons\\repeat.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\repeat.svg',
+   'DATA'),
+  ('icons\\sliders.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\sliders.svg',
+   'DATA'),
+  ('icons\\file-plus.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\file-plus.svg',
+   'DATA'),
+  ('icons\\chevrons-up.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\chevrons-up.svg',
+   'DATA'),
+  ('icons\\columns.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\columns.svg',
+   'DATA'),
+  ('icons\\corner-up-right.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\corner-up-right.svg',
+   'DATA'),
+  ('icons\\layout.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\layout.svg',
+   'DATA'),
+  ('icons\\send.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\send.svg',
+   'DATA'),
+  ('icons\\bluetooth.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\bluetooth.svg',
+   'DATA'),
+  ('icons\\dribbble.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\dribbble.svg',
+   'DATA'),
+  ('icons\\shuffle.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\shuffle.svg',
+   'DATA'),
+  ('icons\\codepen.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\codepen.svg',
+   'DATA'),
+  ('icons\\align-center.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\align-center.svg',
+   'DATA'),
+  ('icons\\rss.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\rss.svg',
+   'DATA'),
+  ('icons\\file-text.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\file-text.svg',
+   'DATA'),
+  ('icons\\filter.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\filter.svg',
+   'DATA'),
+  ('icons\\chevrons-right.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\chevrons-right.svg',
+   'DATA'),
+  ('icons\\map-pin.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\map-pin.svg',
+   'DATA'),
+  ('icons\\phone-off.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\phone-off.svg',
+   'DATA'),
+  ('icons\\meh.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\meh.svg',
+   'DATA'),
+  ('icons\\user-minus.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\user-minus.svg',
+   'DATA'),
+  ('icons\\disc.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\disc.svg',
+   'DATA'),
+  ('icons\\power.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\power.svg',
+   'DATA'),
+  ('icons\\file-minus.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\file-minus.svg',
+   'DATA'),
+  ('icons\\bell-off.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\bell-off.svg',
+   'DATA'),
+  ('icons\\briefcase.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\briefcase.svg',
+   'DATA'),
+  ('icons\\facebook.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\facebook.svg',
+   'DATA'),
+  ('icons\\award.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\award.svg',
+   'DATA'),
+  ('icons\\cloud-lightning.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\cloud-lightning.svg',
+   'DATA'),
+  ('icons\\credit-card.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\credit-card.svg',
+   'DATA'),
+  ('icons\\music.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\music.svg',
+   'DATA'),
+  ('icons\\terminal.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\terminal.svg',
+   'DATA'),
+  ('icons_rc_rc.qrc',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons_rc_rc.qrc',
+   'DATA'),
+  ('icons\\mail.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\mail.svg',
+   'DATA'),
+  ('icons\\frown.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\frown.svg',
+   'DATA'),
+  ('icons\\message-circle.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\message-circle.svg',
+   'DATA'),
+  ('icons\\database.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\database.svg',
+   'DATA'),
+  ('icons\\activity.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\activity.svg',
+   'DATA'),
+  ('icons\\corner-left-down.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\corner-left-down.svg',
+   'DATA'),
+  ('icons\\edit.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\edit.svg',
+   'DATA'),
+  ('icons\\pause.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\pause.svg',
+   'DATA'),
+  ('icons\\percent.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\percent.svg',
+   'DATA'),
+  ('icons\\arrow-right-circle.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\arrow-right-circle.svg',
+   'DATA'),
+  ('icons\\download.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\download.svg',
+   'DATA'),
+  ('icons\\sidebar.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\sidebar.svg',
+   'DATA'),
+  ('icons\\unlock.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\unlock.svg',
+   'DATA'),
+  ('icons\\user.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\user.svg',
+   'DATA'),
+  ('icons\\arrow-left.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\arrow-left.svg',
+   'DATA'),
+  ('icons\\calendar.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\calendar.svg',
+   'DATA'),
+  ('icons\\sun.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\sun.svg',
+   'DATA'),
+  ('icons\\maximize-2.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\maximize-2.svg',
+   'DATA'),
+  ('icons\\heart.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\heart.svg',
+   'DATA'),
+  ('icons\\move.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\move.svg',
+   'DATA'),
+  ('icons\\lock.svg',
+   'C:\\Users\\TOYOTA\\Downloads\\App_Enrollment-repo-main - '
+   'Copy\\App_Enrollment-repo-main\\icons\\lock.svg',
+   'DATA')],
+ [],
+ False,
+ False,
+ 1681317276,
+ [('runw.exe',
+   'C:\\Program '
+   'Files\\Python311\\Lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\runw.exe',
+   'EXECUTABLE')])
